@@ -25,16 +25,17 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testYangXin
+{
+//    NSString* name = @"yangxin";
+//    NSLog(@"name address:%x", &name);
+//    
+//    id test = [[NSObject alloc] init];
+//    NSLog(@"test address:%x", &test);
+//    NSLog(@"test content:%@", test);
+//    
+//    void* pVoid = &name;
+//    NSLog(@"pVoid address:%x", pVoid);
 }
 
 @end
