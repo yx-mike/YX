@@ -26,8 +26,8 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 {
     self = [super init];
     if (self) {
-        _sections = @[@"1.简单的NSOperation"];
-        _vcNames = @[@"Section14_1ViewController"];
+        _sections = @[@"1.XML解析", @"2.JSON解析"];
+        _vcNames = @[@"Section14_1ViewController", @"Section14_1ViewController"];
     }
     return self;
 }

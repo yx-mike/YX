@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rGf-9F-aog">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--故事板-->
+        <scene sceneID="NiV-7m-Mwz">
+            <objects>
+                <viewController storyboardIdentifier="Storyboard_iOS7_Chapter4_ViewController" title="故事板" id="rGf-9F-aog" customClass="Storyboard_iOS7_Chapter4_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6HB-KW-4Vt"/>
+                        <viewControllerLayoutGuide type="bottom" id="nyv-SN-l3z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WyY-zp-0Dj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baJ-gk-VE4">
+                                <rect key="frame" x="100" y="185" width="89" height="30"/>
+                                <state key="normal" title="CustomPush">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCustomPush:" destination="rGf-9F-aog" eventType="touchUpInside" id="KMl-El-6VM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kT-ib-csQ">
+                                <rect key="frame" x="416" y="385" width="84" height="30"/>
+                                <state key="normal" title="DefaultPush">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doDefaultPush:" destination="rGf-9F-aog" eventType="touchUpInside" id="e2R-ol-y6d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="baJ-gk-VE4" secondAttribute="centerY" constant="100" id="DPa-Dk-1pf"/>
+                            <constraint firstItem="baJ-gk-VE4" firstAttribute="leading" secondItem="WyY-zp-0Dj" secondAttribute="leading" constant="100" id="aJS-gj-6SF"/>
+                            <constraint firstAttribute="centerY" secondItem="5kT-ib-csQ" secondAttribute="centerY" constant="-100" id="qYp-Hr-4u0"/>
+                            <constraint firstAttribute="trailing" secondItem="5kT-ib-csQ" secondAttribute="trailing" constant="100" id="skr-O4-Yzo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customButton" destination="baJ-gk-VE4" id="Ar5-34-T4d"/>
+                        <segue destination="sbP-bw-8TX" kind="show" identifier="DefaultPush" id="1wt-US-wvG"/>
+                        <segue destination="aYz-LK-sDR" kind="custom" identifier="CustomPush" customClass="CustomSegue" id="rKG-S2-oRU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y13-rP-ArY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="311"/>
+        </scene>
+        <!--默认过渡-->
+        <scene sceneID="tYd-7w-oqY">
+            <objects>
+                <viewController title="默认过渡" id="sbP-bw-8TX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eF2-fk-jCb"/>
+                        <viewControllerLayoutGuide type="bottom" id="JCP-lt-gC3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SAR-3W-i47">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="muk-z3-dW9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfd-Hz-dca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="763"/>
+        </scene>
+        <!--自定义过渡-->
+        <scene sceneID="UWn-F1-H7h">
+            <objects>
+                <viewController storyboardIdentifier="StoryboardCustom_iOS7_Chapter_ViewController" title="自定义过渡" id="aYz-LK-sDR" customClass="StoryboardCustom_iOS7_Chapter_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FDd-yx-rhE"/>
+                        <viewControllerLayoutGuide type="bottom" id="dXd-DI-aqL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xiu-JM-4gc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Em-gd-ReM">
+                                <rect key="frame" x="282.5" y="285" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uju-tA-1hd" kind="unwind" unwindAction="unwindFromViewController:" id="Ugr-GW-ICd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="8Em-gd-ReM" secondAttribute="centerX" id="Mv9-s7-9TJ"/>
+                            <constraint firstAttribute="centerY" secondItem="8Em-gd-ReM" secondAttribute="centerY" id="vkN-AZ-8Vh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YWD-oh-Oca"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIk-66-h6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Uju-tA-1hd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="24"/>
+        </scene>
+    </scenes>
+</document>
