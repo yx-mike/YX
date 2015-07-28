@@ -24,3 +24,9 @@
 #define AppBackgroundColor HexRGB(0xf8f8f8)
 #define TextColor HexRGB(0x5e606d)
 #define BorderColor HexRGB(0xe2e2e2)
+
+#ifdef DEBUG
+#define Log(xx, ...) NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define Log(xx, ...)
+#endif
