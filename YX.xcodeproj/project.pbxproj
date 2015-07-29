@@ -28,6 +28,11 @@
 		0D7453851B67E350006E1CF6 /* YXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7453841B67E350006E1CF6 /* YXCollectionViewController.m */; };
 		0D7453881B67E472006E1CF6 /* Section5_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7453871B67E472006E1CF6 /* Section5_iOS7_1ViewController.m */; };
 		0D74538C1B67E55B006E1CF6 /* YXMasonryViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D74538B1B67E55B006E1CF6 /* YXMasonryViewLayout.m */; };
+		0D7A8C5F1B68666500FFA493 /* YXCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C5E1B68666500FFA493 /* YXCoverFlowLayout.m */; };
+		0D7A8C611B68675A00FFA493 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = 0D7A8C601B68675A00FFA493 /* Photos */; };
+		0D7A8C641B68679200FFA493 /* Section5_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C631B68679200FFA493 /* Section5_iOS7_2ViewController.m */; };
+		0D7A8C681B6868C200FFA493 /* YXPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C671B6868C200FFA493 /* YXPhotoCollectionViewCell.m */; };
+		0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */; };
 		0D7BC2EA1B61D6A700A9FDC0 /* XMLData.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BC2E91B61D6A700A9FDC0 /* XMLData.xml */; };
 		0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */; };
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
@@ -120,6 +125,15 @@
 		0D7453871B67E472006E1CF6 /* Section5_iOS7_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section5_iOS7_1ViewController.m; path = YX/VC/Section5_iOS7_1ViewController.m; sourceTree = "<group>"; };
 		0D74538A1B67E55B006E1CF6 /* YXMasonryViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXMasonryViewLayout.h; path = YX/VC/CollectionLayout/YXMasonryViewLayout.h; sourceTree = "<group>"; };
 		0D74538B1B67E55B006E1CF6 /* YXMasonryViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXMasonryViewLayout.m; path = YX/VC/CollectionLayout/YXMasonryViewLayout.m; sourceTree = "<group>"; };
+		0D7A8C5D1B68666500FFA493 /* YXCoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXCoverFlowLayout.h; path = YX/VC/CollectionLayout/YXCoverFlowLayout.h; sourceTree = "<group>"; };
+		0D7A8C5E1B68666500FFA493 /* YXCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXCoverFlowLayout.m; path = YX/VC/CollectionLayout/YXCoverFlowLayout.m; sourceTree = "<group>"; };
+		0D7A8C601B68675A00FFA493 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Photos; sourceTree = "<group>"; };
+		0D7A8C621B68679200FFA493 /* Section5_iOS7_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section5_iOS7_2ViewController.h; path = YX/VC/Section5_iOS7_2ViewController.h; sourceTree = "<group>"; };
+		0D7A8C631B68679200FFA493 /* Section5_iOS7_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section5_iOS7_2ViewController.m; path = YX/VC/Section5_iOS7_2ViewController.m; sourceTree = "<group>"; };
+		0D7A8C661B6868C200FFA493 /* YXPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPhotoCollectionViewCell.h; path = YX/VC/Views/YXPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		0D7A8C671B6868C200FFA493 /* YXPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPhotoCollectionViewCell.m; path = YX/VC/Views/YXPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		0D7A8C691B686C4500FFA493 /* NSLayoutConstraint+YXCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+YXCommon.h"; path = "YX/Category/NSLayoutConstraint+YXCommon.h"; sourceTree = "<group>"; };
+		0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+YXCommon.m"; path = "YX/Category/NSLayoutConstraint+YXCommon.m"; sourceTree = "<group>"; };
 		0D7BC2E91B61D6A700A9FDC0 /* XMLData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = XMLData.xml; path = Resoures/XMLData.xml; sourceTree = "<group>"; };
 		0D7BC2EC1B621E5B00A9FDC0 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = YX/Model/JSONModel.h; sourceTree = "<group>"; };
 		0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = YX/Model/JSONModel.m; sourceTree = "<group>"; };
@@ -287,6 +301,8 @@ NO.9 chapter
 				0DCAEF9A1B5903A500AC4425 /* UITableViewCell+YXSetValues.m */,
 				0D6F0ABD1B5CD9EA004C9410 /* CALayer+YXAmimation.h */,
 				0D6F0ABE1B5CD9EA004C9410 /* CALayer+YXAmimation.m */,
+				0D7A8C691B686C4500FFA493 /* NSLayoutConstraint+YXCommon.h */,
+				0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -365,6 +381,7 @@ NO.9 chapter
 		0D5E4E521B52583400CB3A8C /* Resoures */ = {
 			isa = PBXGroup;
 			children = (
+				0D7A8C601B68675A00FFA493 /* Photos */,
 				0DCC75E91B5CBDA3007E3CD0 /* Pushing@2x.png */,
 				0D5E4E531B52583400CB3A8C /* Jessica */,
 			);
@@ -395,11 +412,14 @@ NO.9 chapter
 		0D74537F1B67DA47006E1CF6 /* iOS7_Chapter5 */ = {
 			isa = PBXGroup;
 			children = (
+				0D7A8C651B68688900FFA493 /* CollectionCell */,
 				0D7453891B67E50F006E1CF6 /* CollectionLayout */,
-				0D7453801B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.h */,
-				0D7453811B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m */,
 				0D7453861B67E472006E1CF6 /* Section5_iOS7_1ViewController.h */,
 				0D7453871B67E472006E1CF6 /* Section5_iOS7_1ViewController.m */,
+				0D7A8C621B68679200FFA493 /* Section5_iOS7_2ViewController.h */,
+				0D7A8C631B68679200FFA493 /* Section5_iOS7_2ViewController.m */,
+				0D7453801B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.h */,
+				0D7453811B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m */,
 			);
 			name = iOS7_Chapter5;
 			sourceTree = "<group>";
@@ -409,8 +429,19 @@ NO.9 chapter
 			children = (
 				0D74538A1B67E55B006E1CF6 /* YXMasonryViewLayout.h */,
 				0D74538B1B67E55B006E1CF6 /* YXMasonryViewLayout.m */,
+				0D7A8C5D1B68666500FFA493 /* YXCoverFlowLayout.h */,
+				0D7A8C5E1B68666500FFA493 /* YXCoverFlowLayout.m */,
 			);
 			name = CollectionLayout;
+			sourceTree = "<group>";
+		};
+		0D7A8C651B68688900FFA493 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				0D7A8C661B6868C200FFA493 /* YXPhotoCollectionViewCell.h */,
+				0D7A8C671B6868C200FFA493 /* YXPhotoCollectionViewCell.m */,
+			);
+			name = CollectionCell;
 			sourceTree = "<group>";
 		};
 		0D7BC2E81B61D5F700A9FDC0 /* Supporting Data */ = {
@@ -682,6 +713,7 @@ NO.9 chapter
 				0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */,
 				0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */,
 				0DF4B4451B65DBD70081B8D8 /* CustomVCStoryboard.storyboard in Resources */,
+				0D7A8C611B68675A00FFA493 /* Photos in Resources */,
 				0DCC75EA1B5CBDA3007E3CD0 /* Pushing@2x.png in Resources */,
 				0D5E4E621B52599A00CB3A8C /* j3@2x.jpeg in Resources */,
 			);
@@ -718,10 +750,12 @@ NO.9 chapter
 				0DCC75D71B5C9BC5007E3CD0 /* Section8_6ViewController.m in Sources */,
 				0DCC75E81B5CBBDC007E3CD0 /* Section9_2ViewController.m in Sources */,
 				0DD5A18A1B5BE3BF001436F9 /* Section8_5ViewController.m in Sources */,
+				0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */,
 				0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */,
 				0DCC75DE1B5CB5C2007E3CD0 /* SectionListNO9ViewController.m in Sources */,
 				0D74538C1B67E55B006E1CF6 /* YXMasonryViewLayout.m in Sources */,
 				0DB7C45F1B5F360000D19259 /* Section14_1ViewController.m in Sources */,
+				0D7A8C5F1B68666500FFA493 /* YXCoverFlowLayout.m in Sources */,
 				0DCAEF951B58F9FB00AC4425 /* YXTableViewController.m in Sources */,
 				0D6F0ABC1B5CD15C004C9410 /* Section9_3ViewController.m in Sources */,
 				0D5E4E4B1B52404100CB3A8C /* MainViewController.m in Sources */,
@@ -738,9 +772,11 @@ NO.9 chapter
 				0DCAEF981B58FB0200AC4425 /* AViewController.m in Sources */,
 				0D6F0AC51B5CEF03004C9410 /* Section9_5ViewController.m in Sources */,
 				0D7453851B67E350006E1CF6 /* YXCollectionViewController.m in Sources */,
+				0D7A8C681B6868C200FFA493 /* YXPhotoCollectionViewCell.m in Sources */,
 				0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */,
 				0D43895D1B514288005DFCF7 /* main.m in Sources */,
 				0DB7C45C1B5F358200D19259 /* SectionListNO14ViewController.m in Sources */,
+				0D7A8C641B68679200FFA493 /* Section5_iOS7_2ViewController.m in Sources */,
 				0DE2D9E81B5A31010000AA31 /* YXMutliTableViewController.m in Sources */,
 				0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */,
 				0DF4B44F1B66131F0081B8D8 /* StoryboardCustom_iOS7_Chapter_ViewController.m in Sources */,
