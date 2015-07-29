@@ -37,6 +37,7 @@
 		0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */; };
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
 		0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2F31B621E5B00A9FDC0 /* Review.m */; };
+		0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */; };
 		0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D94481A1B5E1CD6007FF694 /* SectionListNO13ViewController.m */; };
 		0D94481E1B5E1D55007FF694 /* Section13_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D94481D1B5E1D55007FF694 /* Section13_1ViewController.m */; };
 		0D96DDE31B64B18F0072D937 /* UIDevice+MKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D96DDE21B64B18F0072D937 /* UIDevice+MKAdditions.m */; };
@@ -141,6 +142,8 @@
 		0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = YX/Model/MenuItem.m; sourceTree = "<group>"; };
 		0D7BC2F21B621E5B00A9FDC0 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Review.h; path = YX/Model/Review.h; sourceTree = "<group>"; };
 		0D7BC2F31B621E5B00A9FDC0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = YX/Model/Review.m; sourceTree = "<group>"; };
+		0D8701B21B6903D300850F27 /* SectionListiOS7NO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO14ViewController.h; path = YX/VC/SectionListiOS7NO14ViewController.h; sourceTree = "<group>"; };
+		0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO14ViewController.m; path = YX/VC/SectionListiOS7NO14ViewController.m; sourceTree = "<group>"; };
 		0D9448191B5E1CD6007FF694 /* SectionListNO13ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListNO13ViewController.h; path = YX/VC/SectionListNO13ViewController.h; sourceTree = "<group>"; };
 		0D94481A1B5E1CD6007FF694 /* SectionListNO13ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListNO13ViewController.m; path = YX/VC/SectionListNO13ViewController.m; sourceTree = "<group>"; };
 		0D94481C1B5E1D55007FF694 /* Section13_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section13_1ViewController.h; path = YX/VC/Section13_1ViewController.h; sourceTree = "<group>"; };
@@ -246,6 +249,7 @@ NO.9 chapter
  */,
 				0DF4B4431B65DB2B0081B8D8 /* iOS7_Chapter4 */,
 				0D74537F1B67DA47006E1CF6 /* iOS7_Chapter5 */,
+				0D8701B11B69039C00850F27 /* iOS7_Chapter14 */,
 				0DCAEF8B1B58F86A00AC4425 /* Letter */,
 				0D5E4E481B52404100CB3A8C /* MainViewController.h */,
 				0D5E4E491B52404100CB3A8C /* MainViewController.m */,
@@ -463,6 +467,15 @@ NO.9 chapter
 				0D7BC2F31B621E5B00A9FDC0 /* Review.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		0D8701B11B69039C00850F27 /* iOS7_Chapter14 */ = {
+			isa = PBXGroup;
+			children = (
+				0D8701B21B6903D300850F27 /* SectionListiOS7NO14ViewController.h */,
+				0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */,
+			);
+			name = iOS7_Chapter14;
 			sourceTree = "<group>";
 		};
 		0D9448181B5E1C9C007FF694 /* NO.13 chapter */ = {
@@ -738,6 +751,7 @@ NO.9 chapter
 				0DE0602C1B653DD800C09938 /* UIImage+ImageEffects.m in Sources */,
 				0D6F0ACC1B5D043D004C9410 /* CircleCALayer.m in Sources */,
 				0DCAEF921B58F98300AC4425 /* YXNavigationController.m in Sources */,
+				0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */,
 				0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */,
 				0D7453821B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m in Sources */,
 				0DC412D51B5E864D001274DC /* Section13_2ViewController.m in Sources */,
