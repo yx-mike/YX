@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Section23_iOS7_2ViewController">
+            <connections>
+                <outlet property="progressView" destination="gB7-CX-0kc" id="YGr-nB-OaG"/>
+                <outlet property="startButton" destination="k8B-nb-SUk" id="Bq1-nx-cLk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-CX-0kc">
+                    <rect key="frame" x="225" y="299" width="150" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="3gW-BT-7nv"/>
+                    </constraints>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8B-nb-SUk">
+                    <rect key="frame" x="285" y="321" width="30" height="30"/>
+                    <state key="normal" title="Go!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startButtonTap:" destination="-1" eventType="touchUpInside" id="shN-qA-d9r"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="gB7-CX-0kc" secondAttribute="centerX" id="6na-5q-Geh"/>
+                <constraint firstAttribute="centerY" secondItem="gB7-CX-0kc" secondAttribute="centerY" id="DUg-JP-eql"/>
+                <constraint firstAttribute="centerX" secondItem="k8B-nb-SUk" secondAttribute="centerX" id="i83-v2-831"/>
+                <constraint firstItem="k8B-nb-SUk" firstAttribute="top" secondItem="gB7-CX-0kc" secondAttribute="bottom" constant="20" id="slA-gu-qr0"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

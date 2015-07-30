@@ -33,8 +33,8 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         _vcNames = @[@"YXMutliTableViewController", @"SectionListNO8ViewController", @"SectionListNO9ViewController",
                      @"SectionListNO13ViewController", @"SectionListNO14ViewController"];
         
-        _ios7Titles = @[@"第4章 故事板", @"第5章 集合视图"];
-        _ios7VCNames = @[@"", @"SectionListiOS7NO5ViewController"];
+        _ios7Titles = @[@"第4章 故事板", @"第5章 集合视图", @"第23章 GCD"];
+        _ios7VCNames = @[@"", @"SectionListiOS7NO5ViewController", @"SectionListiOS7NO23ViewController"];
     }
     return self;
 }

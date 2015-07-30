@@ -46,6 +46,14 @@
 		0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E261B5B8EA000589B8C /* Section8_2ViewController.m */; };
 		0D9A8E2A1B5BB06B00589B8C /* Section8_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E291B5BB06B00589B8C /* Section8_3ViewController.m */; };
 		0D9A8E2D1B5BBA4B00589B8C /* Section8_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E2C1B5BBA4B00589B8C /* Section8_4ViewController.m */; };
+		0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */; };
+		0DB0E1261B69D42100289B0F /* Section23_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1241B69D42100289B0F /* Section23_iOS7_1ViewController.m */; };
+		0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0E1251B69D42100289B0F /* Section23_iOS7_1ViewController.xib */; };
+		0DB0E12F1B69D80C00289B0F /* RNQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E12E1B69D80C00289B0F /* RNQueue.m */; };
+		0DB0E1331B69F84000289B0F /* Section23_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1311B69F84000289B0F /* Section23_iOS7_2ViewController.m */; };
+		0DB0E1341B69F84000289B0F /* Section23_iOS7_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0E1321B69F84000289B0F /* Section23_iOS7_2ViewController.xib */; };
+		0DB0E1371B69FAE600289B0F /* RNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1361B69FAE600289B0F /* RNTimer.m */; };
+		0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */; };
 		0DB7C45C1B5F358200D19259 /* SectionListNO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C45B1B5F358200D19259 /* SectionListNO14ViewController.m */; };
 		0DB7C45F1B5F360000D19259 /* Section14_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C45E1B5F360000D19259 /* Section14_1ViewController.m */; };
 		0DB7C4621B5F3EF100D19259 /* Section13_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C4611B5F3EF100D19259 /* Section13_3ViewController.m */; };
@@ -160,6 +168,20 @@
 		0D9A8E291B5BB06B00589B8C /* Section8_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section8_3ViewController.m; path = YX/VC/Section8_3ViewController.m; sourceTree = "<group>"; };
 		0D9A8E2B1B5BBA4B00589B8C /* Section8_4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section8_4ViewController.h; path = YX/VC/Section8_4ViewController.h; sourceTree = "<group>"; };
 		0D9A8E2C1B5BBA4B00589B8C /* Section8_4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section8_4ViewController.m; path = YX/VC/Section8_4ViewController.m; sourceTree = "<group>"; };
+		0DB0E1201B69D31600289B0F /* SectionListiOS7NO23ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO23ViewController.h; path = YX/VC/SectionListiOS7NO23ViewController.h; sourceTree = "<group>"; };
+		0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO23ViewController.m; path = YX/VC/SectionListiOS7NO23ViewController.m; sourceTree = "<group>"; };
+		0DB0E1231B69D42100289B0F /* Section23_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_1ViewController.h; path = YX/VC/Section23_iOS7_1ViewController.h; sourceTree = "<group>"; };
+		0DB0E1241B69D42100289B0F /* Section23_iOS7_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section23_iOS7_1ViewController.m; path = YX/VC/Section23_iOS7_1ViewController.m; sourceTree = "<group>"; };
+		0DB0E1251B69D42100289B0F /* Section23_iOS7_1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Section23_iOS7_1ViewController.xib; path = YX/VC/Section23_iOS7_1ViewController.xib; sourceTree = "<group>"; };
+		0DB0E12D1B69D80C00289B0F /* RNQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNQueue.h; path = Helpers/RNQueue.h; sourceTree = "<group>"; };
+		0DB0E12E1B69D80C00289B0F /* RNQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNQueue.m; path = Helpers/RNQueue.m; sourceTree = "<group>"; };
+		0DB0E1301B69F84000289B0F /* Section23_iOS7_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_2ViewController.h; path = YX/VC/Section23_iOS7_2ViewController.h; sourceTree = "<group>"; };
+		0DB0E1311B69F84000289B0F /* Section23_iOS7_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section23_iOS7_2ViewController.m; path = YX/VC/Section23_iOS7_2ViewController.m; sourceTree = "<group>"; };
+		0DB0E1321B69F84000289B0F /* Section23_iOS7_2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Section23_iOS7_2ViewController.xib; path = YX/VC/Section23_iOS7_2ViewController.xib; sourceTree = "<group>"; };
+		0DB0E1351B69FAE600289B0F /* RNTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTimer.h; path = Helpers/RNTimer.h; sourceTree = "<group>"; };
+		0DB0E1361B69FAE600289B0F /* RNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTimer.m; path = Helpers/RNTimer.m; sourceTree = "<group>"; };
+		0DB0E1381B6A0CD100289B0F /* Section23_iOS7_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_3ViewController.h; path = YX/VC/Section23_iOS7_3ViewController.h; sourceTree = "<group>"; };
+		0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section23_iOS7_3ViewController.m; path = YX/VC/Section23_iOS7_3ViewController.m; sourceTree = "<group>"; };
 		0DB7C45A1B5F358200D19259 /* SectionListNO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListNO14ViewController.h; path = YX/VC/SectionListNO14ViewController.h; sourceTree = "<group>"; };
 		0DB7C45B1B5F358200D19259 /* SectionListNO14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListNO14ViewController.m; path = YX/VC/SectionListNO14ViewController.m; sourceTree = "<group>"; };
 		0DB7C45D1B5F360000D19259 /* Section14_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section14_1ViewController.h; path = YX/VC/Section14_1ViewController.h; sourceTree = "<group>"; };
@@ -233,6 +255,10 @@
 		0D0980BA1B5393AB00C0E27E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0DB0E1351B69FAE600289B0F /* RNTimer.h */,
+				0DB0E1361B69FAE600289B0F /* RNTimer.m */,
+				0DB0E12D1B69D80C00289B0F /* RNQueue.h */,
+				0DB0E12E1B69D80C00289B0F /* RNQueue.m */,
 				0D36C2881B563CF30073FC64 /* FunCMacros.h */,
 				0D36C2891B563CF30073FC64 /* Macros.h */,
 				0D36C2851B563CCF0073FC64 /* Constant.h */,
@@ -250,6 +276,7 @@ NO.9 chapter
 				0DF4B4431B65DB2B0081B8D8 /* iOS7_Chapter4 */,
 				0D74537F1B67DA47006E1CF6 /* iOS7_Chapter5 */,
 				0D8701B11B69039C00850F27 /* iOS7_Chapter14 */,
+				0DB0E11F1B69D29F00289B0F /* iOS7_Chapter23 */,
 				0DCAEF8B1B58F86A00AC4425 /* Letter */,
 				0D5E4E481B52404100CB3A8C /* MainViewController.h */,
 				0D5E4E491B52404100CB3A8C /* MainViewController.m */,
@@ -514,6 +541,23 @@ NO.9 chapter
 			name = "NO.8 chapter";
 			sourceTree = "<group>";
 		};
+		0DB0E11F1B69D29F00289B0F /* iOS7_Chapter23 */ = {
+			isa = PBXGroup;
+			children = (
+				0DB0E1201B69D31600289B0F /* SectionListiOS7NO23ViewController.h */,
+				0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */,
+				0DB0E1231B69D42100289B0F /* Section23_iOS7_1ViewController.h */,
+				0DB0E1241B69D42100289B0F /* Section23_iOS7_1ViewController.m */,
+				0DB0E1251B69D42100289B0F /* Section23_iOS7_1ViewController.xib */,
+				0DB0E1301B69F84000289B0F /* Section23_iOS7_2ViewController.h */,
+				0DB0E1311B69F84000289B0F /* Section23_iOS7_2ViewController.m */,
+				0DB0E1321B69F84000289B0F /* Section23_iOS7_2ViewController.xib */,
+				0DB0E1381B6A0CD100289B0F /* Section23_iOS7_3ViewController.h */,
+				0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */,
+			);
+			name = iOS7_Chapter23;
+			sourceTree = "<group>";
+		};
 		0DB7C4581B5F351A00D19259 /* NO.14 chapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,12 +767,14 @@ NO.9 chapter
 				0D5E4E631B52599A00CB3A8C /* j4@2x.jpeg in Resources */,
 				0D7BC2EA1B61D6A700A9FDC0 /* XMLData.xml in Resources */,
 				0D4389681B514288005DFCF7 /* Images.xcassets in Resources */,
+				0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */,
 				0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */,
 				0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */,
 				0DF4B4451B65DBD70081B8D8 /* CustomVCStoryboard.storyboard in Resources */,
 				0D7A8C611B68675A00FFA493 /* Photos in Resources */,
 				0DCC75EA1B5CBDA3007E3CD0 /* Pushing@2x.png in Resources */,
 				0D5E4E621B52599A00CB3A8C /* j3@2x.jpeg in Resources */,
+				0DB0E1341B69F84000289B0F /* Section23_iOS7_2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,18 +797,22 @@ NO.9 chapter
 				0DE0602C1B653DD800C09938 /* UIImage+ImageEffects.m in Sources */,
 				0D6F0ACC1B5D043D004C9410 /* CircleCALayer.m in Sources */,
 				0DCAEF921B58F98300AC4425 /* YXNavigationController.m in Sources */,
+				0DB0E1371B69FAE600289B0F /* RNTimer.m in Sources */,
 				0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */,
 				0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */,
+				0DB0E12F1B69D80C00289B0F /* RNQueue.m in Sources */,
 				0D7453821B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m in Sources */,
 				0DC412D51B5E864D001274DC /* Section13_2ViewController.m in Sources */,
 				0DE2D9E41B5A28560000AA31 /* YXNoMarginTableViewCell.m in Sources */,
 				0DB7C4621B5F3EF100D19259 /* Section13_3ViewController.m in Sources */,
+				0DB0E1261B69D42100289B0F /* Section23_iOS7_1ViewController.m in Sources */,
 				0D94481E1B5E1D55007FF694 /* Section13_1ViewController.m in Sources */,
 				0D9A8E2D1B5BBA4B00589B8C /* Section8_4ViewController.m in Sources */,
 				0DE2D9EB1B5A3D770000AA31 /* YXMultiSubTableViewController.m in Sources */,
 				0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */,
 				0DCC75D71B5C9BC5007E3CD0 /* Section8_6ViewController.m in Sources */,
 				0DCC75E81B5CBBDC007E3CD0 /* Section9_2ViewController.m in Sources */,
+				0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */,
 				0DD5A18A1B5BE3BF001436F9 /* Section8_5ViewController.m in Sources */,
 				0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */,
 				0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */,
@@ -796,7 +846,9 @@ NO.9 chapter
 				0DF4B44F1B66131F0081B8D8 /* StoryboardCustom_iOS7_Chapter_ViewController.m in Sources */,
 				0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */,
 				0D6F0AC21B5CE060004C9410 /* Section9_4ViewController.m in Sources */,
+				0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */,
 				0DCAEF9B1B5903A500AC4425 /* UITableViewCell+YXSetValues.m in Sources */,
+				0DB0E1331B69F84000289B0F /* Section23_iOS7_2ViewController.m in Sources */,
 				0DCC75E51B5CBAF5007E3CD0 /* DelegateView.m in Sources */,
 				0D7453881B67E472006E1CF6 /* Section5_iOS7_1ViewController.m in Sources */,
 				0D6F0AC81B5D02FF004C9410 /* Section9_6ViewController.m in Sources */,

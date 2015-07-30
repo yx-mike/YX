@@ -16,9 +16,9 @@
 
 @implementation YXViewController
 
-- (void)loadView
+- (void)viewDidLoad
 {
-    [super loadView];
+    [super viewDidLoad];
     //
     self.view.backgroundColor = AppBackgroundColor;
 }
