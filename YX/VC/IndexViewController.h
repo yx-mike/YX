@@ -10,6 +10,6 @@
 //
 #import "YXTableViewController.h"
 
-@interface MainViewController : YXTableViewController
+@interface IndexViewController : YXTableViewController
 
 @end

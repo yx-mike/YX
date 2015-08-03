@@ -13,7 +13,7 @@
 		0D4389601B514288005DFCF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43895F1B514288005DFCF7 /* AppDelegate.m */; };
 		0D4389681B514288005DFCF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4389671B514288005DFCF7 /* Images.xcassets */; };
 		0D4389771B514288005DFCF7 /* YXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4389761B514288005DFCF7 /* YXTests.m */; };
-		0D5E4E4B1B52404100CB3A8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E4E491B52404100CB3A8C /* MainViewController.m */; };
+		0D5E4E4B1B52404100CB3A8C /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E4E491B52404100CB3A8C /* IndexViewController.m */; };
 		0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */; };
 		0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5D1B52599A00CB3A8C /* j2@2x.jpeg */; };
 		0D5E4E621B52599A00CB3A8C /* j3@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5E1B52599A00CB3A8C /* j3@2x.jpeg */; };
@@ -33,6 +33,7 @@
 		0D7A8C641B68679200FFA493 /* Section5_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C631B68679200FFA493 /* Section5_iOS7_2ViewController.m */; };
 		0D7A8C681B6868C200FFA493 /* YXPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C671B6868C200FFA493 /* YXPhotoCollectionViewCell.m */; };
 		0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */; };
+		0D7B97A71B6EF53A006820CB /* Section19_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97A61B6EF53A006820CB /* Section19_iOS7_2ViewController.m */; };
 		0D7BC2EA1B61D6A700A9FDC0 /* XMLData.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BC2E91B61D6A700A9FDC0 /* XMLData.xml */; };
 		0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */; };
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
@@ -46,6 +47,8 @@
 		0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E261B5B8EA000589B8C /* Section8_2ViewController.m */; };
 		0D9A8E2A1B5BB06B00589B8C /* Section8_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E291B5BB06B00589B8C /* Section8_3ViewController.m */; };
 		0D9A8E2D1B5BBA4B00589B8C /* Section8_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E2C1B5BBA4B00589B8C /* Section8_4ViewController.m */; };
+		0DA944101B6E737000FD2146 /* SectionListiOS7NO19ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9440F1B6E737000FD2146 /* SectionListiOS7NO19ViewController.m */; };
+		0DA944131B6E748B00FD2146 /* Section19_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA944121B6E748B00FD2146 /* Section19_iOS7_1ViewController.m */; };
 		0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */; };
 		0DB0E1261B69D42100289B0F /* Section23_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1241B69D42100289B0F /* Section23_iOS7_1ViewController.m */; };
 		0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0E1251B69D42100289B0F /* Section23_iOS7_1ViewController.xib */; };
@@ -108,8 +111,8 @@
 		0D4389701B514288005DFCF7 /* YXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4389751B514288005DFCF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4389761B514288005DFCF7 /* YXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXTests.m; sourceTree = "<group>"; };
-		0D5E4E481B52404100CB3A8C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = YX/VC/MainViewController.h; sourceTree = "<group>"; };
-		0D5E4E491B52404100CB3A8C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = YX/VC/MainViewController.m; sourceTree = "<group>"; };
+		0D5E4E481B52404100CB3A8C /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexViewController.h; path = YX/VC/IndexViewController.h; sourceTree = "<group>"; };
+		0D5E4E491B52404100CB3A8C /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexViewController.m; path = YX/VC/IndexViewController.m; sourceTree = "<group>"; };
 		0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "j1@2x.jpeg"; sourceTree = "<group>"; };
 		0D5E4E5D1B52599A00CB3A8C /* j2@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "j2@2x.jpeg"; sourceTree = "<group>"; };
 		0D5E4E5E1B52599A00CB3A8C /* j3@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "j3@2x.jpeg"; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		0D7A8C671B6868C200FFA493 /* YXPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPhotoCollectionViewCell.m; path = YX/VC/Views/YXPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		0D7A8C691B686C4500FFA493 /* NSLayoutConstraint+YXCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+YXCommon.h"; path = "YX/Category/NSLayoutConstraint+YXCommon.h"; sourceTree = "<group>"; };
 		0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+YXCommon.m"; path = "YX/Category/NSLayoutConstraint+YXCommon.m"; sourceTree = "<group>"; };
+		0D7B97A51B6EF53A006820CB /* Section19_iOS7_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_2ViewController.h; path = YX/VC/Section19_iOS7_2ViewController.h; sourceTree = "<group>"; };
+		0D7B97A61B6EF53A006820CB /* Section19_iOS7_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_2ViewController.m; path = YX/VC/Section19_iOS7_2ViewController.m; sourceTree = "<group>"; };
 		0D7BC2E91B61D6A700A9FDC0 /* XMLData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = XMLData.xml; path = Resoures/XMLData.xml; sourceTree = "<group>"; };
 		0D7BC2EC1B621E5B00A9FDC0 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = YX/Model/JSONModel.h; sourceTree = "<group>"; };
 		0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = YX/Model/JSONModel.m; sourceTree = "<group>"; };
@@ -168,6 +173,10 @@
 		0D9A8E291B5BB06B00589B8C /* Section8_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section8_3ViewController.m; path = YX/VC/Section8_3ViewController.m; sourceTree = "<group>"; };
 		0D9A8E2B1B5BBA4B00589B8C /* Section8_4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section8_4ViewController.h; path = YX/VC/Section8_4ViewController.h; sourceTree = "<group>"; };
 		0D9A8E2C1B5BBA4B00589B8C /* Section8_4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section8_4ViewController.m; path = YX/VC/Section8_4ViewController.m; sourceTree = "<group>"; };
+		0DA9440E1B6E737000FD2146 /* SectionListiOS7NO19ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO19ViewController.h; path = YX/VC/SectionListiOS7NO19ViewController.h; sourceTree = "<group>"; };
+		0DA9440F1B6E737000FD2146 /* SectionListiOS7NO19ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO19ViewController.m; path = YX/VC/SectionListiOS7NO19ViewController.m; sourceTree = "<group>"; };
+		0DA944111B6E748B00FD2146 /* Section19_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_1ViewController.h; path = YX/VC/Section19_iOS7_1ViewController.h; sourceTree = "<group>"; };
+		0DA944121B6E748B00FD2146 /* Section19_iOS7_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_1ViewController.m; path = YX/VC/Section19_iOS7_1ViewController.m; sourceTree = "<group>"; };
 		0DB0E1201B69D31600289B0F /* SectionListiOS7NO23ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO23ViewController.h; path = YX/VC/SectionListiOS7NO23ViewController.h; sourceTree = "<group>"; };
 		0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO23ViewController.m; path = YX/VC/SectionListiOS7NO23ViewController.m; sourceTree = "<group>"; };
 		0DB0E1231B69D42100289B0F /* Section23_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_1ViewController.h; path = YX/VC/Section23_iOS7_1ViewController.h; sourceTree = "<group>"; };
@@ -276,10 +285,11 @@ NO.9 chapter
 				0DF4B4431B65DB2B0081B8D8 /* iOS7_Chapter4 */,
 				0D74537F1B67DA47006E1CF6 /* iOS7_Chapter5 */,
 				0D8701B11B69039C00850F27 /* iOS7_Chapter14 */,
+				0DA9440D1B6E731600FD2146 /* iOS7_Chapter19 */,
 				0DB0E11F1B69D29F00289B0F /* iOS7_Chapter23 */,
 				0DCAEF8B1B58F86A00AC4425 /* Letter */,
-				0D5E4E481B52404100CB3A8C /* MainViewController.h */,
-				0D5E4E491B52404100CB3A8C /* MainViewController.m */,
+				0D5E4E481B52404100CB3A8C /* IndexViewController.h */,
+				0D5E4E491B52404100CB3A8C /* IndexViewController.m */,
 				0D9A8E1D1B5B5E6800589B8C /* NO.8 chapter */,
 				0D9448181B5E1C9C007FF694 /* NO.13 chapter */,
 				0DB7C4581B5F351A00D19259 /* NO.14 chapter */,
@@ -539,6 +549,19 @@ NO.9 chapter
 				0D9A8E1F1B5B5F1500589B8C /* SectionListNO8ViewController.m */,
 			);
 			name = "NO.8 chapter";
+			sourceTree = "<group>";
+		};
+		0DA9440D1B6E731600FD2146 /* iOS7_Chapter19 */ = {
+			isa = PBXGroup;
+			children = (
+				0DA9440E1B6E737000FD2146 /* SectionListiOS7NO19ViewController.h */,
+				0DA9440F1B6E737000FD2146 /* SectionListiOS7NO19ViewController.m */,
+				0DA944111B6E748B00FD2146 /* Section19_iOS7_1ViewController.h */,
+				0DA944121B6E748B00FD2146 /* Section19_iOS7_1ViewController.m */,
+				0D7B97A51B6EF53A006820CB /* Section19_iOS7_2ViewController.h */,
+				0D7B97A61B6EF53A006820CB /* Section19_iOS7_2ViewController.m */,
+			);
+			name = iOS7_Chapter19;
 			sourceTree = "<group>";
 		};
 		0DB0E11F1B69D29F00289B0F /* iOS7_Chapter23 */ = {
@@ -814,6 +837,7 @@ NO.9 chapter
 				0DCC75E81B5CBBDC007E3CD0 /* Section9_2ViewController.m in Sources */,
 				0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */,
 				0DD5A18A1B5BE3BF001436F9 /* Section8_5ViewController.m in Sources */,
+				0D7B97A71B6EF53A006820CB /* Section19_iOS7_2ViewController.m in Sources */,
 				0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */,
 				0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */,
 				0DCC75DE1B5CB5C2007E3CD0 /* SectionListNO9ViewController.m in Sources */,
@@ -822,7 +846,7 @@ NO.9 chapter
 				0D7A8C5F1B68666500FFA493 /* YXCoverFlowLayout.m in Sources */,
 				0DCAEF951B58F9FB00AC4425 /* YXTableViewController.m in Sources */,
 				0D6F0ABC1B5CD15C004C9410 /* Section9_3ViewController.m in Sources */,
-				0D5E4E4B1B52404100CB3A8C /* MainViewController.m in Sources */,
+				0D5E4E4B1B52404100CB3A8C /* IndexViewController.m in Sources */,
 				0D6F0ABF1B5CD9EA004C9410 /* CALayer+YXAmimation.m in Sources */,
 				0D9A8E201B5B5F1500589B8C /* SectionListNO8ViewController.m in Sources */,
 				0D36C2871B563CCF0073FC64 /* Constant.m in Sources */,
@@ -840,11 +864,13 @@ NO.9 chapter
 				0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */,
 				0D43895D1B514288005DFCF7 /* main.m in Sources */,
 				0DB7C45C1B5F358200D19259 /* SectionListNO14ViewController.m in Sources */,
+				0DA944131B6E748B00FD2146 /* Section19_iOS7_1ViewController.m in Sources */,
 				0D7A8C641B68679200FFA493 /* Section5_iOS7_2ViewController.m in Sources */,
 				0DE2D9E81B5A31010000AA31 /* YXMutliTableViewController.m in Sources */,
 				0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */,
 				0DF4B44F1B66131F0081B8D8 /* StoryboardCustom_iOS7_Chapter_ViewController.m in Sources */,
 				0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */,
+				0DA944101B6E737000FD2146 /* SectionListiOS7NO19ViewController.m in Sources */,
 				0D6F0AC21B5CE060004C9410 /* Section9_4ViewController.m in Sources */,
 				0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */,
 				0DCAEF9B1B5903A500AC4425 /* UITableViewCell+YXSetValues.m in Sources */,

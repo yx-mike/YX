@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 //
 #import "YXNavigationController.h"
-#import "MainViewController.h"
+#import "IndexViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    MainViewController *vc = [[MainViewController alloc] init];
+    IndexViewController *vc = [[IndexViewController alloc] init];
     YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vc];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 ShanghaiCize Trade And Business Co., Ltd. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "IndexViewController.h"
 //
 #import "UITableViewCell+YXSetValues.h"
 #import "YXNoMarginTableViewCell.h"
 
-@interface MainViewController ()
+@interface IndexViewController ()
 
 @property (strong, nonatomic) NSArray *titles;
 @property (strong, nonatomic) NSArray *vcNames;
@@ -23,18 +23,22 @@
 
 static NSString * const cellId = @"YXNoMarginTableViewCell";
 
-@implementation MainViewController
+@implementation IndexViewController
 
 - (instancetype)init
 {
-    self = [super init];
+    return [self initWithStyle:UITableViewStylePlain];
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
     if (self) {
         _titles = @[@"第6章 多个表视图", @"第8章 绘图功能", @"第9章 Core Animation", @"第13章 多线程", @"第14章 REST"];
-        _vcNames = @[@"YXMutliTableViewController", @"SectionListNO8ViewController", @"SectionListNO9ViewController",
-                     @"SectionListNO13ViewController", @"SectionListNO14ViewController"];
+        _vcNames = @[@"YXMutliTableViewController", @"SectionListNO8ViewController", @"SectionListNO9ViewController", @"SectionListNO13ViewController", @"SectionListNO14ViewController"];
         
-        _ios7Titles = @[@"第4章 故事板", @"第5章 集合视图", @"第23章 GCD"];
-        _ios7VCNames = @[@"", @"SectionListiOS7NO5ViewController", @"SectionListiOS7NO23ViewController"];
+        _ios7Titles = @[@"第4章 故事板", @"第5章 集合视图", @"第19章 UIKit动力学", @"第23章 GCD"];
+        _ios7VCNames = @[@"", @"SectionListiOS7NO5ViewController", @"SectionListiOS7NO19ViewController", @"SectionListiOS7NO23ViewController"];
     }
     return self;
 }
