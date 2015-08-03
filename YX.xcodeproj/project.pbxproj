@@ -34,6 +34,14 @@
 		0D7A8C681B6868C200FFA493 /* YXPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C671B6868C200FFA493 /* YXPhotoCollectionViewCell.m */; };
 		0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */; };
 		0D7B97A71B6EF53A006820CB /* Section19_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97A61B6EF53A006820CB /* Section19_iOS7_2ViewController.m */; };
+		0D7B97AA1B6F04C8006820CB /* Section19_iOS7_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97A91B6F04C8006820CB /* Section19_iOS7_3ViewController.m */; };
+		0D7B97AD1B6F177A006820CB /* Section19_iOS7_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97AC1B6F177A006820CB /* Section19_iOS7_4ViewController.m */; };
+		0D7B97B11B6F19BC006820CB /* YXDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97B01B6F19BC006820CB /* YXDragView.m */; };
+		0D7B97B51B6F3A61006820CB /* YXDefaultDynamicBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97B41B6F3A61006820CB /* YXDefaultDynamicBehavior.m */; };
+		0D7B97B81B6F52D5006820CB /* YXTearCopyBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97B71B6F52D5006820CB /* YXTearCopyBehavior.m */; };
+		0D7B97C41B6F6B67006820CB /* YXCollectionViewDragLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97C31B6F6B67006820CB /* YXCollectionViewDragLayout.m */; };
+		0D7B97DA1B6F8190006820CB /* Section19_iOS7_5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B97D81B6F8190006820CB /* Section19_iOS7_5ViewController.m */; };
+		0D7B97DB1B6F8190006820CB /* Section19_iOS7_5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7B97D91B6F8190006820CB /* Section19_iOS7_5ViewController.xib */; };
 		0D7BC2EA1B61D6A700A9FDC0 /* XMLData.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BC2E91B61D6A700A9FDC0 /* XMLData.xml */; };
 		0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */; };
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
@@ -148,6 +156,21 @@
 		0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+YXCommon.m"; path = "YX/Category/NSLayoutConstraint+YXCommon.m"; sourceTree = "<group>"; };
 		0D7B97A51B6EF53A006820CB /* Section19_iOS7_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_2ViewController.h; path = YX/VC/Section19_iOS7_2ViewController.h; sourceTree = "<group>"; };
 		0D7B97A61B6EF53A006820CB /* Section19_iOS7_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_2ViewController.m; path = YX/VC/Section19_iOS7_2ViewController.m; sourceTree = "<group>"; };
+		0D7B97A81B6F04C8006820CB /* Section19_iOS7_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_3ViewController.h; path = YX/VC/Section19_iOS7_3ViewController.h; sourceTree = "<group>"; };
+		0D7B97A91B6F04C8006820CB /* Section19_iOS7_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_3ViewController.m; path = YX/VC/Section19_iOS7_3ViewController.m; sourceTree = "<group>"; };
+		0D7B97AB1B6F177A006820CB /* Section19_iOS7_4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_4ViewController.h; path = YX/VC/Section19_iOS7_4ViewController.h; sourceTree = "<group>"; };
+		0D7B97AC1B6F177A006820CB /* Section19_iOS7_4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_4ViewController.m; path = YX/VC/Section19_iOS7_4ViewController.m; sourceTree = "<group>"; };
+		0D7B97AF1B6F19BC006820CB /* YXDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDragView.h; path = YX/VC/Views/YXDragView.h; sourceTree = "<group>"; };
+		0D7B97B01B6F19BC006820CB /* YXDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDragView.m; path = YX/VC/Views/YXDragView.m; sourceTree = "<group>"; };
+		0D7B97B31B6F3A61006820CB /* YXDefaultDynamicBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDefaultDynamicBehavior.h; path = YX/VC/Behavior/YXDefaultDynamicBehavior.h; sourceTree = "<group>"; };
+		0D7B97B41B6F3A61006820CB /* YXDefaultDynamicBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDefaultDynamicBehavior.m; path = YX/VC/Behavior/YXDefaultDynamicBehavior.m; sourceTree = "<group>"; };
+		0D7B97B61B6F52D5006820CB /* YXTearCopyBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXTearCopyBehavior.h; path = YX/VC/Behavior/YXTearCopyBehavior.h; sourceTree = "<group>"; };
+		0D7B97B71B6F52D5006820CB /* YXTearCopyBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXTearCopyBehavior.m; path = YX/VC/Behavior/YXTearCopyBehavior.m; sourceTree = "<group>"; };
+		0D7B97C21B6F6B67006820CB /* YXCollectionViewDragLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXCollectionViewDragLayout.h; path = YX/VC/CollectionLayout/YXCollectionViewDragLayout.h; sourceTree = "<group>"; };
+		0D7B97C31B6F6B67006820CB /* YXCollectionViewDragLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXCollectionViewDragLayout.m; path = YX/VC/CollectionLayout/YXCollectionViewDragLayout.m; sourceTree = "<group>"; };
+		0D7B97D71B6F8190006820CB /* Section19_iOS7_5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_5ViewController.h; path = YX/VC/Section19_iOS7_5ViewController.h; sourceTree = "<group>"; };
+		0D7B97D81B6F8190006820CB /* Section19_iOS7_5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_5ViewController.m; path = YX/VC/Section19_iOS7_5ViewController.m; sourceTree = "<group>"; };
+		0D7B97D91B6F8190006820CB /* Section19_iOS7_5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Section19_iOS7_5ViewController.xib; path = YX/VC/Section19_iOS7_5ViewController.xib; sourceTree = "<group>"; };
 		0D7BC2E91B61D6A700A9FDC0 /* XMLData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = XMLData.xml; path = Resoures/XMLData.xml; sourceTree = "<group>"; };
 		0D7BC2EC1B621E5B00A9FDC0 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = YX/Model/JSONModel.h; sourceTree = "<group>"; };
 		0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = YX/Model/JSONModel.m; sourceTree = "<group>"; };
@@ -485,6 +508,35 @@ NO.9 chapter
 			name = CollectionCell;
 			sourceTree = "<group>";
 		};
+		0D7B97AE1B6F1999006820CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B97AF1B6F19BC006820CB /* YXDragView.h */,
+				0D7B97B01B6F19BC006820CB /* YXDragView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0D7B97B21B6F3A22006820CB /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B97B31B6F3A61006820CB /* YXDefaultDynamicBehavior.h */,
+				0D7B97B41B6F3A61006820CB /* YXDefaultDynamicBehavior.m */,
+				0D7B97B61B6F52D5006820CB /* YXTearCopyBehavior.h */,
+				0D7B97B71B6F52D5006820CB /* YXTearCopyBehavior.m */,
+			);
+			name = Behaviors;
+			sourceTree = "<group>";
+		};
+		0D7B97C11B6F6B0F006820CB /* CollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B97C21B6F6B67006820CB /* YXCollectionViewDragLayout.h */,
+				0D7B97C31B6F6B67006820CB /* YXCollectionViewDragLayout.m */,
+			);
+			name = CollectionLayout;
+			sourceTree = "<group>";
+		};
 		0D7BC2E81B61D5F700A9FDC0 /* Supporting Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,12 +606,22 @@ NO.9 chapter
 		0DA9440D1B6E731600FD2146 /* iOS7_Chapter19 */ = {
 			isa = PBXGroup;
 			children = (
+				0D7B97C11B6F6B0F006820CB /* CollectionLayout */,
+				0D7B97B21B6F3A22006820CB /* Behaviors */,
+				0D7B97AE1B6F1999006820CB /* Views */,
 				0DA9440E1B6E737000FD2146 /* SectionListiOS7NO19ViewController.h */,
 				0DA9440F1B6E737000FD2146 /* SectionListiOS7NO19ViewController.m */,
 				0DA944111B6E748B00FD2146 /* Section19_iOS7_1ViewController.h */,
 				0DA944121B6E748B00FD2146 /* Section19_iOS7_1ViewController.m */,
 				0D7B97A51B6EF53A006820CB /* Section19_iOS7_2ViewController.h */,
 				0D7B97A61B6EF53A006820CB /* Section19_iOS7_2ViewController.m */,
+				0D7B97A81B6F04C8006820CB /* Section19_iOS7_3ViewController.h */,
+				0D7B97A91B6F04C8006820CB /* Section19_iOS7_3ViewController.m */,
+				0D7B97AB1B6F177A006820CB /* Section19_iOS7_4ViewController.h */,
+				0D7B97AC1B6F177A006820CB /* Section19_iOS7_4ViewController.m */,
+				0D7B97D71B6F8190006820CB /* Section19_iOS7_5ViewController.h */,
+				0D7B97D81B6F8190006820CB /* Section19_iOS7_5ViewController.m */,
+				0D7B97D91B6F8190006820CB /* Section19_iOS7_5ViewController.xib */,
 			);
 			name = iOS7_Chapter19;
 			sourceTree = "<group>";
@@ -797,6 +859,7 @@ NO.9 chapter
 				0D7A8C611B68675A00FFA493 /* Photos in Resources */,
 				0DCC75EA1B5CBDA3007E3CD0 /* Pushing@2x.png in Resources */,
 				0D5E4E621B52599A00CB3A8C /* j3@2x.jpeg in Resources */,
+				0D7B97DB1B6F8190006820CB /* Section19_iOS7_5ViewController.xib in Resources */,
 				0DB0E1341B69F84000289B0F /* Section23_iOS7_2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,6 +887,7 @@ NO.9 chapter
 				0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */,
 				0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */,
 				0DB0E12F1B69D80C00289B0F /* RNQueue.m in Sources */,
+				0D7B97B11B6F19BC006820CB /* YXDragView.m in Sources */,
 				0D7453821B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m in Sources */,
 				0DC412D51B5E864D001274DC /* Section13_2ViewController.m in Sources */,
 				0DE2D9E41B5A28560000AA31 /* YXNoMarginTableViewCell.m in Sources */,
@@ -834,6 +898,7 @@ NO.9 chapter
 				0DE2D9EB1B5A3D770000AA31 /* YXMultiSubTableViewController.m in Sources */,
 				0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */,
 				0DCC75D71B5C9BC5007E3CD0 /* Section8_6ViewController.m in Sources */,
+				0D7B97B51B6F3A61006820CB /* YXDefaultDynamicBehavior.m in Sources */,
 				0DCC75E81B5CBBDC007E3CD0 /* Section9_2ViewController.m in Sources */,
 				0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */,
 				0DD5A18A1B5BE3BF001436F9 /* Section8_5ViewController.m in Sources */,
@@ -844,9 +909,11 @@ NO.9 chapter
 				0D74538C1B67E55B006E1CF6 /* YXMasonryViewLayout.m in Sources */,
 				0DB7C45F1B5F360000D19259 /* Section14_1ViewController.m in Sources */,
 				0D7A8C5F1B68666500FFA493 /* YXCoverFlowLayout.m in Sources */,
+				0D7B97B81B6F52D5006820CB /* YXTearCopyBehavior.m in Sources */,
 				0DCAEF951B58F9FB00AC4425 /* YXTableViewController.m in Sources */,
 				0D6F0ABC1B5CD15C004C9410 /* Section9_3ViewController.m in Sources */,
 				0D5E4E4B1B52404100CB3A8C /* IndexViewController.m in Sources */,
+				0D7B97DA1B6F8190006820CB /* Section19_iOS7_5ViewController.m in Sources */,
 				0D6F0ABF1B5CD9EA004C9410 /* CALayer+YXAmimation.m in Sources */,
 				0D9A8E201B5B5F1500589B8C /* SectionListNO8ViewController.m in Sources */,
 				0D36C2871B563CCF0073FC64 /* Constant.m in Sources */,
@@ -864,8 +931,10 @@ NO.9 chapter
 				0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */,
 				0D43895D1B514288005DFCF7 /* main.m in Sources */,
 				0DB7C45C1B5F358200D19259 /* SectionListNO14ViewController.m in Sources */,
+				0D7B97AA1B6F04C8006820CB /* Section19_iOS7_3ViewController.m in Sources */,
 				0DA944131B6E748B00FD2146 /* Section19_iOS7_1ViewController.m in Sources */,
 				0D7A8C641B68679200FFA493 /* Section5_iOS7_2ViewController.m in Sources */,
+				0D7B97AD1B6F177A006820CB /* Section19_iOS7_4ViewController.m in Sources */,
 				0DE2D9E81B5A31010000AA31 /* YXMutliTableViewController.m in Sources */,
 				0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */,
 				0DF4B44F1B66131F0081B8D8 /* StoryboardCustom_iOS7_Chapter_ViewController.m in Sources */,
@@ -879,6 +948,7 @@ NO.9 chapter
 				0D7453881B67E472006E1CF6 /* Section5_iOS7_1ViewController.m in Sources */,
 				0D6F0AC81B5D02FF004C9410 /* Section9_6ViewController.m in Sources */,
 				0DF4B4571B6614DD0081B8D8 /* CustomSegue.m in Sources */,
+				0D7B97C41B6F6B67006820CB /* YXCollectionViewDragLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

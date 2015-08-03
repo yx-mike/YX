@@ -67,7 +67,7 @@
     //
     self.title = @"CGLayer";
     //
-    [self.view addSubview:[[LayerView alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, FullScreenHeight-NavigationHeight)]];
+    [self.view addSubview:[[LayerView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-NavigationHeight)]];
 }
 
 @end

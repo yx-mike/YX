@@ -11,6 +11,7 @@
 @interface Section19_iOS7_1ViewController ()
 
 @property (weak, nonatomic) UIView *testView;
+@property (strong, nonatomic) UIDynamicAnimator *dynamicAnimator;
 
 @end
 
@@ -36,8 +37,16 @@
     snap.damping = 1;
     
     UIDynamicAnimator *dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    self.dynamicAnimator = dynamicAnimator;
     [dynamicAnimator addBehavior:snap];
     [dynamicAnimator performSelector:@selector(removeBehavior:) withObject:snap afterDelay:1];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    //
+    [self.dynamicAnimator removeAllBehaviors];
 }
 
 @end

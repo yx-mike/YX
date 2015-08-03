@@ -29,7 +29,7 @@
     //
     self.title = @"简单的NSOperation";
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, FullScreenHeight-NavigationHeight)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-NavigationHeight)];
     self.label = label;
     label.text = @"0";
     label.font = [UIFont systemFontOfSize:88];

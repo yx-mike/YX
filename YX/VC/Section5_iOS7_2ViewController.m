@@ -49,7 +49,7 @@ static NSString *CellIdentifier = @"YXPhotoCollectionViewCell";
     collectionView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:collectionView];
     collectionView.translatesAutoresizingMaskIntoConstraints = NO;
-    [NSLayoutConstraint view:collectionView width:FullkScreenWidth height:FullScreenHeight/2.0];
+    [NSLayoutConstraint view:collectionView width:FullScreenWidth height:FullScreenHeight/2.0];
     [NSLayoutConstraint viewCenterSuperView:collectionView];
 }
 

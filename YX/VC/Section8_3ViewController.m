@@ -107,7 +107,7 @@ const CGFloat kYScale = 100.0;
     [super loadView];
     self.title = @"Graph";
     //
-    [self.view addSubview:[[GraphView alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, FullScreenHeight-NavigationHeight)]];
+    [self.view addSubview:[[GraphView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-NavigationHeight)]];
 }
 
 @end

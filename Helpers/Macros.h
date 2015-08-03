@@ -17,8 +17,9 @@
 #define PrepContraints(View) [View setTranslatesAutoresizingMaskIntoConstraints:NO]
 
 #define FullScreenHeight   ([UIScreen mainScreen].bounds.size.height)
-#define FullkScreenWidth    ([UIScreen mainScreen].bounds.size.width)
+#define FullScreenWidth    ([UIScreen mainScreen].bounds.size.width)
 #define FullScreenFrame    (CGRectMake(0,0,kScreenWidth,kScreenHeight))
+#define ScreenScale ([UIScreen mainScreen].scale)
 #define OnePX (1.0/[UIScreen mainScreen].scale)
 
 #define AppBackgroundColor HexRGB(0xf8f8f8)

@@ -74,7 +74,7 @@
     [super loadView];
     self.title = @"Transform";
     //
-    [self.view addSubview:[[FlowerTransformView alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, FullScreenHeight-NavigationHeight)]];
+    [self.view addSubview:[[FlowerTransformView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-NavigationHeight)]];
 }
 
 @end

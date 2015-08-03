@@ -62,7 +62,7 @@
     [super loadView];
     self.title = @"Drawing";
     //
-    [self.view addSubview:[[DrawingView alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, FullScreenHeight-NavigationHeight)]];
+    [self.view addSubview:[[DrawingView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-NavigationHeight)]];
 }
 
 @end

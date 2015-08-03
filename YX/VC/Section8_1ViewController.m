@@ -89,7 +89,7 @@
     [super loadView];
     self.title = @"Paths";
     //
-    [self.view addSubview:[[FlowerView alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, FullScreenHeight-NavigationHeight)]];
+    [self.view addSubview:[[FlowerView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-NavigationHeight)]];
 }
 
 @end

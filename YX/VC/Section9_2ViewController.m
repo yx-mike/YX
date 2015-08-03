@@ -32,7 +32,7 @@
     #warning 注意retain屏幕要设置scale
     self.view.layer.contentsScale = image.scale;
     
-    UIView *delegateView = [[DelegateView alloc] initWithFrame:CGRectMake(0, 0, FullkScreenWidth, 60)];
+    UIView *delegateView = [[DelegateView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, 60)];
     [self.view addSubview:delegateView];
 }
 
