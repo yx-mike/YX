@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface YXDismissVCAnimateion : NSObject<UIViewControllerAnimatedTransitioning>
+@interface YXDismissVCAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 @end

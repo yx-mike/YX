@@ -19,7 +19,7 @@
 @property (strong, nonatomic) NSArray *sections;
 @property (strong, nonatomic) NSArray *vcNames;
 
-@property (strong, nonatomic) YXVCTransitioningDelegate *transitioningDelegate;
+@property (strong, nonatomic) YXVCTransitioningDelegate *customTransitioningDelegate;
 
 @end
 
@@ -31,7 +31,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 {
     self = [super init];
     if (self) {
-        _sections = @[@"1.集合VC2集合VC", @"2.普通VC"];
+        _sections = @[@"1.集合VC2集合VC", @"2.Present模式"];
         _vcNames = @[@"Section20_iOS7_1ViewController", @"Section20_iOS7_2ViewController"];
     }
     return self;
@@ -80,10 +80,10 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     UIViewController *vcObject = [[vcClass alloc] init];
     
     if (indexPath.row == 1) {
-        self.transitioningDelegate = [[YXVCTransitioningDelegate alloc] init];
+        self.customTransitioningDelegate = [[YXVCTransitioningDelegate alloc] init];
         
         YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
-        navC.transitioningDelegate = self.transitioningDelegate;
+        navC.transitioningDelegate = self.customTransitioningDelegate;
         [self presentViewController:navC animated:YES completion:nil];
     } else {
         [self.navigationController pushViewController:vcObject animated:YES];

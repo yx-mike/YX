@@ -7,13 +7,15 @@
 //
 
 #import "YXVCTransitioningDelegate.h"
-#import "YXPresentVCAnimateion.h"
-#import "YXDismissVCAnimateion.h"
+#import "YXPresentVCAnimation.h"
+#import "YXDismissVCAnimation.h"
+#import "YXPercentDrivenAnimation.h"
 
 @interface YXVCTransitioningDelegate ()
 
-@property (strong, nonatomic) YXPresentVCAnimateion *present;
-@property (strong, nonatomic) YXDismissVCAnimateion *dismiss;
+@property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> present;
+@property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> dismiss;
+
 
 @end
 
@@ -23,8 +25,8 @@
 {
     self = [super init];
     if (self) {
-        _present = [[YXPresentVCAnimateion alloc] init];
-        _dismiss = [[YXDismissVCAnimateion alloc] init];
+        _present = [[YXPresentVCAnimation alloc] init];
+        _dismiss = [[YXDismissVCAnimation alloc] init];
     }
     return self;
 }
@@ -41,6 +43,11 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
     return self.dismiss;
+}
+
+-(id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator
+{
+    return self.dismissPercentDriven.interacting?self.dismissPercentDriven:nil;
 }
 
 @end

@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class YXPercentDrivenAnimation;
+
 @interface YXVCTransitioningDelegate : NSObject<UIViewControllerTransitioningDelegate>
+
+@property (strong, nonatomic) YXPercentDrivenAnimation *dismissPercentDriven;
 
 @end

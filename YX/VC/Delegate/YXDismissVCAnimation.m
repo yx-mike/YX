@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 ShanghaiCize Trade And Business Co., Ltd. All rights reserved.
 //
 
-#import "YXDismissVCAnimateion.h"
+#import "YXDismissVCAnimation.h"
 
-@implementation YXDismissVCAnimateion
+@implementation YXDismissVCAnimation
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 1.0f;
+    return .5f;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
@@ -24,9 +24,7 @@
     UIView *toVCView = toVC.view;
     UIView *fromVCView = fromVC.view;
     
-    [fromVCView removeFromSuperview];
-    [transitionView addSubview:toVCView];
-    [transitionView addSubview:fromVCView];
+    [transitionView insertSubview:toVCView belowSubview:fromVCView];
     
     toVCView.transform = CGAffineTransformMakeScale(.8, .8);
     
@@ -37,7 +35,12 @@
         fromVCView.frame = frame;
         toVCView.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished){
-        [transitionContext completeTransition:YES];
+        if ([transitionContext transitionWasCancelled]) {
+            [toVCView removeFromSuperview];
+            [transitionContext completeTransition:NO];
+        } else {
+            [transitionContext completeTransition:YES];
+        }
     }];
 }
 
