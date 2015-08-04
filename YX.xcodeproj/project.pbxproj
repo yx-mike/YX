@@ -13,6 +13,12 @@
 		0D4389601B514288005DFCF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43895F1B514288005DFCF7 /* AppDelegate.m */; };
 		0D4389681B514288005DFCF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4389671B514288005DFCF7 /* Images.xcassets */; };
 		0D4389771B514288005DFCF7 /* YXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4389761B514288005DFCF7 /* YXTests.m */; };
+		0D45487D1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45487C1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m */; };
+		0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548801B704DEB002E1C41 /* Section20_Test_collectionViewController.m */; };
+		0D4548841B70603C002E1C41 /* Section20_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */; };
+		0D45488B1B706553002E1C41 /* YXVCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45488A1B706553002E1C41 /* YXVCTransitioningDelegate.m */; };
+		0D45488E1B708C75002E1C41 /* YXPresentVCAnimateion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45488D1B708C75002E1C41 /* YXPresentVCAnimateion.m */; };
+		0D4548911B708CD3002E1C41 /* YXDismissVCAnimateion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548901B708CD3002E1C41 /* YXDismissVCAnimateion.m */; };
 		0D5E4E4B1B52404100CB3A8C /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E4E491B52404100CB3A8C /* IndexViewController.m */; };
 		0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */; };
 		0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5D1B52599A00CB3A8C /* j2@2x.jpeg */; };
@@ -46,6 +52,7 @@
 		0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */; };
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
 		0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2F31B621E5B00A9FDC0 /* Review.m */; };
+		0D85DAEB1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */; };
 		0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */; };
 		0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D94481A1B5E1CD6007FF694 /* SectionListNO13ViewController.m */; };
 		0D94481E1B5E1D55007FF694 /* Section13_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D94481D1B5E1D55007FF694 /* Section13_1ViewController.m */; };
@@ -119,6 +126,18 @@
 		0D4389701B514288005DFCF7 /* YXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4389751B514288005DFCF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4389761B514288005DFCF7 /* YXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXTests.m; sourceTree = "<group>"; };
+		0D45487B1B704C7C002E1C41 /* Section20_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section20_iOS7_1ViewController.h; path = YX/VC/Section20_iOS7_1ViewController.h; sourceTree = "<group>"; };
+		0D45487C1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section20_iOS7_1ViewController.m; path = YX/VC/Section20_iOS7_1ViewController.m; sourceTree = "<group>"; };
+		0D45487F1B704DEB002E1C41 /* Section20_Test_collectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section20_Test_collectionViewController.h; path = YX/VC/Section20_Test_collectionViewController.h; sourceTree = "<group>"; };
+		0D4548801B704DEB002E1C41 /* Section20_Test_collectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section20_Test_collectionViewController.m; path = YX/VC/Section20_Test_collectionViewController.m; sourceTree = "<group>"; };
+		0D4548821B70603C002E1C41 /* Section20_iOS7_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section20_iOS7_2ViewController.h; path = YX/VC/Section20_iOS7_2ViewController.h; sourceTree = "<group>"; };
+		0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section20_iOS7_2ViewController.m; path = YX/VC/Section20_iOS7_2ViewController.m; sourceTree = "<group>"; };
+		0D4548891B706553002E1C41 /* YXVCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXVCTransitioningDelegate.h; path = YX/VC/Delegate/YXVCTransitioningDelegate.h; sourceTree = "<group>"; };
+		0D45488A1B706553002E1C41 /* YXVCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXVCTransitioningDelegate.m; path = YX/VC/Delegate/YXVCTransitioningDelegate.m; sourceTree = "<group>"; };
+		0D45488C1B708C75002E1C41 /* YXPresentVCAnimateion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPresentVCAnimateion.h; path = YX/VC/Delegate/YXPresentVCAnimateion.h; sourceTree = "<group>"; };
+		0D45488D1B708C75002E1C41 /* YXPresentVCAnimateion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPresentVCAnimateion.m; path = YX/VC/Delegate/YXPresentVCAnimateion.m; sourceTree = "<group>"; };
+		0D45488F1B708CD3002E1C41 /* YXDismissVCAnimateion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDismissVCAnimateion.h; path = YX/VC/Delegate/YXDismissVCAnimateion.h; sourceTree = "<group>"; };
+		0D4548901B708CD3002E1C41 /* YXDismissVCAnimateion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDismissVCAnimateion.m; path = YX/VC/Delegate/YXDismissVCAnimateion.m; sourceTree = "<group>"; };
 		0D5E4E481B52404100CB3A8C /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexViewController.h; path = YX/VC/IndexViewController.h; sourceTree = "<group>"; };
 		0D5E4E491B52404100CB3A8C /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexViewController.m; path = YX/VC/IndexViewController.m; sourceTree = "<group>"; };
 		0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "j1@2x.jpeg"; sourceTree = "<group>"; };
@@ -178,6 +197,8 @@
 		0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = YX/Model/MenuItem.m; sourceTree = "<group>"; };
 		0D7BC2F21B621E5B00A9FDC0 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Review.h; path = YX/Model/Review.h; sourceTree = "<group>"; };
 		0D7BC2F31B621E5B00A9FDC0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = YX/Model/Review.m; sourceTree = "<group>"; };
+		0D85DAE91B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO20ViewController.h; path = YX/VC/SectionListiOS7NO20ViewController.h; sourceTree = "<group>"; };
+		0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO20ViewController.m; path = YX/VC/SectionListiOS7NO20ViewController.m; sourceTree = "<group>"; };
 		0D8701B21B6903D300850F27 /* SectionListiOS7NO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO14ViewController.h; path = YX/VC/SectionListiOS7NO14ViewController.h; sourceTree = "<group>"; };
 		0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO14ViewController.m; path = YX/VC/SectionListiOS7NO14ViewController.m; sourceTree = "<group>"; };
 		0D9448191B5E1CD6007FF694 /* SectionListNO13ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListNO13ViewController.h; path = YX/VC/SectionListNO13ViewController.h; sourceTree = "<group>"; };
@@ -305,14 +326,15 @@
 				0DCC75D81B5CB512007E3CD0 /* 
 NO.9 chapter
  */,
+				0D5E4E481B52404100CB3A8C /* IndexViewController.h */,
+				0D5E4E491B52404100CB3A8C /* IndexViewController.m */,
 				0DF4B4431B65DB2B0081B8D8 /* iOS7_Chapter4 */,
 				0D74537F1B67DA47006E1CF6 /* iOS7_Chapter5 */,
 				0D8701B11B69039C00850F27 /* iOS7_Chapter14 */,
 				0DA9440D1B6E731600FD2146 /* iOS7_Chapter19 */,
+				0D85DAE81B6FCB70001DD18E /* iOS7_Chapter20 */,
 				0DB0E11F1B69D29F00289B0F /* iOS7_Chapter23 */,
 				0DCAEF8B1B58F86A00AC4425 /* Letter */,
-				0D5E4E481B52404100CB3A8C /* IndexViewController.h */,
-				0D5E4E491B52404100CB3A8C /* IndexViewController.m */,
 				0D9A8E1D1B5B5E6800589B8C /* NO.8 chapter */,
 				0D9448181B5E1C9C007FF694 /* NO.13 chapter */,
 				0DB7C4581B5F351A00D19259 /* NO.14 chapter */,
@@ -433,6 +455,19 @@ NO.9 chapter
 				0D4389751B514288005DFCF7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D4548851B706488002E1C41 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0D4548891B706553002E1C41 /* YXVCTransitioningDelegate.h */,
+				0D45488A1B706553002E1C41 /* YXVCTransitioningDelegate.m */,
+				0D45488C1B708C75002E1C41 /* YXPresentVCAnimateion.h */,
+				0D45488D1B708C75002E1C41 /* YXPresentVCAnimateion.m */,
+				0D45488F1B708CD3002E1C41 /* YXDismissVCAnimateion.h */,
+				0D4548901B708CD3002E1C41 /* YXDismissVCAnimateion.m */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 		0D5E4E4F1B52411C00CB3A8C /* FrameWorks */ = {
@@ -556,6 +591,22 @@ NO.9 chapter
 				0D7BC2F31B621E5B00A9FDC0 /* Review.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		0D85DAE81B6FCB70001DD18E /* iOS7_Chapter20 */ = {
+			isa = PBXGroup;
+			children = (
+				0D4548851B706488002E1C41 /* Delegate */,
+				0D85DAE91B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.h */,
+				0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */,
+				0D45487B1B704C7C002E1C41 /* Section20_iOS7_1ViewController.h */,
+				0D45487C1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m */,
+				0D45487F1B704DEB002E1C41 /* Section20_Test_collectionViewController.h */,
+				0D4548801B704DEB002E1C41 /* Section20_Test_collectionViewController.m */,
+				0D4548821B70603C002E1C41 /* Section20_iOS7_2ViewController.h */,
+				0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */,
+			);
+			name = iOS7_Chapter20;
 			sourceTree = "<group>";
 		};
 		0D8701B11B69039C00850F27 /* iOS7_Chapter14 */ = {
@@ -886,7 +937,9 @@ NO.9 chapter
 				0DB0E1371B69FAE600289B0F /* RNTimer.m in Sources */,
 				0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */,
 				0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */,
+				0D4548841B70603C002E1C41 /* Section20_iOS7_2ViewController.m in Sources */,
 				0DB0E12F1B69D80C00289B0F /* RNQueue.m in Sources */,
+				0D45488E1B708C75002E1C41 /* YXPresentVCAnimateion.m in Sources */,
 				0D7B97B11B6F19BC006820CB /* YXDragView.m in Sources */,
 				0D7453821B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m in Sources */,
 				0DC412D51B5E864D001274DC /* Section13_2ViewController.m in Sources */,
@@ -909,6 +962,7 @@ NO.9 chapter
 				0D74538C1B67E55B006E1CF6 /* YXMasonryViewLayout.m in Sources */,
 				0DB7C45F1B5F360000D19259 /* Section14_1ViewController.m in Sources */,
 				0D7A8C5F1B68666500FFA493 /* YXCoverFlowLayout.m in Sources */,
+				0D45488B1B706553002E1C41 /* YXVCTransitioningDelegate.m in Sources */,
 				0D7B97B81B6F52D5006820CB /* YXTearCopyBehavior.m in Sources */,
 				0DCAEF951B58F9FB00AC4425 /* YXTableViewController.m in Sources */,
 				0D6F0ABC1B5CD15C004C9410 /* Section9_3ViewController.m in Sources */,
@@ -922,6 +976,7 @@ NO.9 chapter
 				0DF4B4581B6614DD0081B8D8 /* CustomUnwindSegue.m in Sources */,
 				0DCAEF8F1B58F92900AC4425 /* YXViewController.m in Sources */,
 				0D9A8E2A1B5BB06B00589B8C /* Section8_3ViewController.m in Sources */,
+				0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */,
 				0D9A8E241B5B86FC00589B8C /* Section8_1ViewController.m in Sources */,
 				0D96DDE31B64B18F0072D937 /* UIDevice+MKAdditions.m in Sources */,
 				0DCAEF981B58FB0200AC4425 /* AViewController.m in Sources */,
@@ -939,8 +994,11 @@ NO.9 chapter
 				0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */,
 				0DF4B44F1B66131F0081B8D8 /* StoryboardCustom_iOS7_Chapter_ViewController.m in Sources */,
 				0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */,
+				0D45487D1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m in Sources */,
 				0DA944101B6E737000FD2146 /* SectionListiOS7NO19ViewController.m in Sources */,
+				0D4548911B708CD3002E1C41 /* YXDismissVCAnimateion.m in Sources */,
 				0D6F0AC21B5CE060004C9410 /* Section9_4ViewController.m in Sources */,
+				0D85DAEB1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m in Sources */,
 				0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */,
 				0DCAEF9B1B5903A500AC4425 /* UITableViewCell+YXSetValues.m in Sources */,
 				0DB0E1331B69F84000289B0F /* Section23_iOS7_2ViewController.m in Sources */,
