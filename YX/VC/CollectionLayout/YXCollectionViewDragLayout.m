@@ -44,13 +44,13 @@
     
     self.behavior = [[UIAttachmentBehavior alloc] initWithItem:attributes attachedToAnchor:p];
     self.behavior.length = 0;
-//    self.behavior.frequency = 10;
+    self.behavior.frequency = 10;
     [self.animator addBehavior:self.behavior];
     
     // Add a little resistance to keep things stable
-//    UIDynamicItemBehavior *dynamicItem = [[UIDynamicItemBehavior alloc] initWithItems:@[attributes]];
-//    dynamicItem.resistance = 10;
-//    [self.animator addBehavior:dynamicItem];
+    UIDynamicItemBehavior *dynamicItem = [[UIDynamicItemBehavior alloc] initWithItems:@[attributes]];
+    dynamicItem.resistance = 10;
+    [self.animator addBehavior:dynamicItem];
     
     [self updateDragLocation:p];
 }

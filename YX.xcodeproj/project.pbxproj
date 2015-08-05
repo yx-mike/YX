@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A83C41B578DFA0008F7AA /* YXTest.m */; };
+		0D1486F01B71E58C00ECFD4F /* Section5_iOS7_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1486EE1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.m */; };
+		0D1486F11B71E58C00ECFD4F /* Section5_iOS7_3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1486EF1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.xib */; };
 		0D36C2871B563CCF0073FC64 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D36C2861B563CCF0073FC64 /* Constant.m */; };
 		0D43895D1B514288005DFCF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43895C1B514288005DFCF7 /* main.m */; };
 		0D4389601B514288005DFCF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43895F1B514288005DFCF7 /* AppDelegate.m */; };
@@ -119,6 +121,9 @@
 /* Begin PBXFileReference section */
 		0D0A83C31B578DFA0008F7AA /* YXTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXTest.h; path = YX/Model/YXTest.h; sourceTree = "<group>"; };
 		0D0A83C41B578DFA0008F7AA /* YXTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXTest.m; path = YX/Model/YXTest.m; sourceTree = "<group>"; };
+		0D1486ED1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section5_iOS7_3ViewController.h; path = YX/VC/Section5_iOS7_3ViewController.h; sourceTree = "<group>"; };
+		0D1486EE1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section5_iOS7_3ViewController.m; path = YX/VC/Section5_iOS7_3ViewController.m; sourceTree = "<group>"; };
+		0D1486EF1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Section5_iOS7_3ViewController.xib; path = YX/VC/Section5_iOS7_3ViewController.xib; sourceTree = "<group>"; };
 		0D36C2851B563CCF0073FC64 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Helpers/Constant.h; sourceTree = "<group>"; };
 		0D36C2861B563CCF0073FC64 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constant.m; path = Helpers/Constant.m; sourceTree = "<group>"; };
 		0D36C2881B563CF30073FC64 /* FunCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunCMacros.h; path = Helpers/FunCMacros.h; sourceTree = "<group>"; };
@@ -554,6 +559,9 @@ NO.9 chapter
 				0D7453871B67E472006E1CF6 /* Section5_iOS7_1ViewController.m */,
 				0D7A8C621B68679200FFA493 /* Section5_iOS7_2ViewController.h */,
 				0D7A8C631B68679200FFA493 /* Section5_iOS7_2ViewController.m */,
+				0D1486ED1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.h */,
+				0D1486EE1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.m */,
+				0D1486EF1B71E58C00ECFD4F /* Section5_iOS7_3ViewController.xib */,
 				0D7453801B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.h */,
 				0D7453811B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m */,
 			);
@@ -940,6 +948,7 @@ NO.9 chapter
 			files = (
 				0D5E4E631B52599A00CB3A8C /* j4@2x.jpeg in Resources */,
 				0D7BC2EA1B61D6A700A9FDC0 /* XMLData.xml in Resources */,
+				0D1486F11B71E58C00ECFD4F /* Section5_iOS7_3ViewController.xib in Resources */,
 				0D4389681B514288005DFCF7 /* Images.xcassets in Resources */,
 				0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */,
 				0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */,
@@ -1025,6 +1034,7 @@ NO.9 chapter
 				0D6F0AC51B5CEF03004C9410 /* Section9_5ViewController.m in Sources */,
 				0D7453851B67E350006E1CF6 /* YXCollectionViewController.m in Sources */,
 				0DAE1B651B71C89000B0462D /* YXPercentDrivenPopAnimation.m in Sources */,
+				0D1486F01B71E58C00ECFD4F /* Section5_iOS7_3ViewController.m in Sources */,
 				0D7A8C681B6868C200FFA493 /* YXPhotoCollectionViewCell.m in Sources */,
 				0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */,
 				0D43895D1B514288005DFCF7 /* main.m in Sources */,
