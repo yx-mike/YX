@@ -19,43 +19,6 @@
 
 @implementation Storyboard_iOS7_Chapter4_ViewController
 
-#pragma mark - Life Circle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    //
-    NSLog(@"Storyboard_iOS7_Chapter4_ViewController viewDidLoad");
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    //
-    NSLog(@"Storyboard_iOS7_Chapter4_ViewController viewWillAppear");
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    //
-    NSLog(@"Storyboard_iOS7_Chapter4_ViewController viewDidAppear");
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    //
-    NSLog(@"Storyboard_iOS7_Chapter4_ViewController viewWillDisappear");
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    //
-    NSLog(@"Storyboard_iOS7_Chapter4_ViewController viewDidDisappear");
-}
-
 #pragma mark - Public
 
 - (UIView *)unWindView

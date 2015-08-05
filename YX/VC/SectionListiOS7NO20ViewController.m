@@ -13,6 +13,7 @@
 #import "YXNoMarginTableViewCell.h"
 //
 #import "YXVCTransitioningDelegate.h"
+#import "YXNavigationControllerDelegate.h"
 
 @interface SectionListiOS7NO20ViewController ()
 
@@ -20,6 +21,7 @@
 @property (strong, nonatomic) NSArray *vcNames;
 
 @property (strong, nonatomic) YXVCTransitioningDelegate *customTransitioningDelegate;
+@property (strong, nonatomic) YXNavigationControllerDelegate *customNavigationControllerDelegate;
 
 @end
 
@@ -31,8 +33,9 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 {
     self = [super init];
     if (self) {
-        _sections = @[@"1.集合VC2集合VC", @"2.Present模式"];
-        _vcNames = @[@"Section20_iOS7_1ViewController", @"Section20_iOS7_2ViewController"];
+        _sections = @[@"1.集合VC2集合VC", @"2.Present模式", @"3.Push模式", @"Tabbar模式"];
+        //Tabbar模式和Push模式类似，只是容器控制器不一样
+        _vcNames = @[@"Section20_iOS7_1ViewController", @"Section20_iOS7_2ViewController", @"Section20_iOS7_2ViewController", @""];
     }
     return self;
 }
@@ -50,6 +53,11 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     //
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self.tableView registerClass:[YXNoMarginTableViewCell class] forCellReuseIdentifier:cellId];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
@@ -79,11 +87,16 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     Class vcClass = NSClassFromString(vcClassName);
     UIViewController *vcObject = [[vcClass alloc] init];
     
-    if (indexPath.row == 1) {
-        self.customTransitioningDelegate = [[YXVCTransitioningDelegate alloc] init];
-        
+    if (indexPath.row == 1 || indexPath.row == 2) {
         YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
+        navC.navigationBarHidden = YES;
+        
+        self.customTransitioningDelegate = [[YXVCTransitioningDelegate alloc] init];
         navC.transitioningDelegate = self.customTransitioningDelegate;
+        
+        self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
+        navC.delegate = self.customNavigationControllerDelegate;
+        
         [self presentViewController:navC animated:YES completion:nil];
     } else {
         [self.navigationController pushViewController:vcObject animated:YES];

@@ -20,7 +20,7 @@
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
-    UIView *transitionView = fromVC.view.superview;
+    UIView *transitionView = [transitionContext containerView];
     UIView *toVCView = toVC.view;
     UIView *fromVCView = fromVC.view;
     
