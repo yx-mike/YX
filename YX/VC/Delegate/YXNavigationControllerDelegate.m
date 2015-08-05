@@ -16,10 +16,6 @@
 
 @property (weak, nonatomic) UINavigationController *navVC;
 
-@property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> pushAnimation;
-@property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> popAnimation;
-@property (strong, nonatomic) YXPercentDrivenPopAnimation *popPercentDriven;
-
 @end
 
 @implementation YXNavigationControllerDelegate
@@ -63,7 +59,7 @@
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
     if (animationController == self.popAnimation) {
-        return self.popPercentDriven;
+        return self.popPercentDriven.interacting?self.popPercentDriven:nil;
     } else {
         return nil;
     }

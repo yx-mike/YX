@@ -9,12 +9,12 @@
 #import "Section20_iOS7_2ViewController.h"
 #import "Section20_iOS7_3ViewController.h"
 //
-#import "YXVCTransitioningDelegate.h"
-#import "YXPercentDrivenAnimation.h"
+#import "YXVCPresentDelegate.h"
+#import "YXDismissPercentDrivenAnimation.h"
 
 @interface Section20_iOS7_2ViewController ()
 
-@property (strong, nonatomic) YXPercentDrivenAnimation *animation;
+@property (strong, nonatomic) YXDismissPercentDrivenAnimation *animation;
 
 @end
 
@@ -45,10 +45,10 @@
     
     self.view.backgroundColor = [UIColor lightGrayColor];
     //
-    self.animation = [[YXPercentDrivenAnimation alloc] init];
+    self.animation = [[YXDismissPercentDrivenAnimation alloc] init];
     [self.animation wireToViewController:self];
     
-    YXVCTransitioningDelegate *transition = self.navigationController.transitioningDelegate;
+    YXVCPresentDelegate *transition = self.navigationController.transitioningDelegate;
     transition.dismissPercentDriven = self.animation;
 }
 

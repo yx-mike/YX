@@ -6,20 +6,19 @@
 //  Copyright (c) 2015年 ShanghaiCize Trade And Business Co., Ltd. All rights reserved.
 //
 
-#import "YXVCTransitioningDelegate.h"
+#import "YXVCPresentDelegate.h"
 #import "YXPresentVCAnimation.h"
 #import "YXDismissVCAnimation.h"
-#import "YXPercentDrivenAnimation.h"
+#import "YXDismissPercentDrivenAnimation.h"
 
-@interface YXVCTransitioningDelegate ()
+@interface YXVCPresentDelegate ()
 
 @property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> present;
 @property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> dismiss;
 
-
 @end
 
-@implementation YXVCTransitioningDelegate
+@implementation YXVCPresentDelegate
 
 - (instancetype)init
 {

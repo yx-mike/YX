@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YXPercentDrivenAnimation : UIPercentDrivenInteractiveTransition
+@interface YXDismissPercentDrivenAnimation : UIPercentDrivenInteractiveTransition
 
 @property (nonatomic) BOOL interacting;
 

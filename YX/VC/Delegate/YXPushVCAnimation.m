@@ -21,13 +21,13 @@
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIView *transitionView = [transitionContext containerView];
-    
+    UIView *fromVCView = fromVC.view;
     UIView *toVCView = toVC.view;
     CGRect frame = toVCView.frame;
     toVCView.frame = CGRectMake(frame.origin.x+frame.size.width, frame.origin.y, frame.size.width, frame.size.height);
-    [transitionView addSubview:toVC.view];
+    [transitionView addSubview:toVCView];
     
-    UIView *fromVCView = fromVC.view;
+    
     
     [UIView animateWithDuration:.5 animations:^{
         fromVCView.transform = CGAffineTransformMakeScale(.8, .8);

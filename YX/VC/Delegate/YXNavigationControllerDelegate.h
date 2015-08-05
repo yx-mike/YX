@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class YXPercentDrivenPopAnimation;
+
 @interface YXNavigationControllerDelegate : NSObject<UINavigationControllerDelegate>
+
+@property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> pushAnimation;
+@property (strong, nonatomic) id<UIViewControllerAnimatedTransitioning> popAnimation;
+@property (strong, nonatomic) YXPercentDrivenPopAnimation *popPercentDriven;
 
 - (instancetype)initWithNav:(UINavigationController *)navVC;
 

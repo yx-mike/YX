@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 ShanghaiCize Trade And Business Co., Ltd. All rights reserved.
 //
 
-#import "YXPercentDrivenAnimation.h"
+#import "YXDismissPercentDrivenAnimation.h"
 
-@interface YXPercentDrivenAnimation ()
+@interface YXDismissPercentDrivenAnimation ()
 
 @property (nonatomic, strong) UIViewController *presentedVC;
 
 @end
 
-@implementation YXPercentDrivenAnimation
+@implementation YXDismissPercentDrivenAnimation
 
 - (void)wireToViewController:(UIViewController *)viewController
 {
