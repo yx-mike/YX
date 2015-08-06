@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2E72EABB-4CBB-4FB4-A3E1-791C384F5C04</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>YX</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E7D04A83A1E740135AF4F41792770937CB69D427</key>
 		<string>https://github.com/yx-mike/YX.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>YX.xcodeproj/project.xcworkspace</string>
+	<string>YX.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E7D04A83A1E740135AF4F41792770937CB69D427</key>

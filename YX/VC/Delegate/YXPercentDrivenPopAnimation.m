@@ -28,7 +28,8 @@
     UIGestureRecognizerState state = g.state;
     if (state == UIGestureRecognizerStateBegan) {
         self.interacting = YES;
-        if (self.navVC.viewControllers.count > 1) {
+        CGPoint movePoint = [g translationInView:self.navVC.view];
+        if (self.navVC.viewControllers.count > 1 && movePoint.x > 0) {
             [self.navVC popViewControllerAnimated:YES];
         }
     } else if (state == UIGestureRecognizerStateChanged) {
@@ -44,7 +45,7 @@
         if (movePoint.x <= 0) {
             [self cancelInteractiveTransition];
         } else {
-            if (movePoint.x/self.navVC.view.frame.size.width > .3) {
+            if (movePoint.x/self.navVC.view.frame.size.width > .4) {
                 [self finishInteractiveTransition];
             } else {
                 [self cancelInteractiveTransition];

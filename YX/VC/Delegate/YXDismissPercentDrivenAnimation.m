@@ -28,7 +28,10 @@
     UIGestureRecognizerState state = g.state;
     if (state == UIGestureRecognizerStateBegan) {
         self.interacting = YES;
-        [self.presentedVC dismissViewControllerAnimated:YES completion:nil];
+        CGPoint movePoint = [g translationInView:self.presentedVC.view];
+        if (movePoint.y > 0) {
+            [self.presentedVC dismissViewControllerAnimated:YES completion:nil];
+        }
     } else if (state == UIGestureRecognizerStateChanged) {
         CGPoint movePoint = [g translationInView:self.presentedVC.view];
         if (movePoint.y <= 0) {
@@ -42,7 +45,7 @@
         if (movePoint.y <= 0) {
             [self cancelInteractiveTransition];
         } else {
-            if (movePoint.y/self.presentedVC.view.frame.size.height > .3) {
+            if (movePoint.y/self.presentedVC.view.frame.size.height > .4) {
                 [self finishInteractiveTransition];
             } else {
                 [self cancelInteractiveTransition];

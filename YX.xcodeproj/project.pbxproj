@@ -80,6 +80,8 @@
 		0DB0E1341B69F84000289B0F /* Section23_iOS7_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0E1321B69F84000289B0F /* Section23_iOS7_2ViewController.xib */; };
 		0DB0E1371B69FAE600289B0F /* RNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1361B69FAE600289B0F /* RNTimer.m */; };
 		0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */; };
+		0DB79A6D1B72EB74002D9923 /* YXPushVCCubeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB79A6C1B72EB74002D9923 /* YXPushVCCubeAnimation.m */; };
+		0DB79A701B72ECE7002D9923 /* YXPopVCCubeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB79A6F1B72ECE7002D9923 /* YXPopVCCubeAnimation.m */; };
 		0DB7C45C1B5F358200D19259 /* SectionListNO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C45B1B5F358200D19259 /* SectionListNO14ViewController.m */; };
 		0DB7C45F1B5F360000D19259 /* Section14_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C45E1B5F360000D19259 /* Section14_1ViewController.m */; };
 		0DB7C4621B5F3EF100D19259 /* Section13_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C4611B5F3EF100D19259 /* Section13_3ViewController.m */; };
@@ -258,6 +260,10 @@
 		0DB0E1361B69FAE600289B0F /* RNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTimer.m; path = Helpers/RNTimer.m; sourceTree = "<group>"; };
 		0DB0E1381B6A0CD100289B0F /* Section23_iOS7_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_3ViewController.h; path = YX/VC/Section23_iOS7_3ViewController.h; sourceTree = "<group>"; };
 		0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section23_iOS7_3ViewController.m; path = YX/VC/Section23_iOS7_3ViewController.m; sourceTree = "<group>"; };
+		0DB79A6B1B72EB74002D9923 /* YXPushVCCubeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPushVCCubeAnimation.h; path = YX/VC/Delegate/YXPushVCCubeAnimation.h; sourceTree = "<group>"; };
+		0DB79A6C1B72EB74002D9923 /* YXPushVCCubeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPushVCCubeAnimation.m; path = YX/VC/Delegate/YXPushVCCubeAnimation.m; sourceTree = "<group>"; };
+		0DB79A6E1B72ECE7002D9923 /* YXPopVCCubeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPopVCCubeAnimation.h; path = YX/VC/Delegate/YXPopVCCubeAnimation.h; sourceTree = "<group>"; };
+		0DB79A6F1B72ECE7002D9923 /* YXPopVCCubeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPopVCCubeAnimation.m; path = YX/VC/Delegate/YXPopVCCubeAnimation.m; sourceTree = "<group>"; };
 		0DB7C45A1B5F358200D19259 /* SectionListNO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListNO14ViewController.h; path = YX/VC/SectionListNO14ViewController.h; sourceTree = "<group>"; };
 		0DB7C45B1B5F358200D19259 /* SectionListNO14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListNO14ViewController.m; path = YX/VC/SectionListNO14ViewController.m; sourceTree = "<group>"; };
 		0DB7C45D1B5F360000D19259 /* Section14_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section14_1ViewController.h; path = YX/VC/Section14_1ViewController.h; sourceTree = "<group>"; };
@@ -499,6 +505,10 @@ NO.9 chapter
 				0DAE1B611B71A32E00B0462D /* YXPopVCAnimation.m */,
 				0DAE1B631B71C89000B0462D /* YXPercentDrivenPopAnimation.h */,
 				0DAE1B641B71C89000B0462D /* YXPercentDrivenPopAnimation.m */,
+				0DB79A6B1B72EB74002D9923 /* YXPushVCCubeAnimation.h */,
+				0DB79A6C1B72EB74002D9923 /* YXPushVCCubeAnimation.m */,
+				0DB79A6E1B72ECE7002D9923 /* YXPopVCCubeAnimation.h */,
+				0DB79A6F1B72ECE7002D9923 /* YXPopVCCubeAnimation.m */,
 			);
 			name = Delegate;
 			sourceTree = "<group>";
@@ -1030,6 +1040,7 @@ NO.9 chapter
 				0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */,
 				0D9A8E241B5B86FC00589B8C /* Section8_1ViewController.m in Sources */,
 				0D96DDE31B64B18F0072D937 /* UIDevice+MKAdditions.m in Sources */,
+				0DB79A701B72ECE7002D9923 /* YXPopVCCubeAnimation.m in Sources */,
 				0DCAEF981B58FB0200AC4425 /* AViewController.m in Sources */,
 				0D6F0AC51B5CEF03004C9410 /* Section9_5ViewController.m in Sources */,
 				0D7453851B67E350006E1CF6 /* YXCollectionViewController.m in Sources */,
@@ -1049,6 +1060,7 @@ NO.9 chapter
 				0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */,
 				0D45487D1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m in Sources */,
 				0DA944101B6E737000FD2146 /* SectionListiOS7NO19ViewController.m in Sources */,
+				0DB79A6D1B72EB74002D9923 /* YXPushVCCubeAnimation.m in Sources */,
 				0D4548911B708CD3002E1C41 /* YXDismissVCAnimation.m in Sources */,
 				0D6F0AC21B5CE060004C9410 /* Section9_4ViewController.m in Sources */,
 				0D85DAEB1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m in Sources */,

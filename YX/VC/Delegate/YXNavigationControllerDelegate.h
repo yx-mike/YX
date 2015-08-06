@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, YXNavigationAnimationStyle) {
+    YXNavigationAnimationStyle1,
+    YXNavigationAnimationStyle2Cube
+};
+
 @class YXPercentDrivenPopAnimation;
 
 @interface YXNavigationControllerDelegate : NSObject<UINavigationControllerDelegate>
@@ -18,5 +23,6 @@
 @property (strong, nonatomic) YXPercentDrivenPopAnimation *popPercentDriven;
 
 - (instancetype)initWithNav:(UINavigationController *)navVC;
+- (void)setAnimationStyle:(YXNavigationAnimationStyle)style;
 
 @end

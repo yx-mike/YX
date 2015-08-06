@@ -36,6 +36,7 @@
         toVCView.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished){
         if ([transitionContext transitionWasCancelled]) {
+            toVCView.transform = CGAffineTransformIdentity;
             [toVCView removeFromSuperview];
             [transitionContext completeTransition:NO];
         } else {

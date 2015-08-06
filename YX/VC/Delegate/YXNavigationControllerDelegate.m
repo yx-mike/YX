@@ -10,11 +10,11 @@
 //
 #import "YXPushVCAnimation.h"
 #import "YXPopVCAnimation.h"
+#import "YXPushVCCubeAnimation.h"
+#import "YXPopVCCubeAnimation.h"
 #import "YXPercentDrivenPopAnimation.h"
 
 @interface YXNavigationControllerDelegate ()
-
-@property (weak, nonatomic) UINavigationController *navVC;
 
 @end
 
@@ -24,14 +24,33 @@
 {
     self = [super init];
     if (self) {
-        _navVC = navVC;
-        _pushAnimation = [[YXPushVCAnimation alloc] init];
-        _popAnimation = [[YXPopVCAnimation alloc] init];
+        [self setAnimationStyle:YXNavigationAnimationStyle1];
         
         _popPercentDriven = [[YXPercentDrivenPopAnimation alloc] init];
         [_popPercentDriven wireToViewController:navVC];
     }
     return self;
+}
+
+- (void)setAnimationStyle:(YXNavigationAnimationStyle)style
+{
+    switch (style) {
+        case YXNavigationAnimationStyle1:{
+            self.pushAnimation = [[YXPushVCAnimation alloc] init];
+            self.popAnimation = [[YXPopVCAnimation alloc] init];
+            break;
+        }
+            
+            
+        case YXNavigationAnimationStyle2Cube:{
+            self.pushAnimation = [[YXPushVCCubeAnimation alloc] init];
+            self.popAnimation = [[YXPopVCCubeAnimation alloc] init];
+            break;
+        }
+            
+        default:
+            break;
+    }
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController

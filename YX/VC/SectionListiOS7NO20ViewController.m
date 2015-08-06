@@ -33,9 +33,9 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 {
     self = [super init];
     if (self) {
-        _sections = @[@"1.集合VC2集合VC", @"2.Present+Push(1)"];
+        _sections = @[@"1.集合VC2集合VC", @"2.Present+Push(1)", @"3.Present+Push(2)"];
         //Tabbar模式和Push模式类似，只是容器控制器不一样
-        _vcNames = @[@"Section20_iOS7_1ViewController", @"Section20_iOS7_2ViewController"];
+        _vcNames = @[@"Section20_iOS7_1ViewController", @"Section20_iOS7_2ViewController", @"Section20_iOS7_2ViewController"];
     }
     return self;
 }
@@ -95,6 +95,18 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         navC.transitioningDelegate = self.customTransitioningDelegate;
         
         self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
+        navC.delegate = self.customNavigationControllerDelegate;
+        
+        [self presentViewController:navC animated:YES completion:nil];
+    } else if (indexPath.row == 2) {
+        YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
+        navC.navigationBarHidden = YES;
+        
+        self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] init];
+        navC.transitioningDelegate = self.customTransitioningDelegate;
+        
+        self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
+        [self.customNavigationControllerDelegate setAnimationStyle:YXNavigationAnimationStyle2Cube];
         navC.delegate = self.customNavigationControllerDelegate;
         
         [self presentViewController:navC animated:YES completion:nil];
