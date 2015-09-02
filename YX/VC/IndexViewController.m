@@ -19,6 +19,9 @@
 @property (strong, nonatomic) NSArray *ios7Titles;
 @property (strong, nonatomic) NSArray *ios7VCNames;
 
+@property (strong, nonatomic) NSArray *layerTitles;
+@property (strong, nonatomic) NSArray *layerVCNames;
+
 @end
 
 static NSString * const cellId = @"YXNoMarginTableViewCell";
@@ -39,6 +42,9 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         
         _ios7Titles = @[@"第4章 故事板", @"第5章 集合视图", @"第19章 UIKit动力学", @"第20章 自定义控制器过渡", @"第23章 GCD"];
         _ios7VCNames = @[@"", @"SectionListiOS7NO5ViewController", @"SectionListiOS7NO19ViewController", @"SectionListiOS7NO20ViewController", @"SectionListiOS7NO23ViewController"];
+        
+        _layerTitles = @[@"CAGradientLayer&CAShapeLayer"];
+        _layerVCNames = @[@"MultiColorCircleLayerVC"];
     }
     return self;
 }
@@ -61,6 +67,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     switch (indexPath.section) {
         case 0: titles = self.titles;break;
         case 1: titles = self.ios7Titles;break;
+        case 2: titles = self.layerTitles;break;
         default: titles = @[];break;
     }
     
@@ -71,7 +78,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -79,6 +86,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     switch (section) {
         case 0: return @"第6版";
         case 1: return @"第7版";
+        case 2: return @"Layer";
         default: return @"";
     }
 }
@@ -88,6 +96,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     switch (section) {
         case 0: return self.titles.count;
         case 1: return self.ios7Titles.count;
+        case 2: return self.layerTitles.count;
         default: return 0;
     }
 }
@@ -100,6 +109,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     switch (indexPath.section) {
         case 0: vcNames = self.vcNames;break;
         case 1: vcNames = self.ios7VCNames;break;
+        case 2: vcNames = self.layerVCNames;break;
         default: vcNames = @[];break;
     }
     

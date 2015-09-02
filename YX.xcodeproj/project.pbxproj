@@ -108,6 +108,8 @@
 		0DF4B4521B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4511B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m */; };
 		0DF4B4571B6614DD0081B8D8 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */; };
 		0DF4B4581B6614DD0081B8D8 /* CustomUnwindSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */; };
+		DFD32AA21B96FA7C00035BD6 /* MultiColorCircleLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */; };
+		DFD32AA61B96FBA900035BD6 /* MultiColorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +316,10 @@
 		0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = YX/VC/Storyboard/Segue/CustomSegue.m; sourceTree = "<group>"; };
 		0DF4B4551B6614DD0081B8D8 /* CustomUnwindSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomUnwindSegue.h; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.h; sourceTree = "<group>"; };
 		0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomUnwindSegue.m; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.m; sourceTree = "<group>"; };
+		DFD32AA01B96FA7C00035BD6 /* MultiColorCircleLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleLayerVC.h; path = YX/VC/MultiColorCircleLayerVC.h; sourceTree = "<group>"; };
+		DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiColorCircleLayerVC.m; path = YX/VC/MultiColorCircleLayerVC.m; sourceTree = "<group>"; };
+		DFD32AA41B96FBA900035BD6 /* MultiColorCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleView.h; path = YX/VC/Views/MultiColorCircleView.h; sourceTree = "<group>"; };
+		DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiColorCircleView.m; path = YX/VC/Views/MultiColorCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +358,7 @@
 		0D0980BE1B53CB6900C0E27E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DFD32A9F1B96F9BF00035BD6 /* LayerVC */,
 				0DCC75D81B5CB512007E3CD0 /* 
 NO.9 chapter
  */,
@@ -874,6 +881,25 @@ NO.9 chapter
 			name = Segue;
 			sourceTree = "<group>";
 		};
+		DFD32A9F1B96F9BF00035BD6 /* LayerVC */ = {
+			isa = PBXGroup;
+			children = (
+				DFD32AA31B96FB4A00035BD6 /* View */,
+				DFD32AA01B96FA7C00035BD6 /* MultiColorCircleLayerVC.h */,
+				DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */,
+			);
+			name = LayerVC;
+			sourceTree = "<group>";
+		};
+		DFD32AA31B96FB4A00035BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFD32AA41B96FBA900035BD6 /* MultiColorCircleView.h */,
+				DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1055,7 +1081,9 @@ NO.9 chapter
 				0D7A8C641B68679200FFA493 /* Section5_iOS7_2ViewController.m in Sources */,
 				0D7B97AD1B6F177A006820CB /* Section19_iOS7_4ViewController.m in Sources */,
 				0DE2D9E81B5A31010000AA31 /* YXMutliTableViewController.m in Sources */,
+				DFD32AA61B96FBA900035BD6 /* MultiColorCircleView.m in Sources */,
 				0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */,
+				DFD32AA21B96FA7C00035BD6 /* MultiColorCircleLayerVC.m in Sources */,
 				0DF4B44F1B66131F0081B8D8 /* StoryboardCustom_iOS7_Chapter_ViewController.m in Sources */,
 				0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */,
 				0D45487D1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m in Sources */,
