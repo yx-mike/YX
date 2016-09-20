@@ -117,7 +117,8 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"CustomVCStoryboard" bundle:[NSBundle mainBundle]];
         UIViewController *vc = [storyboard instantiateInitialViewController];
         [self.navigationController pushViewController:vc animated:YES];
-    } else {
+    }
+    else {
         #warning 用NSString生成Class
         Class vcClass = NSClassFromString(vcNames[indexPath.row]);
         [self.navigationController pushViewController:[[vcClass alloc] init] animated:YES];
