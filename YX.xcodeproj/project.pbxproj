@@ -14,7 +14,6 @@
 		0D43895D1B514288005DFCF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43895C1B514288005DFCF7 /* main.m */; };
 		0D4389601B514288005DFCF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43895F1B514288005DFCF7 /* AppDelegate.m */; };
 		0D4389681B514288005DFCF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4389671B514288005DFCF7 /* Images.xcassets */; };
-		0D4389771B514288005DFCF7 /* YXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4389761B514288005DFCF7 /* YXTests.m */; };
 		0D45487D1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45487C1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m */; };
 		0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548801B704DEB002E1C41 /* Section20_Test_collectionViewController.m */; };
 		0D4548841B70603C002E1C41 /* Section20_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */; };
@@ -112,16 +111,6 @@
 		DFD32AA61B96FBA900035BD6 /* MultiColorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0D4389711B514288005DFCF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D43894F1B514288005DFCF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D4389561B514288005DFCF7;
-			remoteInfo = YX;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0D0A83C31B578DFA0008F7AA /* YXTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXTest.h; path = YX/Model/YXTest.h; sourceTree = "<group>"; };
 		0D0A83C41B578DFA0008F7AA /* YXTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXTest.m; path = YX/Model/YXTest.m; sourceTree = "<group>"; };
@@ -138,7 +127,6 @@
 		0D43895E1B514288005DFCF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D43895F1B514288005DFCF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0D4389671B514288005DFCF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0D4389701B514288005DFCF7 /* YXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4389751B514288005DFCF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D4389761B514288005DFCF7 /* YXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXTests.m; sourceTree = "<group>"; };
 		0D45487B1B704C7C002E1C41 /* Section20_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section20_iOS7_1ViewController.h; path = YX/VC/Section20_iOS7_1ViewController.h; sourceTree = "<group>"; };
@@ -330,13 +318,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D43896D1B514288005DFCF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -450,7 +431,6 @@ NO.9 chapter
 			isa = PBXGroup;
 			children = (
 				0D4389571B514288005DFCF7 /* YX.app */,
-				0D4389701B514288005DFCF7 /* YXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -920,24 +900,6 @@ NO.9 chapter
 			productReference = 0D4389571B514288005DFCF7 /* YX.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D43896F1B514288005DFCF7 /* YXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0D43897D1B514288005DFCF7 /* Build configuration list for PBXNativeTarget "YXTests" */;
-			buildPhases = (
-				0D43896C1B514288005DFCF7 /* Sources */,
-				0D43896D1B514288005DFCF7 /* Frameworks */,
-				0D43896E1B514288005DFCF7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0D4389721B514288005DFCF7 /* PBXTargetDependency */,
-			);
-			name = YXTests;
-			productName = YXTests;
-			productReference = 0D4389701B514288005DFCF7 /* YXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -945,23 +907,19 @@ NO.9 chapter
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = YX;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "ShanghaiCize Trade And Business Co., Ltd.";
 				TargetAttributes = {
 					0D4389561B514288005DFCF7 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 7VWBJVD4CH;
-					};
-					0D43896F1B514288005DFCF7 = {
-						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 7VWBJVD4CH;
-						TestTargetID = 0D4389561B514288005DFCF7;
+						DevelopmentTeam = 4FL62462P2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = 0D4389521B514288005DFCF7 /* Build configuration list for PBXProject "YX" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -973,7 +931,6 @@ NO.9 chapter
 			projectRoot = "";
 			targets = (
 				0D4389561B514288005DFCF7 /* YX */,
-				0D43896F1B514288005DFCF7 /* YXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -996,13 +953,6 @@ NO.9 chapter
 				0D5E4E621B52599A00CB3A8C /* j3@2x.jpeg in Resources */,
 				0D7B97DB1B6F8190006820CB /* Section19_iOS7_5ViewController.xib in Resources */,
 				0DB0E1341B69F84000289B0F /* Section23_iOS7_2ViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D43896E1B514288005DFCF7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1105,23 +1055,7 @@ NO.9 chapter
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D43896C1B514288005DFCF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D4389771B514288005DFCF7 /* YXTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0D4389721B514288005DFCF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0D4389561B514288005DFCF7 /* YX */;
-			targetProxy = 0D4389711B514288005DFCF7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0D4389781B514288005DFCF7 /* Debug */ = {
@@ -1132,13 +1066,23 @@ NO.9 chapter
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1161,7 +1105,7 @@ NO.9 chapter
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1176,13 +1120,23 @@ NO.9 chapter
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1198,7 +1152,7 @@ NO.9 chapter
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1212,13 +1166,16 @@ NO.9 chapter
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4FL62462P2;
 				INFOPLIST_FILE = YX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = All_Dev;
 			};
 			name = Debug;
 		};
@@ -1229,55 +1186,15 @@ NO.9 chapter
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4FL62462P2;
 				INFOPLIST_FILE = YX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		0D43897E1B514288005DFCF7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = YXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YX.app/YX";
-			};
-			name = Debug;
-		};
-		0D43897F1B514288005DFCF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = YXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YX.app/YX";
+				PROVISIONING_PROFILE_SPECIFIER = All_Dev;
 			};
 			name = Release;
 		};
@@ -1298,15 +1215,6 @@ NO.9 chapter
 			buildConfigurations = (
 				0D43897B1B514288005DFCF7 /* Debug */,
 				0D43897C1B514288005DFCF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0D43897D1B514288005DFCF7 /* Build configuration list for PBXNativeTarget "YXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D43897E1B514288005DFCF7 /* Debug */,
-				0D43897F1B514288005DFCF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
