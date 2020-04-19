@@ -9,6 +9,7 @@
 #import "MultiColorCircleLayerVC.h"
 //
 #import "MultiColorCircleView.h"
+#import "YXLoadingSpinner.h"
 //
 #import "Macros.h"
 
@@ -23,9 +24,15 @@
     [super loadView];
     //
     
-    MultiColorCircleView *view = [[MultiColorCircleView alloc] initWithFrame:CGRectMake(0, 0, FullScreenWidth, FullScreenHeight-64)];
+    CGRect frame = CGRectMake(0, 0, FullScreenWidth/2, FullScreenWidth/2);
+    MultiColorCircleView *view = [[MultiColorCircleView alloc] initWithFrame:frame];
     [self.view addSubview:view];
     [view startAnimation];
+    
+    frame = CGRectMake(FullScreenWidth/2, 0, FullScreenWidth/2, FullScreenWidth/2);
+    YXLoadingSpinner *spinnerView = [[YXLoadingSpinner alloc] initWithFrame:frame];
+    [self.view addSubview:spinnerView];
+    [spinnerView startAnimating];
 }
 
 @end

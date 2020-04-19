@@ -107,6 +107,8 @@
 		0DF4B4521B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4511B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m */; };
 		0DF4B4571B6614DD0081B8D8 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */; };
 		0DF4B4581B6614DD0081B8D8 /* CustomUnwindSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */; };
+		DF274DB6244BF83900CFA44D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF274DB5244BF83900CFA44D /* Launch Screen.storyboard */; };
+		DF274DB9244BFC8C00CFA44D /* YXLoadingSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DF274DB8244BFC8C00CFA44D /* YXLoadingSpinner.m */; };
 		DFD32AA21B96FA7C00035BD6 /* MultiColorCircleLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */; };
 		DFD32AA61B96FBA900035BD6 /* MultiColorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */; };
 /* End PBXBuildFile section */
@@ -304,6 +306,9 @@
 		0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = YX/VC/Storyboard/Segue/CustomSegue.m; sourceTree = "<group>"; };
 		0DF4B4551B6614DD0081B8D8 /* CustomUnwindSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomUnwindSegue.h; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.h; sourceTree = "<group>"; };
 		0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomUnwindSegue.m; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.m; sourceTree = "<group>"; };
+		DF274DB5244BF83900CFA44D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DF274DB7244BFC8C00CFA44D /* YXLoadingSpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YXLoadingSpinner.h; path = YX/VC/Views/YXLoadingSpinner.h; sourceTree = "<group>"; };
+		DF274DB8244BFC8C00CFA44D /* YXLoadingSpinner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YXLoadingSpinner.m; path = YX/VC/Views/YXLoadingSpinner.m; sourceTree = "<group>"; };
 		DFD32AA01B96FA7C00035BD6 /* MultiColorCircleLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleLayerVC.h; path = YX/VC/MultiColorCircleLayerVC.h; sourceTree = "<group>"; };
 		DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiColorCircleLayerVC.m; path = YX/VC/MultiColorCircleLayerVC.m; sourceTree = "<group>"; };
 		DFD32AA41B96FBA900035BD6 /* MultiColorCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleView.h; path = YX/VC/Views/MultiColorCircleView.h; sourceTree = "<group>"; };
@@ -443,6 +448,7 @@ NO.9 chapter
 				0D43895F1B514288005DFCF7 /* AppDelegate.m */,
 				0D4389671B514288005DFCF7 /* Images.xcassets */,
 				0D43895A1B514288005DFCF7 /* Supporting Files */,
+				DF274DB5244BF83900CFA44D /* Launch Screen.storyboard */,
 			);
 			path = YX;
 			sourceTree = "<group>";
@@ -876,6 +882,8 @@ NO.9 chapter
 			children = (
 				DFD32AA41B96FBA900035BD6 /* MultiColorCircleView.h */,
 				DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */,
+				DF274DB7244BFC8C00CFA44D /* YXLoadingSpinner.h */,
+				DF274DB8244BFC8C00CFA44D /* YXLoadingSpinner.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -946,6 +954,7 @@ NO.9 chapter
 				0D4389681B514288005DFCF7 /* Images.xcassets in Resources */,
 				0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */,
 				0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */,
+				DF274DB6244BF83900CFA44D /* Launch Screen.storyboard in Resources */,
 				0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */,
 				0DF4B4451B65DBD70081B8D8 /* CustomVCStoryboard.storyboard in Resources */,
 				0D7A8C611B68675A00FFA493 /* Photos in Resources */,
@@ -994,6 +1003,7 @@ NO.9 chapter
 				0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */,
 				0DD5A18A1B5BE3BF001436F9 /* Section8_5ViewController.m in Sources */,
 				0D7B97A71B6EF53A006820CB /* Section19_iOS7_2ViewController.m in Sources */,
+				DF274DB9244BFC8C00CFA44D /* YXLoadingSpinner.m in Sources */,
 				0D7A8C6B1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m in Sources */,
 				0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */,
 				0DCC75DE1B5CB5C2007E3CD0 /* SectionListNO9ViewController.m in Sources */,
