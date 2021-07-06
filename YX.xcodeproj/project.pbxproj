@@ -20,6 +20,7 @@
 		0D45488B1B706553002E1C41 /* YXVCPresentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45488A1B706553002E1C41 /* YXVCPresentDelegate.m */; };
 		0D45488E1B708C75002E1C41 /* YXPresentVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45488D1B708C75002E1C41 /* YXPresentVCAnimation.m */; };
 		0D4548911B708CD3002E1C41 /* YXDismissVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548901B708CD3002E1C41 /* YXDismissVCAnimation.m */; };
+		0D4AC3B42693F05C00F21A8F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4AC3B32693F05C00F21A8F /* Launch Screen.storyboard */; };
 		0D5E4E4B1B52404100CB3A8C /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E4E491B52404100CB3A8C /* IndexViewController.m */; };
 		0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */; };
 		0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5D1B52599A00CB3A8C /* j2@2x.jpeg */; };
@@ -141,6 +142,7 @@
 		0D45488D1B708C75002E1C41 /* YXPresentVCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPresentVCAnimation.m; path = YX/VC/Delegate/YXPresentVCAnimation.m; sourceTree = "<group>"; };
 		0D45488F1B708CD3002E1C41 /* YXDismissVCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDismissVCAnimation.h; path = YX/VC/Delegate/YXDismissVCAnimation.h; sourceTree = "<group>"; };
 		0D4548901B708CD3002E1C41 /* YXDismissVCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDismissVCAnimation.m; path = YX/VC/Delegate/YXDismissVCAnimation.m; sourceTree = "<group>"; };
+		0D4AC3B32693F05C00F21A8F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0D5E4E481B52404100CB3A8C /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexViewController.h; path = YX/VC/IndexViewController.h; sourceTree = "<group>"; };
 		0D5E4E491B52404100CB3A8C /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexViewController.m; path = YX/VC/IndexViewController.m; sourceTree = "<group>"; };
 		0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "j1@2x.jpeg"; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@ NO.9 chapter
 				0D43895F1B514288005DFCF7 /* AppDelegate.m */,
 				0D4389671B514288005DFCF7 /* Images.xcassets */,
 				0D43895A1B514288005DFCF7 /* Supporting Files */,
+				0D4AC3B32693F05C00F21A8F /* Launch Screen.storyboard */,
 			);
 			path = YX;
 			sourceTree = "<group>";
@@ -912,7 +915,7 @@ NO.9 chapter
 				TargetAttributes = {
 					0D4389561B514288005DFCF7 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 4FL62462P2;
+						DevelopmentTeam = 3A946D8N5T;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -946,6 +949,7 @@ NO.9 chapter
 				0D4389681B514288005DFCF7 /* Images.xcassets in Resources */,
 				0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */,
 				0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */,
+				0D4AC3B42693F05C00F21A8F /* Launch Screen.storyboard in Resources */,
 				0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */,
 				0DF4B4451B65DBD70081B8D8 /* CustomVCStoryboard.storyboard in Resources */,
 				0D7A8C611B68675A00FFA493 /* Photos in Resources */,
@@ -1163,19 +1167,19 @@ NO.9 chapter
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4FL62462P2;
+				DEVELOPMENT_TEAM = 3A946D8N5T;
 				INFOPLIST_FILE = YX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = All_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = Dev_AllTeam;
 			};
 			name = Debug;
 		};
@@ -1183,18 +1187,18 @@ NO.9 chapter
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4FL62462P2;
+				DEVELOPMENT_TEAM = 3A946D8N5T;
 				INFOPLIST_FILE = YX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = All_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = Dev_AllTeam;
 			};
 			name = Release;
 		};
