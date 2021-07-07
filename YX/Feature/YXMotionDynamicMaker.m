@@ -11,6 +11,7 @@
 
 #import "YXMotionDynamicMaker.h"
 
+
 ///
 /**
  UIDynamicItemBehavior
@@ -159,14 +160,14 @@
                  withItem:(id <UIDynamicItem>)item2
                   atPoint:(CGPoint)p
 {
-    
+    NSLog(@"yx02: collisionBehavior 1");
 }
 
 - (void)collisionBehavior:(UICollisionBehavior *)behavior
       endedContactForItem:(id <UIDynamicItem>)item1
                  withItem:(id <UIDynamicItem>)item2
 {
-    
+    NSLog(@"yx02: collisionBehavior 2");
 }
 
 // The identifier of a boundary created with translatesReferenceBoundsIntoBoundary or setTranslatesReferenceBoundsIntoBoundaryWithInsets is nil
@@ -175,13 +176,13 @@
    withBoundaryIdentifier:(nullable id <NSCopying>)identifier
                   atPoint:(CGPoint)p
 {
-    
+    NSLog(@"yx02: collisionBehavior 3");
 }
 - (void)collisionBehavior:(UICollisionBehavior*)behavior
       endedContactForItem:(id <UIDynamicItem>)item
    withBoundaryIdentifier:(nullable id <NSCopying>)identifier
 {
-    
+    NSLog(@"yx02: collisionBehavior 4");
 }
 
 #pragma mark - Public

@@ -8,8 +8,23 @@
 
 #import "YXMotionDynamicItem.h"
 
-static NSDictionary *kImageSizeMap;
-static NSDictionary *kImageBezierMap;
+
+CGPoint YXCPointMake(CGFloat x, CGFloat y, CGFloat w, CGFloat h) {
+    CGPoint p;
+    p.x = x - w / 2;
+    p.y = y - h / 2;
+    return p;
+}
+
+CGRect YXCRectMake(CGFloat x, CGFloat y, CGFloat w, CGFloat h) {
+    CGRect rect;
+    rect.origin.x = x - w / 2;
+    rect.origin.y = y - h / 2;
+    rect.size.width = w;
+    rect.size.height = h;
+    return rect;
+}
+
 
 @interface YXMotionDynamicItem ()
 
@@ -21,30 +36,6 @@ static NSDictionary *kImageBezierMap;
 
 @implementation YXMotionDynamicItem
 
-+ (void)prepareImageSizeMap:(NSDictionary *)imageSizeMap imageBezierMap:(NSDictionary *)imageBezierMap {
-    kImageSizeMap = [imageSizeMap copy];
-    kImageBezierMap = [imageBezierMap copy];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame type:(YXMotionDynamicItemType)type imageName:(NSString *)imageName {
-    UIImage *image = [UIImage imageNamed:imageName];
-    
-    NSValue *sizeValue = kImageSizeMap[imageName];
-    if (sizeValue) {
-        CGSize imageSize = sizeValue.CGSizeValue;
-        
-        frame.size.width = imageSize.width;
-        frame.size.height = imageSize.height;
-    }
-    
-    UIBezierPath *bezierPath = kImageBezierMap[imageName];
-    if ([bezierPath isKindOfClass:NSNull.class]) {
-        bezierPath = nil;
-    }
-    
-    return [self initWithFrame:frame type:type image:image bezierPath:bezierPath];
-}
-
 - (instancetype)initWithFrame:(CGRect)frame
                          type:(YXMotionDynamicItemType)type
                         image:(UIImage *)image
@@ -52,6 +43,10 @@ static NSDictionary *kImageBezierMap;
 {
     if (image == nil) {
         frame = CGRectZero;
+        bezierPath = nil;
+    }
+    
+    if ([bezierPath isKindOfClass:NSNull.class]) {
         bezierPath = nil;
     }
     
@@ -73,7 +68,7 @@ static NSDictionary *kImageBezierMap;
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     self.imageView = imageView;
-    imageView.frame = self.bounds;
+    imageView.frame = bounds;
     
     [self addSubview:imageView];
 }
@@ -88,6 +83,15 @@ static NSDictionary *kImageBezierMap;
     return UIDynamicItemCollisionBoundsTypeRectangle;
 }
 
+/**
+ 路径必须表示一个逆时针缠绕且无自相交的凸多边形。
+ 路径中的点 (0,0) 对应于动态项目的中心。
+
+ 用于碰撞边界的基于路径的形状。
+
+ 当collisionBoundsType属性为UIDynamicItemCollisionBoundsTypePath时，该属性中的对象作为碰撞边界。 如果您的动态项实现了collisionBoundsType 属性，您还必须实现该属性。
+ 您创建的路径对象必须代表一个逆时针或顺时针缠绕的凸多边形，并且路径不得与自身相交。 路径的(0, 0)点必须位于对应动态项的中心点。 如果中心点与路径的原点不匹配，碰撞行为可能无法按预期工作。
+ */
 - (UIBezierPath *)collisionBoundingPath {
     return self.bezierPath;
 }
