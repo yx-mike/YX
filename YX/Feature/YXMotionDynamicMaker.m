@@ -224,7 +224,9 @@
         return;
     }
     
-    [self.motionManager stopGyroUpdates];
+    [self.motionManager stopDeviceMotionUpdates];
+    
+    self.motionManager = nil;
 }
 
 #pragma mark - UICollisionBehaviorDelegate

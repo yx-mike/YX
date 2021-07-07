@@ -22,14 +22,6 @@
 
 @implementation Section19_iOS7_6ViewController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
