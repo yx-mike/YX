@@ -38,6 +38,9 @@ static NSDictionary *kImageBezierMap;
     }
     
     UIBezierPath *bezierPath = kImageBezierMap[imageName];
+    if ([bezierPath isKindOfClass:NSNull.class]) {
+        bezierPath = nil;
+    }
     
     return [self initWithFrame:frame type:type image:image bezierPath:bezierPath];
 }
