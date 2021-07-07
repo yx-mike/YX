@@ -75,7 +75,7 @@
 
 // 滑动，作用力.
 // 依赖陀螺仪，所以所有item的力的相对指都是一样的
-@property (nonatomic, weak) UIPushBehavior *pushBehavior;
+//@property (nonatomic, weak) UIPushBehavior *pushBehavior;
 @property (nonatomic, strong) CMMotionManager *motionManager;
 
 // 拥有默认Behavior的视图
@@ -99,21 +99,21 @@
 - (void)initBehaviors {
     UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] init];
     collisionBehavior.collisionMode = UICollisionBehaviorModeEverything;
-    collisionBehavior.collisionDelegate = self;
+//    collisionBehavior.collisionDelegate = self;
     collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] init];
         
     // UIPushBehaviorModeContinuous 持久的力
-    UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[] mode:UIPushBehaviorModeContinuous];
+//    UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[] mode:UIPushBehaviorModeContinuous];
     
     [self.dynamicAnimator addBehavior:collisionBehavior];
     [self.dynamicAnimator addBehavior:gravityBehavior];
-    [self.dynamicAnimator addBehavior:pushBehavior];
+//    [self.dynamicAnimator addBehavior:pushBehavior];
     
     self.collisionBehavior = collisionBehavior;
     self.gravityBehavior = gravityBehavior;
-    self.pushBehavior = pushBehavior;
+//    self.pushBehavior = pushBehavior;
 }
 
 - (void)startMotion {
@@ -123,67 +123,141 @@
     
     CMMotionManager *motionManager = [[CMMotionManager alloc] init];
     //告诉manager，更新频率是100Hz
-    motionManager.accelerometerUpdateInterval = 1.f/60;
+    motionManager.accelerometerUpdateInterval = 1.f/30;
     
     //Push方式获取和处理数据
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
     // 在操作队列和指定的处理程序上启动陀螺仪更新。
-    if (motionManager.isGyroAvailable && motionManager.isGyroActive) {
-        [motionManager startGyroUpdatesToQueue:queue withHandler:^(CMGyroData * _Nullable gyroData, NSError * _Nullable error) {
-            
-        }];
-        
-        self.motionManager = motionManager;
-    }
+//    if (motionManager.isGyroAvailable) {
+//        [motionManager startGyroUpdatesToQueue:queue withHandler:^(CMGyroData *gyroData, NSError *error) {
+//            if (error) {
+//                return;
+//            }
+//
+//            CMRotationRate rotationRate = gyroData.rotationRate;
+//            NSLog(@"yx02: CMRotationRate(%f, %f, %f)", rotationRate.x, rotationRate.y, rotationRate.z);
+//        }];
+//
+//        self.motionManager = motionManager;
+//    }
     
     // 在操作队列上并使用指定的处理程序启动磁力计更新。
-//    [motionManager startMagnetometerUpdatesToQueue:queue withHandler:^(CMMagnetometerData * _Nullable magnetometerData, NSError * _Nullable error) {
+//    if (motionManager.isMagnetometerAvailable) {
+//        [motionManager startMagnetometerUpdatesToQueue:queue withHandler:^(CMMagnetometerData *magnetometerData, NSError *error) {
+//            if (error) {
+//                return;
+//            }
 //
-//    }];
+//            CMMagneticField magneticField = magnetometerData.magneticField;
+//            NSLog(@"yx02: CMMagneticField(%f, %f, %f)", magneticField.x, magneticField.y, magneticField.z);
+//        }];
+//
+//        self.motionManager = motionManager;
+//    }
     
     // 在操作队列和指定的处理程序上启动加速度计更新。
-//    [motionManager startAccelerometerUpdatesToQueue:queue withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
+//    if (motionManager.isAccelerometerAvailable) {
+//        [motionManager startAccelerometerUpdatesToQueue:queue withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
+//            if (error) {
+//                return;
+//            }
 //
-//    }];
+//            CMAcceleration acceleration = accelerometerData.acceleration;
+//            NSLog(@"yx02: CMAcceleration(%f, %f, %f)", acceleration.x, acceleration.y, acceleration.z);
+//        }];
+//
+//        self.motionManager = motionManager;
+//    }
     
     // 在操作队列上启动设备运动更新并使用指定的块处理程序。
-//    [motionManager startDeviceMotionUpdatesToQueue:queue withHandler:^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error) {
-//
-//    }];
+    if (motionManager.isDeviceMotionAvailable) {
+        __weak typeof(self) weakself = self;
+        [motionManager startDeviceMotionUpdatesToQueue:queue withHandler:^(CMDeviceMotion *motion, NSError *error) {
+            if (error) {
+                return;
+            }
+            
+            [weakself updateDeviceMotion:motion];
+        }];
+
+        self.motionManager = motionManager;
+    }
+}
+
+- (void)updateDeviceMotion:(CMDeviceMotion *)motion {
+    /**
+     CMAttitude,姿势，设备在某个时间点相对于已知参考系的方向。(朝向)
+     下面有三种数学表示方式，我表示没学过。欧拉角、旋转矩阵、四元数，😂😂😂😂😂。
+     */
+    /// 姿态的第一种数学表示：欧拉角（滚动、俯仰和偏航值）
+//    CMAttitude *attitude = motion.attitude;
+//    attitude.roll;
+//    attitude.pitch;
+//    attitude.yaw;
+    /// 姿态的第二种数学表示：旋转矩阵（线性代数中的旋转矩阵描述了物体在三维欧几里得空间中的旋转）
+//    CMRotationMatrix rotationMatrix = attitude.rotationMatrix;
+    /// 姿态的第三种数学表示：四元数
+//    CMQuaternion quaternion = attitude.quaternion;
+    
+    /// 设备的转速。
+//    CMRotationRate rotationRate = motion.rotationRate;
+    
+    /// 在设备的参考系中表示的重力加速度矢量。
+    CMAcceleration gravity = motion.gravity;
+//    NSLog(@"yx02: gravity(%f, %f, %f)", gravity.x, gravity.y, gravity.z);
+    [self.gravityBehavior setGravityDirection:CGVectorMake(gravity.x, -gravity.y)];
+    
+    /// 相对于当前参考系的航向角（以度为单位）。
+//    double heading = motion.heading;
+    
+//    if (@available(iOS 14.0, *)) {
+        /// 计算设备运动数据的传感器的位置。
+//        CMDeviceMotionSensorLocation sensorLocation = motion.sensorLocation;
+//    } else {
+        // Fallback on earlier versions
+//    }
+}
+
+- (void)stopMotion {
+    if (!self.motionManager) {
+        return;
+    }
+    
+    [self.motionManager stopGyroUpdates];
 }
 
 #pragma mark - UICollisionBehaviorDelegate
 
-- (void)collisionBehavior:(UICollisionBehavior *)behavior
-      beganContactForItem:(id <UIDynamicItem>)item1
-                 withItem:(id <UIDynamicItem>)item2
-                  atPoint:(CGPoint)p
-{
-    NSLog(@"yx02: collisionBehavior 1");
-}
-
-- (void)collisionBehavior:(UICollisionBehavior *)behavior
-      endedContactForItem:(id <UIDynamicItem>)item1
-                 withItem:(id <UIDynamicItem>)item2
-{
-    NSLog(@"yx02: collisionBehavior 2");
-}
-
-// The identifier of a boundary created with translatesReferenceBoundsIntoBoundary or setTranslatesReferenceBoundsIntoBoundaryWithInsets is nil
-- (void)collisionBehavior:(UICollisionBehavior*)behavior
-      beganContactForItem:(id <UIDynamicItem>)item
-   withBoundaryIdentifier:(nullable id <NSCopying>)identifier
-                  atPoint:(CGPoint)p
-{
-    NSLog(@"yx02: collisionBehavior 3");
-}
-- (void)collisionBehavior:(UICollisionBehavior*)behavior
-      endedContactForItem:(id <UIDynamicItem>)item
-   withBoundaryIdentifier:(nullable id <NSCopying>)identifier
-{
-    NSLog(@"yx02: collisionBehavior 4");
-}
+//- (void)collisionBehavior:(UICollisionBehavior *)behavior
+//      beganContactForItem:(id <UIDynamicItem>)item1
+//                 withItem:(id <UIDynamicItem>)item2
+//                  atPoint:(CGPoint)p
+//{
+//    NSLog(@"yx02: collisionBehavior 1");
+//}
+//
+//- (void)collisionBehavior:(UICollisionBehavior *)behavior
+//      endedContactForItem:(id <UIDynamicItem>)item1
+//                 withItem:(id <UIDynamicItem>)item2
+//{
+//    NSLog(@"yx02: collisionBehavior 2");
+//}
+//
+//// The identifier of a boundary created with translatesReferenceBoundsIntoBoundary or setTranslatesReferenceBoundsIntoBoundaryWithInsets is nil
+//- (void)collisionBehavior:(UICollisionBehavior*)behavior
+//      beganContactForItem:(id <UIDynamicItem>)item
+//   withBoundaryIdentifier:(nullable id <NSCopying>)identifier
+//                  atPoint:(CGPoint)p
+//{
+//    NSLog(@"yx02: collisionBehavior 3");
+//}
+//- (void)collisionBehavior:(UICollisionBehavior*)behavior
+//      endedContactForItem:(id <UIDynamicItem>)item
+//   withBoundaryIdentifier:(nullable id <NSCopying>)identifier
+//{
+//    NSLog(@"yx02: collisionBehavior 4");
+//}
 
 #pragma mark - Public
 

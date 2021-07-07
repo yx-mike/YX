@@ -66,6 +66,14 @@
             [self.motionDynamicMaker addItem:itemView];
         });
     }];
+    
+    [self.motionDynamicMaker startMotion];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    [self.motionDynamicMaker stopMotion];
 }
 
 #pragma mark - Test Data
