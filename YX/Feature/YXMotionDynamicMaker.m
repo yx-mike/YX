@@ -75,8 +75,10 @@
 
 // 滑动，作用力.
 // 依赖陀螺仪，所以所有item的力的相对指都是一样的
-//@property (nonatomic, weak) UIPushBehavior *pushBehavior;
 @property (nonatomic, strong) CMMotionManager *motionManager;
+// 更重力感应数组，保留几3位小数
+@property (nonatomic, assign) NSInteger gX;
+@property (nonatomic, assign) NSInteger gY;
 
 // 拥有默认Behavior的视图
 @property (nonatomic, strong) NSPointerArray *weakItemList;
@@ -91,6 +93,9 @@
         self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:view];
         self.weakItemList = [NSPointerArray weakObjectsPointerArray];
         
+        self.gX = NSIntegerMax;
+        self.gY = NSIntegerMax;
+        
         [self initBehaviors];
     }
     return self;
@@ -99,21 +104,15 @@
 - (void)initBehaviors {
     UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] init];
     collisionBehavior.collisionMode = UICollisionBehaviorModeEverything;
-//    collisionBehavior.collisionDelegate = self;
     collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] init];
-        
-    // UIPushBehaviorModeContinuous 持久的力
-//    UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[] mode:UIPushBehaviorModeContinuous];
     
     [self.dynamicAnimator addBehavior:collisionBehavior];
     [self.dynamicAnimator addBehavior:gravityBehavior];
-//    [self.dynamicAnimator addBehavior:pushBehavior];
     
     self.collisionBehavior = collisionBehavior;
     self.gravityBehavior = gravityBehavior;
-//    self.pushBehavior = pushBehavior;
 }
 
 - (void)startMotion {
@@ -122,8 +121,8 @@
     }
     
     CMMotionManager *motionManager = [[CMMotionManager alloc] init];
-    //告诉manager，更新频率是100Hz
-    motionManager.accelerometerUpdateInterval = 1.f/30;
+    // 更新频率是10Hz，先看看每秒10次的效果
+    motionManager.accelerometerUpdateInterval = 1.f/10;
     
     //Push方式获取和处理数据
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
@@ -137,20 +136,6 @@
 //
 //            CMRotationRate rotationRate = gyroData.rotationRate;
 //            NSLog(@"yx02: CMRotationRate(%f, %f, %f)", rotationRate.x, rotationRate.y, rotationRate.z);
-//        }];
-//
-//        self.motionManager = motionManager;
-//    }
-    
-    // 在操作队列上并使用指定的处理程序启动磁力计更新。
-//    if (motionManager.isMagnetometerAvailable) {
-//        [motionManager startMagnetometerUpdatesToQueue:queue withHandler:^(CMMagnetometerData *magnetometerData, NSError *error) {
-//            if (error) {
-//                return;
-//            }
-//
-//            CMMagneticField magneticField = magnetometerData.magneticField;
-//            NSLog(@"yx02: CMMagneticField(%f, %f, %f)", magneticField.x, magneticField.y, magneticField.z);
 //        }];
 //
 //        self.motionManager = motionManager;
@@ -205,8 +190,18 @@
     
     /// 在设备的参考系中表示的重力加速度矢量。
     CMAcceleration gravity = motion.gravity;
-//    NSLog(@"yx02: gravity(%f, %f, %f)", gravity.x, gravity.y, gravity.z);
-    [self.gravityBehavior setGravityDirection:CGVectorMake(gravity.x, -gravity.y)];
+    NSLog(@"yx02: CMAcceleration(%f, %f, %f)", gravity.x, gravity.y, gravity.z);
+    NSInteger gX = gravity.x * 1000;
+    NSInteger gY = gravity.y * 1000;
+    if (self.gX == gX && self.gY == gY) {
+        return;
+    }
+    self.gX = gX;
+    self.gY = gY;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.gravityBehavior setGravityDirection:CGVectorMake(gravity.x, -gravity.y)];
+    });
     
     /// 相对于当前参考系的航向角（以度为单位）。
 //    double heading = motion.heading;
@@ -229,38 +224,6 @@
     self.motionManager = nil;
 }
 
-#pragma mark - UICollisionBehaviorDelegate
-
-//- (void)collisionBehavior:(UICollisionBehavior *)behavior
-//      beganContactForItem:(id <UIDynamicItem>)item1
-//                 withItem:(id <UIDynamicItem>)item2
-//                  atPoint:(CGPoint)p
-//{
-//    NSLog(@"yx02: collisionBehavior 1");
-//}
-//
-//- (void)collisionBehavior:(UICollisionBehavior *)behavior
-//      endedContactForItem:(id <UIDynamicItem>)item1
-//                 withItem:(id <UIDynamicItem>)item2
-//{
-//    NSLog(@"yx02: collisionBehavior 2");
-//}
-//
-//// The identifier of a boundary created with translatesReferenceBoundsIntoBoundary or setTranslatesReferenceBoundsIntoBoundaryWithInsets is nil
-//- (void)collisionBehavior:(UICollisionBehavior*)behavior
-//      beganContactForItem:(id <UIDynamicItem>)item
-//   withBoundaryIdentifier:(nullable id <NSCopying>)identifier
-//                  atPoint:(CGPoint)p
-//{
-//    NSLog(@"yx02: collisionBehavior 3");
-//}
-//- (void)collisionBehavior:(UICollisionBehavior*)behavior
-//      endedContactForItem:(id <UIDynamicItem>)item
-//   withBoundaryIdentifier:(nullable id <NSCopying>)identifier
-//{
-//    NSLog(@"yx02: collisionBehavior 4");
-//}
-
 #pragma mark - Public
 
 - (void)addItem:(id<UIDynamicItem>)item {
@@ -272,7 +235,6 @@
     
     [self.collisionBehavior addItem:item];
     [self.gravityBehavior addItem:item];
-//    [self.pushBehavior addItem:item];
 }
 
 @end
