@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithView:(UIView *)view;
 
+- (void)loadItems;
+
 - (void)startMotion;
 - (void)stopMotion;
 
