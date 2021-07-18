@@ -14,6 +14,8 @@
 //
 #import "YXVCPresentDelegate.h"
 #import "YXNavigationControllerDelegate.h"
+#import "WDClimbPresentAnimationDelegate.h"
+
 
 @interface SectionListiOS7NO20ViewController ()
 
@@ -22,6 +24,8 @@
 
 @property (strong, nonatomic) YXVCPresentDelegate *customTransitioningDelegate;
 @property (strong, nonatomic) YXNavigationControllerDelegate *customNavigationControllerDelegate;
+
+@property (nonatomic, strong) WDClimbPresentAnimationDelegate *climbDelegate;
 
 @end
 
@@ -33,31 +37,50 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 {
     self = [super init];
     if (self) {
-        _sections = @[@"1.集合VC2集合VC", @"2.Present+Push(1)", @"3.Present+Push(2)"];
+        _sections = @[
+            @"1.集合VC2集合VC",
+            @"2.Present+Push(1)",
+            @"3.Present+Push(2)",
+            @"3.ClimbPresent",
+        ];
         //Tabbar模式和Push模式类似，只是容器控制器不一样
-        _vcNames = @[@"Section20_iOS7_1ViewController", @"Section20_iOS7_2ViewController", @"Section20_iOS7_2ViewController"];
+        _vcNames = @[
+            @"Section20_iOS7_1ViewController",
+            @"Section20_iOS7_2ViewController",
+            @"Section20_iOS7_2ViewController",
+            @"Section20_iOS7_4ViewController",
+        ];
     }
     return self;
 }
 
-- (void)loadView
-{
+- (void)loadView {
     [super loadView];
     //
     self.title = @"自定义控制器过渡";
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     //
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self.tableView registerClass:[YXNoMarginTableViewCell class] forCellReuseIdentifier:cellId];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
 }
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
@@ -108,6 +131,17 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
         [self.customNavigationControllerDelegate setAnimationStyle:YXNavigationAnimationStyle2Cube];
         navC.delegate = self.customNavigationControllerDelegate;
+        
+        [self presentViewController:navC animated:YES completion:nil];
+    } else if (indexPath.row == 3) {
+        YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
+        navC.modalPresentationStyle = UIModalPresentationFullScreen;
+//        navC.modalPresentationStyle = UIModalPresentationCustom;
+
+        WDClimbPresentAnimationDelegate *climbDelegate = [[WDClimbPresentAnimationDelegate alloc] init];
+        navC.transitioningDelegate = climbDelegate;
+
+        self.climbDelegate = climbDelegate;
         
         [self presentViewController:navC animated:YES completion:nil];
     } else {

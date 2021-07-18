@@ -60,6 +60,8 @@
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
 		0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2F31B621E5B00A9FDC0 /* Review.m */; };
 		0D7BD6421B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BD6411B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m */; };
+		0D7F613926A47FF800832521 /* Section20_iOS7_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F613826A47FF800832521 /* Section20_iOS7_4ViewController.m */; };
+		0D7F613D26A48AA600832521 /* WDClimbPresentAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F613C26A48AA600832521 /* WDClimbPresentAnimationDelegate.m */; };
 		0D85DAEB1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */; };
 		0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */; };
 		0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D94481A1B5E1CD6007FF694 /* SectionListNO13ViewController.m */; };
@@ -217,6 +219,10 @@
 		0D7BC2F31B621E5B00A9FDC0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = YX/Model/Review.m; sourceTree = "<group>"; };
 		0D7BD6401B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDismissPercentDrivenAnimation.h; path = YX/VC/Delegate/YXDismissPercentDrivenAnimation.h; sourceTree = "<group>"; };
 		0D7BD6411B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDismissPercentDrivenAnimation.m; path = YX/VC/Delegate/YXDismissPercentDrivenAnimation.m; sourceTree = "<group>"; };
+		0D7F613726A47FF800832521 /* Section20_iOS7_4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Section20_iOS7_4ViewController.h; path = YX/VC/Section20_iOS7_4ViewController.h; sourceTree = "<group>"; };
+		0D7F613826A47FF800832521 /* Section20_iOS7_4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Section20_iOS7_4ViewController.m; path = YX/VC/Section20_iOS7_4ViewController.m; sourceTree = "<group>"; };
+		0D7F613B26A48AA600832521 /* WDClimbPresentAnimationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WDClimbPresentAnimationDelegate.h; path = YX/VC/Animation/WDClimbPresentAnimationDelegate.h; sourceTree = "<group>"; };
+		0D7F613C26A48AA600832521 /* WDClimbPresentAnimationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WDClimbPresentAnimationDelegate.m; path = YX/VC/Animation/WDClimbPresentAnimationDelegate.m; sourceTree = "<group>"; };
 		0D85DAE91B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO20ViewController.h; path = YX/VC/SectionListiOS7NO20ViewController.h; sourceTree = "<group>"; };
 		0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO20ViewController.m; path = YX/VC/SectionListiOS7NO20ViewController.m; sourceTree = "<group>"; };
 		0D8701B21B6903D300850F27 /* SectionListiOS7NO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO14ViewController.h; path = YX/VC/SectionListiOS7NO14ViewController.h; sourceTree = "<group>"; };
@@ -680,9 +686,19 @@ NO.9 chapter
 			name = Models;
 			sourceTree = "<group>";
 		};
+		0D7F613A26A481D700832521 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0D7F613B26A48AA600832521 /* WDClimbPresentAnimationDelegate.h */,
+				0D7F613C26A48AA600832521 /* WDClimbPresentAnimationDelegate.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		0D85DAE81B6FCB70001DD18E /* iOS7_Chapter20 */ = {
 			isa = PBXGroup;
 			children = (
+				0D7F613A26A481D700832521 /* Animation */,
 				0D4548921B709443002E1C41 /* VC */,
 				0D4548851B706488002E1C41 /* Delegate */,
 				0D85DAE91B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.h */,
@@ -693,6 +709,8 @@ NO.9 chapter
 				0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */,
 				0DAE1B571B719CBA00B0462D /* Section20_iOS7_3ViewController.h */,
 				0DAE1B581B719CBA00B0462D /* Section20_iOS7_3ViewController.m */,
+				0D7F613726A47FF800832521 /* Section20_iOS7_4ViewController.h */,
+				0D7F613826A47FF800832521 /* Section20_iOS7_4ViewController.m */,
 			);
 			name = iOS7_Chapter20;
 			sourceTree = "<group>";
@@ -1065,7 +1083,9 @@ NO.9 chapter
 				0D9A8E2A1B5BB06B00589B8C /* Section8_3ViewController.m in Sources */,
 				0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */,
 				0D9A8E241B5B86FC00589B8C /* Section8_1ViewController.m in Sources */,
+				0D7F613D26A48AA600832521 /* WDClimbPresentAnimationDelegate.m in Sources */,
 				0D96DDE31B64B18F0072D937 /* UIDevice+MKAdditions.m in Sources */,
+				0D7F613926A47FF800832521 /* Section20_iOS7_4ViewController.m in Sources */,
 				0DABFD7C2694583D0010DF42 /* YXMotionDynamicItem.m in Sources */,
 				0DB79A701B72ECE7002D9923 /* YXPopVCCubeAnimation.m in Sources */,
 				0DCAEF981B58FB0200AC4425 /* AViewController.m in Sources */,
