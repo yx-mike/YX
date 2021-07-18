@@ -115,24 +115,39 @@
     NSDictionary *sizeMap = [self prepareSizeMap];
     NSDictionary *bezierMap = [self prepareBezierMap];
     
+    // 逐个动画插入，动画结束后再加上行为
+    __block double delayTime = 0;
     [sizeMap enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSValue *obj, BOOL *stop) {
         CGSize size = obj.CGSizeValue;
-        CGRect rect = CGRectMake(20 + random() % 150, 20, size.width, size.height);
-        
+        CGRect rect = CGRectMake(random() % 200, -size.height, size.width, size.height);
         UIImage *image = [UIImage imageNamed:key];
-        
         UIBezierPath *bezierPath = bezierMap[key];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_time_t delayGCDTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC));
+        dispatch_after(delayGCDTime, dispatch_get_main_queue(), ^{
             YXMotionDynamicItem *itemView;
             itemView = [[YXMotionDynamicItem alloc] initWithFrame:rect
                                                              type:YXMotionDynamicItemTypeDefault
                                                             image:image
                                                        bezierPath:bezierPath];
             
-            [self.refView addSubview:itemView];
-            [self addItem:itemView];
+            [self addItemView:itemView toView:self.refView];
         });
+        
+        delayTime += 0.25;
+    }];
+}
+
+- (void)addItemView:(YXMotionDynamicItem *)itemView toView:(UIView *)view {
+    [view addSubview:itemView];
+    [view layoutIfNeeded];
+    
+    CGRect frame = itemView.frame;
+    frame.origin.y = 0;
+    [UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        itemView.frame = frame;
+    } completion:^(BOOL finished) {
+        [self addItem:itemView];
     }];
 }
 
@@ -211,7 +226,7 @@
     
     /// 在设备的参考系中表示的重力加速度矢量。
     CMAcceleration gravity = motion.gravity;
-    NSLog(@"yx02: CMAcceleration(%f, %f, %f)", gravity.x, gravity.y, gravity.z);
+//    NSLog(@"yx02: CMAcceleration(%f, %f, %f)", gravity.x, gravity.y, gravity.z);
     NSInteger gX = gravity.x * 1000;
     NSInteger gY = gravity.y * 1000;
     if (self.gX == gX && self.gY == gY) {
