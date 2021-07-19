@@ -8,6 +8,7 @@
 
 #import "SectionListiOS7NO20ViewController.h"
 #import "YXNavigationController.h"
+#import "UINavigationController+YXTransitions.h"
 //
 #import "UITableViewCell+YXSetValues.h"
 #import "YXNoMarginTableViewCell.h"
@@ -21,11 +22,6 @@
 
 @property (strong, nonatomic) NSArray *sections;
 @property (strong, nonatomic) NSArray *vcNames;
-
-@property (strong, nonatomic) YXVCPresentDelegate *customTransitioningDelegate;
-@property (strong, nonatomic) YXNavigationControllerDelegate *customNavigationControllerDelegate;
-
-@property (nonatomic, strong) WDClimbPresentAnimationDelegate *climbDelegate;
 
 @end
 
@@ -112,12 +108,12 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         navC.navigationBarHidden = YES;
         
         // present
-        self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] initWithRootVC:navC];
-        navC.transitioningDelegate = self.customTransitioningDelegate;
+        navC.transitionsWDDelegate = [[YXVCPresentDelegate alloc] initWithRootVC:navC];
+        navC.transitioningDelegate = navC.transitionsWDDelegate;
         
         // push
-        self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
-        navC.delegate = self.customNavigationControllerDelegate;
+        navC.navigationWDDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
+        navC.delegate = navC.navigationWDDelegate;
         
         [self presentViewController:navC animated:YES completion:nil];
     } else if (indexPath.row == 2) {
@@ -125,22 +121,23 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         navC.modalPresentationStyle = UIModalPresentationFullScreen;
         navC.navigationBarHidden = YES;
         
-        self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] init];
-        navC.transitioningDelegate = self.customTransitioningDelegate;
+        navC.transitionsWDDelegate = [[YXVCPresentDelegate alloc] initWithRootVC:navC];
+        navC.transitioningDelegate = navC.transitionsWDDelegate;
         
-        self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
-        [self.customNavigationControllerDelegate setAnimationStyle:YXNavigationAnimationStyle2Cube];
-        navC.delegate = self.customNavigationControllerDelegate;
+        YXNavigationControllerDelegate *navigationDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
+        [navigationDelegate setAnimationStyle:YXNavigationAnimationStyle2Cube];
+        
+        navC.navigationWDDelegate = navigationDelegate;
+        navC.delegate = navigationDelegate;
         
         [self presentViewController:navC animated:YES completion:nil];
     } else if (indexPath.row == 3) {
         YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
         navC.modalPresentationStyle = UIModalPresentationFullScreen;
+        navC.navigationBarHidden = YES;
 
-        WDClimbPresentAnimationDelegate *climbDelegate = [[WDClimbPresentAnimationDelegate alloc] init];
-        navC.transitioningDelegate = climbDelegate;
-
-        self.climbDelegate = climbDelegate;
+        navC.transitionsWDDelegate = [[WDClimbPresentAnimationDelegate alloc] init];
+        navC.transitioningDelegate = navC.transitionsWDDelegate;
         
         [self presentViewController:navC animated:YES completion:nil];
     } else {

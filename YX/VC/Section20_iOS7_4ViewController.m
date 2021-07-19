@@ -20,7 +20,7 @@
     //
     
     UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    closeButton.frame = CGRectMake(12, 20, 60, 44);
+    closeButton.frame = CGRectMake(12, 34, 60, 44);
     [closeButton setTitle:@"关闭" forState:UIControlStateNormal];
     [closeButton addTarget:self action:@selector(closePage:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeButton];

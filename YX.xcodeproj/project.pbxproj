@@ -110,6 +110,7 @@
 		0DF4B4521B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4511B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m */; };
 		0DF4B4571B6614DD0081B8D8 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */; };
 		0DF4B4581B6614DD0081B8D8 /* CustomUnwindSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */; };
+		0DFC388826A550CC000716FE /* UINavigationController+YXTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC388726A550CC000716FE /* UINavigationController+YXTransitions.m */; };
 		DFD32AA21B96FA7C00035BD6 /* MultiColorCircleLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */; };
 		DFD32AA61B96FBA900035BD6 /* MultiColorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */; };
 /* End PBXBuildFile section */
@@ -309,6 +310,8 @@
 		0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = YX/VC/Storyboard/Segue/CustomSegue.m; sourceTree = "<group>"; };
 		0DF4B4551B6614DD0081B8D8 /* CustomUnwindSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomUnwindSegue.h; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.h; sourceTree = "<group>"; };
 		0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomUnwindSegue.m; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.m; sourceTree = "<group>"; };
+		0DFC388626A550CC000716FE /* UINavigationController+YXTransitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+YXTransitions.h"; path = "YX/Category/UINavigationController+YXTransitions.h"; sourceTree = "<group>"; };
+		0DFC388726A550CC000716FE /* UINavigationController+YXTransitions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+YXTransitions.m"; path = "YX/Category/UINavigationController+YXTransitions.m"; sourceTree = "<group>"; };
 		DFD32AA01B96FA7C00035BD6 /* MultiColorCircleLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleLayerVC.h; path = YX/VC/MultiColorCircleLayerVC.h; sourceTree = "<group>"; };
 		DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiColorCircleLayerVC.m; path = YX/VC/MultiColorCircleLayerVC.m; sourceTree = "<group>"; };
 		DFD32AA41B96FBA900035BD6 /* MultiColorCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleView.h; path = YX/VC/Views/MultiColorCircleView.h; sourceTree = "<group>"; };
@@ -414,6 +417,8 @@ NO.9 chapter
 				0D6F0ABE1B5CD9EA004C9410 /* CALayer+YXAmimation.m */,
 				0D7A8C691B686C4500FFA493 /* NSLayoutConstraint+YXCommon.h */,
 				0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */,
+				0DFC388626A550CC000716FE /* UINavigationController+YXTransitions.h */,
+				0DFC388726A550CC000716FE /* UINavigationController+YXTransitions.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -1023,6 +1028,7 @@ NO.9 chapter
 				0DAE1B5C1B71A0F000B0462D /* YXNavigationControllerDelegate.m in Sources */,
 				0DCC75D71B5C9BC5007E3CD0 /* Section8_6ViewController.m in Sources */,
 				0D7B97B51B6F3A61006820CB /* YXDefaultDynamicBehavior.m in Sources */,
+				0DFC388826A550CC000716FE /* UINavigationController+YXTransitions.m in Sources */,
 				0DCC75E81B5CBBDC007E3CD0 /* Section9_2ViewController.m in Sources */,
 				0DAE1B591B719CBA00B0462D /* Section20_iOS7_3ViewController.m in Sources */,
 				0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */,
