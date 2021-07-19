@@ -187,13 +187,15 @@
 
 - (void)prepareGestureRecognizer {
     UIPanGestureRecognizer *panG = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandle:)];
-    self.panG = panG;
-    
     [self.presentedVC.view addGestureRecognizer:panG];
+    
+    self.panG = panG;
 }
 
 - (void)removeGestureRecognizer {
     [self.presentedVC.view removeGestureRecognizer:self.panG];
+    
+    self.panG = nil;
 }
 
 - (void)panHandle:(UIPanGestureRecognizer *)g {
