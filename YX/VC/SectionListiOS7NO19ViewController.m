@@ -26,8 +26,18 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 {
     self = [super init];
     if (self) {
-        _sections = @[@"1.迅速移动", @"2.附着", @"3.推力、重力、碰撞", @"4.例子1", @"5.例子2"];
-        _vcNames = @[@"Section19_iOS7_1ViewController", @"Section19_iOS7_2ViewController", @"Section19_iOS7_3ViewController", @"Section19_iOS7_4ViewController", @"Section19_iOS7_5ViewController"];
+        _sections = @[@"1.迅速移动",
+                      @"2.附着",
+                      @"3.推力、重力、碰撞",
+                      @"4.例子1",
+                      @"5.例子2",
+                      @"6.例子3,需求"];
+        _vcNames = @[@"Section19_iOS7_1ViewController",
+                     @"Section19_iOS7_2ViewController",
+                     @"Section19_iOS7_3ViewController",
+                     @"Section19_iOS7_4ViewController",
+                     @"Section19_iOS7_5ViewController",
+                     @"Section19_iOS7_6ViewController"];
     }
     return self;
 }

@@ -14,10 +14,8 @@
 
 @implementation Section20_iOS7_3ViewController
 
-- (void)loadView
-{
+- (void)loadView {
     [super loadView];
-    //
     
     UIButton *popButton = [UIButton buttonWithType:UIButtonTypeSystem];
     popButton.frame = CGRectMake(0, 0, 100, 50);
@@ -27,8 +25,7 @@
     [self.view addSubview:popButton];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     //
     self.view.backgroundColor = [UIColor purpleColor];
@@ -36,8 +33,7 @@
 
 #pragma mark - Action
 
-- (void)popPage:(UIButton *)sender
-{
+- (void)popPage:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 

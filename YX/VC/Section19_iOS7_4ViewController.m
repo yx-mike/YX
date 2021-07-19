@@ -43,6 +43,7 @@
     dragView.alpha = .5;
     [self.view addSubview:dragView];
     
+    // 用YXDefaultDynamicBehavior包了两个行为，碰撞和重力
     YXDefaultDynamicBehavior *defaultBehavior = [[YXDefaultDynamicBehavior alloc] init];
     self.defaultBehavior = defaultBehavior;
     [self.dynamicAnimator addBehavior:defaultBehavior];

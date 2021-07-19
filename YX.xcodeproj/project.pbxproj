@@ -18,8 +18,9 @@
 		0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548801B704DEB002E1C41 /* Section20_Test_collectionViewController.m */; };
 		0D4548841B70603C002E1C41 /* Section20_iOS7_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */; };
 		0D45488B1B706553002E1C41 /* YXVCPresentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45488A1B706553002E1C41 /* YXVCPresentDelegate.m */; };
-		0D45488E1B708C75002E1C41 /* YXPresentVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D45488D1B708C75002E1C41 /* YXPresentVCAnimation.m */; };
-		0D4548911B708CD3002E1C41 /* YXDismissVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4548901B708CD3002E1C41 /* YXDismissVCAnimation.m */; };
+		0D4AC3B42693F05C00F21A8F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4AC3B32693F05C00F21A8F /* Launch Screen.storyboard */; };
+		0D4AC3B72694372000F21A8F /* Section19_iOS7_6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC3B62694372000F21A8F /* Section19_iOS7_6ViewController.m */; };
+		0D4AC3BE269448CA00F21A8F /* YXMotionDynamicMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC3BD269448CA00F21A8F /* YXMotionDynamicMaker.m */; };
 		0D5E4E4B1B52404100CB3A8C /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E4E491B52404100CB3A8C /* IndexViewController.m */; };
 		0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */; };
 		0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5E4E5D1B52599A00CB3A8C /* j2@2x.jpeg */; };
@@ -31,6 +32,9 @@
 		0D6F0AC51B5CEF03004C9410 /* Section9_5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F0AC41B5CEF03004C9410 /* Section9_5ViewController.m */; };
 		0D6F0AC81B5D02FF004C9410 /* Section9_6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F0AC71B5D02FF004C9410 /* Section9_6ViewController.m */; };
 		0D6F0ACC1B5D043D004C9410 /* CircleCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F0ACB1B5D043D004C9410 /* CircleCALayer.m */; };
+		0D7308AB26948C7000530F83 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7308AA26948C7000530F83 /* CoreMotion.framework */; };
+		0D7308AD26948C7500530F83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7308AC26948C7500530F83 /* UIKit.framework */; };
+		0D7308AF26948C7A00530F83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7308AE26948C7A00530F83 /* Foundation.framework */; };
 		0D7453821B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7453811B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m */; };
 		0D7453851B67E350006E1CF6 /* YXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7453841B67E350006E1CF6 /* YXCollectionViewController.m */; };
 		0D7453881B67E472006E1CF6 /* Section5_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7453871B67E472006E1CF6 /* Section5_iOS7_1ViewController.m */; };
@@ -53,7 +57,8 @@
 		0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2ED1B621E5B00A9FDC0 /* JSONModel.m */; };
 		0D7BC2F51B621E5B00A9FDC0 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */; };
 		0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BC2F31B621E5B00A9FDC0 /* Review.m */; };
-		0D7BD6421B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BD6411B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m */; };
+		0D7F613926A47FF800832521 /* Section20_iOS7_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F613826A47FF800832521 /* Section20_iOS7_4ViewController.m */; };
+		0D7F613D26A48AA600832521 /* WDClimbPresentAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F613C26A48AA600832521 /* WDClimbPresentAnimationDelegate.m */; };
 		0D85DAEB1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */; };
 		0D8701B41B6903D300850F27 /* SectionListiOS7NO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8701B31B6903D300850F27 /* SectionListiOS7NO14ViewController.m */; };
 		0D94481B1B5E1CD6007FF694 /* SectionListNO13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D94481A1B5E1CD6007FF694 /* SectionListNO13ViewController.m */; };
@@ -66,11 +71,9 @@
 		0D9A8E2D1B5BBA4B00589B8C /* Section8_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A8E2C1B5BBA4B00589B8C /* Section8_4ViewController.m */; };
 		0DA944101B6E737000FD2146 /* SectionListiOS7NO19ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9440F1B6E737000FD2146 /* SectionListiOS7NO19ViewController.m */; };
 		0DA944131B6E748B00FD2146 /* Section19_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA944121B6E748B00FD2146 /* Section19_iOS7_1ViewController.m */; };
+		0DABFD7C2694583D0010DF42 /* YXMotionDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DABFD7B2694583D0010DF42 /* YXMotionDynamicItem.m */; };
 		0DAE1B591B719CBA00B0462D /* Section20_iOS7_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE1B581B719CBA00B0462D /* Section20_iOS7_3ViewController.m */; };
 		0DAE1B5C1B71A0F000B0462D /* YXNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE1B5B1B71A0F000B0462D /* YXNavigationControllerDelegate.m */; };
-		0DAE1B5F1B71A2E600B0462D /* YXPushVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE1B5E1B71A2E600B0462D /* YXPushVCAnimation.m */; };
-		0DAE1B621B71A32E00B0462D /* YXPopVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE1B611B71A32E00B0462D /* YXPopVCAnimation.m */; };
-		0DAE1B651B71C89000B0462D /* YXPercentDrivenPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE1B641B71C89000B0462D /* YXPercentDrivenPopAnimation.m */; };
 		0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */; };
 		0DB0E1261B69D42100289B0F /* Section23_iOS7_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1241B69D42100289B0F /* Section23_iOS7_1ViewController.m */; };
 		0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0E1251B69D42100289B0F /* Section23_iOS7_1ViewController.xib */; };
@@ -79,8 +82,6 @@
 		0DB0E1341B69F84000289B0F /* Section23_iOS7_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0E1321B69F84000289B0F /* Section23_iOS7_2ViewController.xib */; };
 		0DB0E1371B69FAE600289B0F /* RNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1361B69FAE600289B0F /* RNTimer.m */; };
 		0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */; };
-		0DB79A6D1B72EB74002D9923 /* YXPushVCCubeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB79A6C1B72EB74002D9923 /* YXPushVCCubeAnimation.m */; };
-		0DB79A701B72ECE7002D9923 /* YXPopVCCubeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB79A6F1B72ECE7002D9923 /* YXPopVCCubeAnimation.m */; };
 		0DB7C45C1B5F358200D19259 /* SectionListNO14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C45B1B5F358200D19259 /* SectionListNO14ViewController.m */; };
 		0DB7C45F1B5F360000D19259 /* Section14_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C45E1B5F360000D19259 /* Section14_1ViewController.m */; };
 		0DB7C4621B5F3EF100D19259 /* Section13_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7C4611B5F3EF100D19259 /* Section13_3ViewController.m */; };
@@ -107,6 +108,7 @@
 		0DF4B4521B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4511B6614D20081B8D8 /* Storyboard_iOS7_Chapter4_ViewController.m */; };
 		0DF4B4571B6614DD0081B8D8 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */; };
 		0DF4B4581B6614DD0081B8D8 /* CustomUnwindSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */; };
+		0DFC388826A550CC000716FE /* UINavigationController+YXTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC388726A550CC000716FE /* UINavigationController+YXTransitions.m */; };
 		DFD32AA21B96FA7C00035BD6 /* MultiColorCircleLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */; };
 		DFD32AA61B96FBA900035BD6 /* MultiColorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD32AA51B96FBA900035BD6 /* MultiColorCircleView.m */; };
 /* End PBXBuildFile section */
@@ -137,10 +139,11 @@
 		0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section20_iOS7_2ViewController.m; path = YX/VC/Section20_iOS7_2ViewController.m; sourceTree = "<group>"; };
 		0D4548891B706553002E1C41 /* YXVCPresentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXVCPresentDelegate.h; path = YX/VC/Delegate/YXVCPresentDelegate.h; sourceTree = "<group>"; };
 		0D45488A1B706553002E1C41 /* YXVCPresentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXVCPresentDelegate.m; path = YX/VC/Delegate/YXVCPresentDelegate.m; sourceTree = "<group>"; };
-		0D45488C1B708C75002E1C41 /* YXPresentVCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPresentVCAnimation.h; path = YX/VC/Delegate/YXPresentVCAnimation.h; sourceTree = "<group>"; };
-		0D45488D1B708C75002E1C41 /* YXPresentVCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPresentVCAnimation.m; path = YX/VC/Delegate/YXPresentVCAnimation.m; sourceTree = "<group>"; };
-		0D45488F1B708CD3002E1C41 /* YXDismissVCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDismissVCAnimation.h; path = YX/VC/Delegate/YXDismissVCAnimation.h; sourceTree = "<group>"; };
-		0D4548901B708CD3002E1C41 /* YXDismissVCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDismissVCAnimation.m; path = YX/VC/Delegate/YXDismissVCAnimation.m; sourceTree = "<group>"; };
+		0D4AC3B32693F05C00F21A8F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0D4AC3B52694372000F21A8F /* Section19_iOS7_6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_6ViewController.h; path = YX/VC/Section19_iOS7_6ViewController.h; sourceTree = "<group>"; };
+		0D4AC3B62694372000F21A8F /* Section19_iOS7_6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_6ViewController.m; path = YX/VC/Section19_iOS7_6ViewController.m; sourceTree = "<group>"; };
+		0D4AC3BC269448CA00F21A8F /* YXMotionDynamicMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXMotionDynamicMaker.h; sourceTree = "<group>"; };
+		0D4AC3BD269448CA00F21A8F /* YXMotionDynamicMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXMotionDynamicMaker.m; sourceTree = "<group>"; };
 		0D5E4E481B52404100CB3A8C /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexViewController.h; path = YX/VC/IndexViewController.h; sourceTree = "<group>"; };
 		0D5E4E491B52404100CB3A8C /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexViewController.m; path = YX/VC/IndexViewController.m; sourceTree = "<group>"; };
 		0D5E4E5C1B52599A00CB3A8C /* j1@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "j1@2x.jpeg"; sourceTree = "<group>"; };
@@ -159,6 +162,9 @@
 		0D6F0AC71B5D02FF004C9410 /* Section9_6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section9_6ViewController.m; path = YX/VC/Section9_6ViewController.m; sourceTree = "<group>"; };
 		0D6F0ACA1B5D043D004C9410 /* CircleCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleCALayer.h; path = YX/VC/CALayers/CircleCALayer.h; sourceTree = "<group>"; };
 		0D6F0ACB1B5D043D004C9410 /* CircleCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleCALayer.m; path = YX/VC/CALayers/CircleCALayer.m; sourceTree = "<group>"; };
+		0D7308AA26948C7000530F83 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0D7308AC26948C7500530F83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D7308AE26948C7A00530F83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D7453801B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO5ViewController.h; path = YX/VC/SectionListiOS7NO5ViewController.h; sourceTree = "<group>"; };
 		0D7453811B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO5ViewController.m; path = YX/VC/SectionListiOS7NO5ViewController.m; sourceTree = "<group>"; };
 		0D7453831B67E350006E1CF6 /* YXCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXCollectionViewController.h; path = YX/VC/YXCollectionViewController.h; sourceTree = "<group>"; };
@@ -200,8 +206,10 @@
 		0D7BC2EF1B621E5B00A9FDC0 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = YX/Model/MenuItem.m; sourceTree = "<group>"; };
 		0D7BC2F21B621E5B00A9FDC0 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Review.h; path = YX/Model/Review.h; sourceTree = "<group>"; };
 		0D7BC2F31B621E5B00A9FDC0 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = YX/Model/Review.m; sourceTree = "<group>"; };
-		0D7BD6401B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXDismissPercentDrivenAnimation.h; path = YX/VC/Delegate/YXDismissPercentDrivenAnimation.h; sourceTree = "<group>"; };
-		0D7BD6411B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXDismissPercentDrivenAnimation.m; path = YX/VC/Delegate/YXDismissPercentDrivenAnimation.m; sourceTree = "<group>"; };
+		0D7F613726A47FF800832521 /* Section20_iOS7_4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Section20_iOS7_4ViewController.h; path = YX/VC/Section20_iOS7_4ViewController.h; sourceTree = "<group>"; };
+		0D7F613826A47FF800832521 /* Section20_iOS7_4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Section20_iOS7_4ViewController.m; path = YX/VC/Section20_iOS7_4ViewController.m; sourceTree = "<group>"; };
+		0D7F613B26A48AA600832521 /* WDClimbPresentAnimationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WDClimbPresentAnimationDelegate.h; path = YX/VC/Animation/WDClimbPresentAnimationDelegate.h; sourceTree = "<group>"; };
+		0D7F613C26A48AA600832521 /* WDClimbPresentAnimationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WDClimbPresentAnimationDelegate.m; path = YX/VC/Animation/WDClimbPresentAnimationDelegate.m; sourceTree = "<group>"; };
 		0D85DAE91B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO20ViewController.h; path = YX/VC/SectionListiOS7NO20ViewController.h; sourceTree = "<group>"; };
 		0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO20ViewController.m; path = YX/VC/SectionListiOS7NO20ViewController.m; sourceTree = "<group>"; };
 		0D8701B21B6903D300850F27 /* SectionListiOS7NO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO14ViewController.h; path = YX/VC/SectionListiOS7NO14ViewController.h; sourceTree = "<group>"; };
@@ -226,16 +234,12 @@
 		0DA9440F1B6E737000FD2146 /* SectionListiOS7NO19ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO19ViewController.m; path = YX/VC/SectionListiOS7NO19ViewController.m; sourceTree = "<group>"; };
 		0DA944111B6E748B00FD2146 /* Section19_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section19_iOS7_1ViewController.h; path = YX/VC/Section19_iOS7_1ViewController.h; sourceTree = "<group>"; };
 		0DA944121B6E748B00FD2146 /* Section19_iOS7_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section19_iOS7_1ViewController.m; path = YX/VC/Section19_iOS7_1ViewController.m; sourceTree = "<group>"; };
+		0DABFD7A2694583D0010DF42 /* YXMotionDynamicItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXMotionDynamicItem.h; sourceTree = "<group>"; };
+		0DABFD7B2694583D0010DF42 /* YXMotionDynamicItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXMotionDynamicItem.m; sourceTree = "<group>"; };
 		0DAE1B571B719CBA00B0462D /* Section20_iOS7_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section20_iOS7_3ViewController.h; path = YX/VC/Section20_iOS7_3ViewController.h; sourceTree = "<group>"; };
 		0DAE1B581B719CBA00B0462D /* Section20_iOS7_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section20_iOS7_3ViewController.m; path = YX/VC/Section20_iOS7_3ViewController.m; sourceTree = "<group>"; };
 		0DAE1B5A1B71A0F000B0462D /* YXNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXNavigationControllerDelegate.h; path = YX/VC/Delegate/YXNavigationControllerDelegate.h; sourceTree = "<group>"; };
 		0DAE1B5B1B71A0F000B0462D /* YXNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXNavigationControllerDelegate.m; path = YX/VC/Delegate/YXNavigationControllerDelegate.m; sourceTree = "<group>"; };
-		0DAE1B5D1B71A2E600B0462D /* YXPushVCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPushVCAnimation.h; path = YX/VC/Delegate/YXPushVCAnimation.h; sourceTree = "<group>"; };
-		0DAE1B5E1B71A2E600B0462D /* YXPushVCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPushVCAnimation.m; path = YX/VC/Delegate/YXPushVCAnimation.m; sourceTree = "<group>"; };
-		0DAE1B601B71A32E00B0462D /* YXPopVCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPopVCAnimation.h; path = YX/VC/Delegate/YXPopVCAnimation.h; sourceTree = "<group>"; };
-		0DAE1B611B71A32E00B0462D /* YXPopVCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPopVCAnimation.m; path = YX/VC/Delegate/YXPopVCAnimation.m; sourceTree = "<group>"; };
-		0DAE1B631B71C89000B0462D /* YXPercentDrivenPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPercentDrivenPopAnimation.h; path = YX/VC/Delegate/YXPercentDrivenPopAnimation.h; sourceTree = "<group>"; };
-		0DAE1B641B71C89000B0462D /* YXPercentDrivenPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPercentDrivenPopAnimation.m; path = YX/VC/Delegate/YXPercentDrivenPopAnimation.m; sourceTree = "<group>"; };
 		0DB0E1201B69D31600289B0F /* SectionListiOS7NO23ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListiOS7NO23ViewController.h; path = YX/VC/SectionListiOS7NO23ViewController.h; sourceTree = "<group>"; };
 		0DB0E1211B69D31600289B0F /* SectionListiOS7NO23ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListiOS7NO23ViewController.m; path = YX/VC/SectionListiOS7NO23ViewController.m; sourceTree = "<group>"; };
 		0DB0E1231B69D42100289B0F /* Section23_iOS7_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_1ViewController.h; path = YX/VC/Section23_iOS7_1ViewController.h; sourceTree = "<group>"; };
@@ -250,10 +254,6 @@
 		0DB0E1361B69FAE600289B0F /* RNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTimer.m; path = Helpers/RNTimer.m; sourceTree = "<group>"; };
 		0DB0E1381B6A0CD100289B0F /* Section23_iOS7_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section23_iOS7_3ViewController.h; path = YX/VC/Section23_iOS7_3ViewController.h; sourceTree = "<group>"; };
 		0DB0E1391B6A0CD100289B0F /* Section23_iOS7_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section23_iOS7_3ViewController.m; path = YX/VC/Section23_iOS7_3ViewController.m; sourceTree = "<group>"; };
-		0DB79A6B1B72EB74002D9923 /* YXPushVCCubeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPushVCCubeAnimation.h; path = YX/VC/Delegate/YXPushVCCubeAnimation.h; sourceTree = "<group>"; };
-		0DB79A6C1B72EB74002D9923 /* YXPushVCCubeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPushVCCubeAnimation.m; path = YX/VC/Delegate/YXPushVCCubeAnimation.m; sourceTree = "<group>"; };
-		0DB79A6E1B72ECE7002D9923 /* YXPopVCCubeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXPopVCCubeAnimation.h; path = YX/VC/Delegate/YXPopVCCubeAnimation.h; sourceTree = "<group>"; };
-		0DB79A6F1B72ECE7002D9923 /* YXPopVCCubeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXPopVCCubeAnimation.m; path = YX/VC/Delegate/YXPopVCCubeAnimation.m; sourceTree = "<group>"; };
 		0DB7C45A1B5F358200D19259 /* SectionListNO14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionListNO14ViewController.h; path = YX/VC/SectionListNO14ViewController.h; sourceTree = "<group>"; };
 		0DB7C45B1B5F358200D19259 /* SectionListNO14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionListNO14ViewController.m; path = YX/VC/SectionListNO14ViewController.m; sourceTree = "<group>"; };
 		0DB7C45D1B5F360000D19259 /* Section14_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section14_1ViewController.h; path = YX/VC/Section14_1ViewController.h; sourceTree = "<group>"; };
@@ -304,6 +304,8 @@
 		0DF4B4541B6614DD0081B8D8 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = YX/VC/Storyboard/Segue/CustomSegue.m; sourceTree = "<group>"; };
 		0DF4B4551B6614DD0081B8D8 /* CustomUnwindSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomUnwindSegue.h; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.h; sourceTree = "<group>"; };
 		0DF4B4561B6614DD0081B8D8 /* CustomUnwindSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomUnwindSegue.m; path = YX/VC/Storyboard/Segue/CustomUnwindSegue.m; sourceTree = "<group>"; };
+		0DFC388626A550CC000716FE /* UINavigationController+YXTransitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+YXTransitions.h"; path = "YX/Category/UINavigationController+YXTransitions.h"; sourceTree = "<group>"; };
+		0DFC388726A550CC000716FE /* UINavigationController+YXTransitions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+YXTransitions.m"; path = "YX/Category/UINavigationController+YXTransitions.m"; sourceTree = "<group>"; };
 		DFD32AA01B96FA7C00035BD6 /* MultiColorCircleLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleLayerVC.h; path = YX/VC/MultiColorCircleLayerVC.h; sourceTree = "<group>"; };
 		DFD32AA11B96FA7C00035BD6 /* MultiColorCircleLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiColorCircleLayerVC.m; path = YX/VC/MultiColorCircleLayerVC.m; sourceTree = "<group>"; };
 		DFD32AA41B96FBA900035BD6 /* MultiColorCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiColorCircleView.h; path = YX/VC/Views/MultiColorCircleView.h; sourceTree = "<group>"; };
@@ -315,6 +317,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7308AF26948C7A00530F83 /* Foundation.framework in Frameworks */,
+				0D7308AD26948C7500530F83 /* UIKit.framework in Frameworks */,
+				0D7308AB26948C7000530F83 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +411,8 @@ NO.9 chapter
 				0D6F0ABE1B5CD9EA004C9410 /* CALayer+YXAmimation.m */,
 				0D7A8C691B686C4500FFA493 /* NSLayoutConstraint+YXCommon.h */,
 				0D7A8C6A1B686C4500FFA493 /* NSLayoutConstraint+YXCommon.m */,
+				0DFC388626A550CC000716FE /* UINavigationController+YXTransitions.h */,
+				0DFC388726A550CC000716FE /* UINavigationController+YXTransitions.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -414,16 +421,18 @@ NO.9 chapter
 			isa = PBXGroup;
 			children = (
 				0D36C2841B563B9C0073FC64 /* Category */,
+				0D4AC3BB269448CA00F21A8F /* Feature */,
+				0D5E4E4F1B52411C00CB3A8C /* FrameWorks */,
 				0D0980BA1B5393AB00C0E27E /* Helpers */,
 				0D36C2831B563B7B0073FC64 /* Manager */,
 				0D36C2821B563B680073FC64 /* Model */,
-				0DE2D9E01B5A272E0000AA31 /* Views */,
-				0D0980BE1B53CB6900C0E27E /* ViewController */,
-				0D4389591B514288005DFCF7 /* YX */,
-				0D5E4E521B52583400CB3A8C /* Resoures */,
-				0D5E4E4F1B52411C00CB3A8C /* FrameWorks */,
-				0D4389731B514288005DFCF7 /* YXTests */,
 				0D4389581B514288005DFCF7 /* Products */,
+				0D5E4E521B52583400CB3A8C /* Resoures */,
+				0D0980BE1B53CB6900C0E27E /* ViewController */,
+				0DE2D9E01B5A272E0000AA31 /* Views */,
+				0D4389591B514288005DFCF7 /* YX */,
+				0D4389731B514288005DFCF7 /* YXTests */,
+				0D7308A926948C7000530F83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -443,6 +452,7 @@ NO.9 chapter
 				0D43895F1B514288005DFCF7 /* AppDelegate.m */,
 				0D4389671B514288005DFCF7 /* Images.xcassets */,
 				0D43895A1B514288005DFCF7 /* Supporting Files */,
+				0D4AC3B32693F05C00F21A8F /* Launch Screen.storyboard */,
 			);
 			path = YX;
 			sourceTree = "<group>";
@@ -473,33 +483,6 @@ NO.9 chapter
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0D4548851B706488002E1C41 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				0D4548891B706553002E1C41 /* YXVCPresentDelegate.h */,
-				0D45488A1B706553002E1C41 /* YXVCPresentDelegate.m */,
-				0D45488C1B708C75002E1C41 /* YXPresentVCAnimation.h */,
-				0D45488D1B708C75002E1C41 /* YXPresentVCAnimation.m */,
-				0D45488F1B708CD3002E1C41 /* YXDismissVCAnimation.h */,
-				0D4548901B708CD3002E1C41 /* YXDismissVCAnimation.m */,
-				0D7BD6401B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.h */,
-				0D7BD6411B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m */,
-				0DAE1B5A1B71A0F000B0462D /* YXNavigationControllerDelegate.h */,
-				0DAE1B5B1B71A0F000B0462D /* YXNavigationControllerDelegate.m */,
-				0DAE1B5D1B71A2E600B0462D /* YXPushVCAnimation.h */,
-				0DAE1B5E1B71A2E600B0462D /* YXPushVCAnimation.m */,
-				0DAE1B601B71A32E00B0462D /* YXPopVCAnimation.h */,
-				0DAE1B611B71A32E00B0462D /* YXPopVCAnimation.m */,
-				0DAE1B631B71C89000B0462D /* YXPercentDrivenPopAnimation.h */,
-				0DAE1B641B71C89000B0462D /* YXPercentDrivenPopAnimation.m */,
-				0DB79A6B1B72EB74002D9923 /* YXPushVCCubeAnimation.h */,
-				0DB79A6C1B72EB74002D9923 /* YXPushVCCubeAnimation.m */,
-				0DB79A6E1B72ECE7002D9923 /* YXPopVCCubeAnimation.h */,
-				0DB79A6F1B72ECE7002D9923 /* YXPopVCCubeAnimation.m */,
-			);
-			name = Delegate;
-			sourceTree = "<group>";
-		};
 		0D4548921B709443002E1C41 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +490,18 @@ NO.9 chapter
 				0D4548801B704DEB002E1C41 /* Section20_Test_collectionViewController.m */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		0D4AC3BB269448CA00F21A8F /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				0DABFD7A2694583D0010DF42 /* YXMotionDynamicItem.h */,
+				0DABFD7B2694583D0010DF42 /* YXMotionDynamicItem.m */,
+				0D4AC3BC269448CA00F21A8F /* YXMotionDynamicMaker.h */,
+				0D4AC3BD269448CA00F21A8F /* YXMotionDynamicMaker.m */,
+			);
+			name = Feature;
+			path = YX/Feature;
 			sourceTree = "<group>";
 		};
 		0D5E4E4F1B52411C00CB3A8C /* FrameWorks */ = {
@@ -545,6 +540,16 @@ NO.9 chapter
 				0D6F0ACB1B5D043D004C9410 /* CircleCALayer.m */,
 			);
 			name = CALayer;
+			sourceTree = "<group>";
+		};
+		0D7308A926948C7000530F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D7308AE26948C7A00530F83 /* Foundation.framework */,
+				0D7308AC26948C7500530F83 /* UIKit.framework */,
+				0D7308AA26948C7000530F83 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0D74537F1B67DA47006E1CF6 /* iOS7_Chapter5 */ = {
@@ -635,11 +640,24 @@ NO.9 chapter
 			name = Models;
 			sourceTree = "<group>";
 		};
+		0D7F613A26A481D700832521 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0D7F613B26A48AA600832521 /* WDClimbPresentAnimationDelegate.h */,
+				0D7F613C26A48AA600832521 /* WDClimbPresentAnimationDelegate.m */,
+				0DAE1B5A1B71A0F000B0462D /* YXNavigationControllerDelegate.h */,
+				0DAE1B5B1B71A0F000B0462D /* YXNavigationControllerDelegate.m */,
+				0D4548891B706553002E1C41 /* YXVCPresentDelegate.h */,
+				0D45488A1B706553002E1C41 /* YXVCPresentDelegate.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		0D85DAE81B6FCB70001DD18E /* iOS7_Chapter20 */ = {
 			isa = PBXGroup;
 			children = (
+				0D7F613A26A481D700832521 /* Animation */,
 				0D4548921B709443002E1C41 /* VC */,
-				0D4548851B706488002E1C41 /* Delegate */,
 				0D85DAE91B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.h */,
 				0D85DAEA1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m */,
 				0D45487B1B704C7C002E1C41 /* Section20_iOS7_1ViewController.h */,
@@ -648,6 +666,8 @@ NO.9 chapter
 				0D4548831B70603C002E1C41 /* Section20_iOS7_2ViewController.m */,
 				0DAE1B571B719CBA00B0462D /* Section20_iOS7_3ViewController.h */,
 				0DAE1B581B719CBA00B0462D /* Section20_iOS7_3ViewController.m */,
+				0D7F613726A47FF800832521 /* Section20_iOS7_4ViewController.h */,
+				0D7F613826A47FF800832521 /* Section20_iOS7_4ViewController.m */,
 			);
 			name = iOS7_Chapter20;
 			sourceTree = "<group>";
@@ -716,6 +736,8 @@ NO.9 chapter
 				0D7B97D71B6F8190006820CB /* Section19_iOS7_5ViewController.h */,
 				0D7B97D81B6F8190006820CB /* Section19_iOS7_5ViewController.m */,
 				0D7B97D91B6F8190006820CB /* Section19_iOS7_5ViewController.xib */,
+				0D4AC3B52694372000F21A8F /* Section19_iOS7_6ViewController.h */,
+				0D4AC3B62694372000F21A8F /* Section19_iOS7_6ViewController.m */,
 			);
 			name = iOS7_Chapter19;
 			sourceTree = "<group>";
@@ -912,7 +934,7 @@ NO.9 chapter
 				TargetAttributes = {
 					0D4389561B514288005DFCF7 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 4FL62462P2;
+						DevelopmentTeam = 3A946D8N5T;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -946,6 +968,7 @@ NO.9 chapter
 				0D4389681B514288005DFCF7 /* Images.xcassets in Resources */,
 				0DB0E1271B69D42100289B0F /* Section23_iOS7_1ViewController.xib in Resources */,
 				0D5E4E601B52599A00CB3A8C /* j1@2x.jpeg in Resources */,
+				0D4AC3B42693F05C00F21A8F /* Launch Screen.storyboard in Resources */,
 				0D5E4E611B52599A00CB3A8C /* j2@2x.jpeg in Resources */,
 				0DF4B4451B65DBD70081B8D8 /* CustomVCStoryboard.storyboard in Resources */,
 				0D7A8C611B68675A00FFA493 /* Photos in Resources */,
@@ -966,7 +989,6 @@ NO.9 chapter
 				0DCC75DB1B5CB5A4007E3CD0 /* Section9_1ViewController.m in Sources */,
 				0D4389601B514288005DFCF7 /* AppDelegate.m in Sources */,
 				0DE0602C1B653DD800C09938 /* UIImage+ImageEffects.m in Sources */,
-				0DAE1B621B71A32E00B0462D /* YXPopVCAnimation.m in Sources */,
 				0D6F0ACC1B5D043D004C9410 /* CircleCALayer.m in Sources */,
 				0DCAEF921B58F98300AC4425 /* YXNavigationController.m in Sources */,
 				0DB0E1371B69FAE600289B0F /* RNTimer.m in Sources */,
@@ -974,21 +996,21 @@ NO.9 chapter
 				0D9A8E271B5B8EA000589B8C /* Section8_2ViewController.m in Sources */,
 				0D4548841B70603C002E1C41 /* Section20_iOS7_2ViewController.m in Sources */,
 				0DB0E12F1B69D80C00289B0F /* RNQueue.m in Sources */,
-				0D45488E1B708C75002E1C41 /* YXPresentVCAnimation.m in Sources */,
 				0D7B97B11B6F19BC006820CB /* YXDragView.m in Sources */,
 				0D7453821B67DAC0006E1CF6 /* SectionListiOS7NO5ViewController.m in Sources */,
 				0DC412D51B5E864D001274DC /* Section13_2ViewController.m in Sources */,
 				0DE2D9E41B5A28560000AA31 /* YXNoMarginTableViewCell.m in Sources */,
 				0DB7C4621B5F3EF100D19259 /* Section13_3ViewController.m in Sources */,
 				0DB0E1261B69D42100289B0F /* Section23_iOS7_1ViewController.m in Sources */,
+				0D4AC3B72694372000F21A8F /* Section19_iOS7_6ViewController.m in Sources */,
 				0D94481E1B5E1D55007FF694 /* Section13_1ViewController.m in Sources */,
-				0DAE1B5F1B71A2E600B0462D /* YXPushVCAnimation.m in Sources */,
 				0D9A8E2D1B5BBA4B00589B8C /* Section8_4ViewController.m in Sources */,
 				0DE2D9EB1B5A3D770000AA31 /* YXMultiSubTableViewController.m in Sources */,
 				0D7BC2F41B621E5B00A9FDC0 /* JSONModel.m in Sources */,
 				0DAE1B5C1B71A0F000B0462D /* YXNavigationControllerDelegate.m in Sources */,
 				0DCC75D71B5C9BC5007E3CD0 /* Section8_6ViewController.m in Sources */,
 				0D7B97B51B6F3A61006820CB /* YXDefaultDynamicBehavior.m in Sources */,
+				0DFC388826A550CC000716FE /* UINavigationController+YXTransitions.m in Sources */,
 				0DCC75E81B5CBBDC007E3CD0 /* Section9_2ViewController.m in Sources */,
 				0DAE1B591B719CBA00B0462D /* Section20_iOS7_3ViewController.m in Sources */,
 				0DB0E13A1B6A0CD100289B0F /* Section23_iOS7_3ViewController.m in Sources */,
@@ -1016,12 +1038,13 @@ NO.9 chapter
 				0D9A8E2A1B5BB06B00589B8C /* Section8_3ViewController.m in Sources */,
 				0D4548811B704DEB002E1C41 /* Section20_Test_collectionViewController.m in Sources */,
 				0D9A8E241B5B86FC00589B8C /* Section8_1ViewController.m in Sources */,
+				0D7F613D26A48AA600832521 /* WDClimbPresentAnimationDelegate.m in Sources */,
 				0D96DDE31B64B18F0072D937 /* UIDevice+MKAdditions.m in Sources */,
-				0DB79A701B72ECE7002D9923 /* YXPopVCCubeAnimation.m in Sources */,
+				0D7F613926A47FF800832521 /* Section20_iOS7_4ViewController.m in Sources */,
+				0DABFD7C2694583D0010DF42 /* YXMotionDynamicItem.m in Sources */,
 				0DCAEF981B58FB0200AC4425 /* AViewController.m in Sources */,
 				0D6F0AC51B5CEF03004C9410 /* Section9_5ViewController.m in Sources */,
 				0D7453851B67E350006E1CF6 /* YXCollectionViewController.m in Sources */,
-				0DAE1B651B71C89000B0462D /* YXPercentDrivenPopAnimation.m in Sources */,
 				0D1486F01B71E58C00ECFD4F /* Section5_iOS7_3ViewController.m in Sources */,
 				0D7A8C681B6868C200FFA493 /* YXPhotoCollectionViewCell.m in Sources */,
 				0D7BC2F71B621E5B00A9FDC0 /* Review.m in Sources */,
@@ -1039,14 +1062,12 @@ NO.9 chapter
 				0D0A83C51B578DFA0008F7AA /* YXTest.m in Sources */,
 				0D45487D1B704C7C002E1C41 /* Section20_iOS7_1ViewController.m in Sources */,
 				0DA944101B6E737000FD2146 /* SectionListiOS7NO19ViewController.m in Sources */,
-				0DB79A6D1B72EB74002D9923 /* YXPushVCCubeAnimation.m in Sources */,
-				0D4548911B708CD3002E1C41 /* YXDismissVCAnimation.m in Sources */,
 				0D6F0AC21B5CE060004C9410 /* Section9_4ViewController.m in Sources */,
 				0D85DAEB1B6FCBA9001DD18E /* SectionListiOS7NO20ViewController.m in Sources */,
 				0DB0E1221B69D31600289B0F /* SectionListiOS7NO23ViewController.m in Sources */,
 				0DCAEF9B1B5903A500AC4425 /* UITableViewCell+YXSetValues.m in Sources */,
-				0D7BD6421B70D6BF00524F3B /* YXDismissPercentDrivenAnimation.m in Sources */,
 				0DB0E1331B69F84000289B0F /* Section23_iOS7_2ViewController.m in Sources */,
+				0D4AC3BE269448CA00F21A8F /* YXMotionDynamicMaker.m in Sources */,
 				0DCC75E51B5CBAF5007E3CD0 /* DelegateView.m in Sources */,
 				0D7453881B67E472006E1CF6 /* Section5_iOS7_1ViewController.m in Sources */,
 				0D6F0AC81B5D02FF004C9410 /* Section9_6ViewController.m in Sources */,
@@ -1105,7 +1126,7 @@ NO.9 chapter
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1152,7 +1173,7 @@ NO.9 chapter
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1163,19 +1184,19 @@ NO.9 chapter
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4FL62462P2;
+				DEVELOPMENT_TEAM = 3A946D8N5T;
 				INFOPLIST_FILE = YX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = All_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = Dev_AllTeam;
 			};
 			name = Debug;
 		};
@@ -1183,18 +1204,18 @@ NO.9 chapter
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4FL62462P2;
+				DEVELOPMENT_TEAM = 3A946D8N5T;
 				INFOPLIST_FILE = YX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = All_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = Dev_AllTeam;
 			};
 			name = Release;
 		};

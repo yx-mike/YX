@@ -8,25 +8,15 @@
 
 #import "Section20_iOS7_2ViewController.h"
 #import "Section20_iOS7_3ViewController.h"
-//
-#import "YXVCPresentDelegate.h"
-#import "YXDismissPercentDrivenAnimation.h"
 
-@interface Section20_iOS7_2ViewController ()
-
-@property (strong, nonatomic) YXDismissPercentDrivenAnimation *animation;
-
-@end
 
 @implementation Section20_iOS7_2ViewController
 
-- (void)loadView
-{
+- (void)loadView {
     [super loadView];
-    //
     
     UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    closeButton.frame = CGRectMake(12, 20, 60, 44);
+    closeButton.frame = CGRectMake(12, 34, 60, 44);
     [closeButton setTitle:@"关闭" forState:UIControlStateNormal];
     [closeButton addTarget:self action:@selector(closePage:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeButton];
@@ -39,28 +29,19 @@
     [self.view addSubview:pushButton];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor lightGrayColor];
-    //
-    self.animation = [[YXDismissPercentDrivenAnimation alloc] init];
-    [self.animation wireToViewController:self];
-    
-    YXVCPresentDelegate *transition = self.navigationController.transitioningDelegate;
-    transition.dismissPercentDriven = self.animation;
 }
 
 #pragma mark - Action
 
-- (void)closePage:(UIButton *)sender
-{
+- (void)closePage:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)pushPage:(UIButton *)sender
-{
+- (void)pushPage:(UIButton *)sender {
     Section20_iOS7_3ViewController *vc = [[Section20_iOS7_3ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
