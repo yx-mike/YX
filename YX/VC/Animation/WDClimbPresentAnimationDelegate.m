@@ -31,7 +31,7 @@
 @implementation WDClimbPresentAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.5f;
+    return 0.35f;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -68,7 +68,7 @@
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
                           delay:0.0f
-                        options:isPresent ? UIViewAnimationOptionCurveEaseIn : UIViewAnimationOptionCurveEaseOut
+                        options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
         toView.frame = endRect4To;
         fromView.frame = endRect4ToFrom;

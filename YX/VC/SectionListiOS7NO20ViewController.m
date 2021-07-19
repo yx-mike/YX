@@ -112,6 +112,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     
     if (indexPath.row == 1) {
         YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
+        navC.modalPresentationStyle = UIModalPresentationFullScreen;
         navC.navigationBarHidden = YES;
         
         self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] init];
@@ -123,6 +124,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         [self presentViewController:navC animated:YES completion:nil];
     } else if (indexPath.row == 2) {
         YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
+        navC.modalPresentationStyle = UIModalPresentationFullScreen;
         navC.navigationBarHidden = YES;
         
         self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] init];
@@ -136,7 +138,6 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
     } else if (indexPath.row == 3) {
         YXNavigationController *navC = [[YXNavigationController alloc] initWithRootViewController:vcObject];
         navC.modalPresentationStyle = UIModalPresentationFullScreen;
-//        navC.modalPresentationStyle = UIModalPresentationCustom;
 
         WDClimbPresentAnimationDelegate *climbDelegate = [[WDClimbPresentAnimationDelegate alloc] init];
         navC.transitioningDelegate = climbDelegate;
