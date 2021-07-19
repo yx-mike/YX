@@ -136,7 +136,7 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         navC.modalPresentationStyle = UIModalPresentationFullScreen;
         navC.navigationBarHidden = YES;
 
-        navC.transitionsWDDelegate = [[WDClimbPresentAnimationDelegate alloc] init];
+        navC.transitionsWDDelegate = [[WDClimbPresentAnimationDelegate alloc] initWithRootVC:navC];
         navC.transitioningDelegate = navC.transitionsWDDelegate;
         
         [self presentViewController:navC animated:YES completion:nil];
