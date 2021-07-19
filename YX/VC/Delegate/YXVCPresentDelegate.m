@@ -199,27 +199,31 @@
 }
 
 - (void)panHandle:(UIPanGestureRecognizer *)g {
+    UIView *view = self.presentedVC.view;
+    
     UIGestureRecognizerState state = g.state;
     if (state == UIGestureRecognizerStateBegan) {
         self.interacting = YES;
-        CGPoint movePoint = [g translationInView:self.presentedVC.view];
-        if (movePoint.y > 0) {
+        
+        CGPoint movePoint = [g translationInView:view];
+        if (movePoint.y >= 0) {
             [self.presentedVC dismissViewControllerAnimated:YES completion:nil];
         }
     } else if (state == UIGestureRecognizerStateChanged) {
-        CGPoint movePoint = [g translationInView:self.presentedVC.view];
+        CGPoint movePoint = [g translationInView:view];
         if (movePoint.y <= 0) {
             [self updateInteractiveTransition:0];
         } else {
-            [self updateInteractiveTransition:movePoint.y/self.presentedVC.view.frame.size.height];
+            [self updateInteractiveTransition:movePoint.y / view.frame.size.height];
         }
     } else if (state == UIGestureRecognizerStateEnded) {
         self.interacting = NO;
-        CGPoint movePoint = [g translationInView:self.presentedVC.view];
+        
+        CGPoint movePoint = [g translationInView:view];
         if (movePoint.y <= 0) {
             [self cancelInteractiveTransition];
         } else {
-            if (movePoint.y/self.presentedVC.view.frame.size.height > .4) {
+            if (movePoint.y / view.frame.size.height > .4) {
                 [self finishInteractiveTransition];
             } else {
                 [self cancelInteractiveTransition];
@@ -227,6 +231,7 @@
         }
     } else if (state == UIGestureRecognizerStateCancelled) {
         self.interacting = NO;
+        
         [self cancelInteractiveTransition];
     }
 }

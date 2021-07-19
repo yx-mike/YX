@@ -7,9 +7,6 @@
 //
 
 #import "YXNavigationControllerDelegate.h"
-//
-#import "YXPushVCCubeAnimation.h"
-#import "YXPopVCCubeAnimation.h"
 
 
 @interface YXNavigationControllerDelegate ()
@@ -36,14 +33,16 @@
     return self;
 }
 
-- (void)setAnimationStyle:(YXNavigationAnimationStyle)style {
-    switch (style) {
-        case YXNavigationAnimationStyle1:{
+- (void)setAnimationStyle:(YXNavigationAnimationStyle)animationStyle {
+    _animationStyle = animationStyle;
+    
+    switch (animationStyle) {
+        case YXNavigationAnimationStyle1: {
             self.pushAnimation = [[YXPushVCAnimation alloc] initWithControllerDelegate:self];
             self.popAnimation = [[YXPopVCAnimation alloc] initWithControllerDelegate:self];
             break;
         }
-        case YXNavigationAnimationStyle2Cube:{
+        case YXNavigationAnimationStyle2Cube: {
             self.pushAnimation = [[YXPushVCCubeAnimation alloc] init];
             self.popAnimation = [[YXPopVCCubeAnimation alloc] init];
             break;
@@ -82,6 +81,10 @@
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
+    if (self.animationStyle == YXNavigationAnimationStyle2Cube) {
+        return nil;
+    }
+    
     if (animationController == self.popAnimation) {
         return self.popPercentDriven.interacting ? self.popPercentDriven : nil;
     } else {
@@ -91,6 +94,8 @@
 
 @end
 
+
+#pragma mark - Push
 
 @interface YXPushVCAnimation ()
 
@@ -141,7 +146,6 @@
 }
 
 @end
-
 
 @interface YXPopVCAnimation ()
 
@@ -197,11 +201,93 @@
 @end
 
 
+#pragma mark - Cube
+
+@interface YXPushVCCubeAnimation ()<CAAnimationDelegate>
+
+@property (strong, nonatomic) id <UIViewControllerContextTransitioning> transitionContext;
+
+@end
+
+@implementation YXPushVCCubeAnimation
+
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
+    return .7f;
+}
+
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+    self.transitionContext = transitionContext;
+    
+    UIView *containerView = [transitionContext containerView];
+    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    [containerView addSubview:toViewController.view];
+    
+    CATransition *animation = [CATransition animation];
+    animation.type = @"cube";
+    animation.subtype = kCATransitionFromRight;
+    animation.duration = 0.7;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.removedOnCompletion = YES;
+    animation.fillMode = kCAFillModeForwards;
+    animation.delegate = self;
+    
+    [containerView.layer addAnimation:animation forKey:nil];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    [self.transitionContext completeTransition:![self.transitionContext transitionWasCancelled]];
+}
+
+@end
+
+@interface YXPopVCCubeAnimation ()<CAAnimationDelegate>
+
+@property (strong, nonatomic) id <UIViewControllerContextTransitioning> transitionContext;
+
+@end
+
+@implementation YXPopVCCubeAnimation
+
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
+    return .7f;
+}
+
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+    self.transitionContext = transitionContext;
+    
+    UIView *containerView = [transitionContext containerView];
+    UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    [containerView insertSubview:toViewController.view belowSubview:fromViewController.view];
+    
+    CATransition *animation = [CATransition animation];
+    animation.type = @"cube";
+    animation.subtype = kCATransitionFromLeft;
+    animation.duration = 0.7;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.removedOnCompletion = YES;
+    animation.fillMode = kCAFillModeForwards;
+    animation.delegate = self;
+    
+    [containerView.layer addAnimation:animation forKey:nil];
+    [containerView exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    [self.transitionContext completeTransition:![self.transitionContext transitionWasCancelled]];
+}
+
+@end
+
+
+#pragma mark - 手势
+
 @interface YXPercentDrivenPopAnimation ()
 
 @property (nonatomic, weak) UIViewController *toVC;
 
 @property (nonatomic, weak) UIPanGestureRecognizer *panG;
+@property (nonatomic, weak) UIScreenEdgePanGestureRecognizer *edgePan;
 
 @property (nonatomic, assign) BOOL interacting;
 
@@ -212,41 +298,61 @@
 - (void)prepareGestureRecognizer:(UIViewController *)toVC {
     self.toVC = toVC;
     
+    // 普通的拖动
     UIPanGestureRecognizer *panG = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandle:)];
+    self.panG = panG;
     [self.toVC.view addGestureRecognizer:panG];
     
-    self.panG = panG;
+    // 边缘拖动
+//    UIScreenEdgePanGestureRecognizer *edgePan = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(edgePanGesture:)];
+//    self.edgePan = edgePan;
+//    edgePan.edges = UIRectEdgeLeft;
+//    [self.toVC.view addGestureRecognizer:edgePan];
 }
 
 - (void)removeGestureRecognizer {
-    [self.toVC.view removeGestureRecognizer:self.panG];
+    if (self.panG) {
+        [self.toVC.view removeGestureRecognizer:self.panG];
+        
+        self.panG = nil;
+    }
+    
+    if (self.edgePan) {
+        [self.toVC.view removeGestureRecognizer:self.edgePan];
+        
+        self.edgePan = nil;
+    }
     
     self.toVC = nil;
-    self.panG = nil;
 }
 
 - (void)panHandle:(UIPanGestureRecognizer *)g {
+    UIView *view = self.toVC.view;
+    UINavigationController *naVC = self.toVC.navigationController;
+    
     UIGestureRecognizerState state = g.state;
     if (state == UIGestureRecognizerStateBegan) {
         self.interacting = YES;
-        CGPoint movePoint = [g translationInView:self.toVC.view];
-        if (self.toVC.navigationController.viewControllers.count > 1 && movePoint.x > 0) {
-            [self.toVC.navigationController popViewControllerAnimated:YES];
+        
+        CGPoint movePoint = [g translationInView:view];
+        if (naVC.viewControllers.count > 1 && movePoint.x >= 0) {
+            [naVC popViewControllerAnimated:YES];
         }
     } else if (state == UIGestureRecognizerStateChanged) {
-        CGPoint movePoint = [g translationInView:self.toVC.view];
+        CGPoint movePoint = [g translationInView:view];
         if (movePoint.x <= 0) {
             [self updateInteractiveTransition:0];
         } else {
-            [self updateInteractiveTransition:movePoint.x/self.toVC.view.frame.size.width];
+            [self updateInteractiveTransition:movePoint.x / view.frame.size.width];
         }
     } else if (state == UIGestureRecognizerStateEnded) {
         self.interacting = NO;
-        CGPoint movePoint = [g translationInView:self.toVC.view];
+        
+        CGPoint movePoint = [g translationInView:view];
         if (movePoint.x <= 0) {
             [self cancelInteractiveTransition];
         } else {
-            if (movePoint.x/self.toVC.view.frame.size.width > .4) {
+            if (movePoint.x / view.frame.size.width > .45) {
                 [self finishInteractiveTransition];
             } else {
                 [self cancelInteractiveTransition];
@@ -254,6 +360,45 @@
         }
     } else if (state == UIGestureRecognizerStateCancelled) {
         self.interacting = NO;
+        
+        [self cancelInteractiveTransition];
+    }
+}
+
+- (void)edgePanGesture:(UIScreenEdgePanGestureRecognizer *)g {
+    UIView *view = self.toVC.view;
+    UINavigationController *naVC = self.toVC.navigationController;
+    
+    UIGestureRecognizerState state = g.state;
+    if (state == UIGestureRecognizerStateBegan) {
+        self.interacting = YES;
+        
+        if (naVC.viewControllers.count > 1) {
+            [naVC popViewControllerAnimated:YES];
+        }
+    } else if (state == UIGestureRecognizerStateChanged) {
+        CGPoint movePoint = [g translationInView:view];
+        if (movePoint.x <= 0) {
+            [self updateInteractiveTransition:0];
+        } else {
+            [self updateInteractiveTransition:movePoint.x / view.frame.size.width];
+        }
+    } else if (state == UIGestureRecognizerStateEnded) {
+        self.interacting = NO;
+        
+        CGPoint movePoint = [g translationInView:view];
+        if (movePoint.x <= 0) {
+            [self cancelInteractiveTransition];
+        } else {
+            if (movePoint.x / view.frame.size.width > .45) {
+                [self finishInteractiveTransition];
+            } else {
+                [self cancelInteractiveTransition];
+            }
+        }
+    } else if (state == UIGestureRecognizerStateCancelled) {
+        self.interacting = NO;
+        
         [self cancelInteractiveTransition];
     }
 }

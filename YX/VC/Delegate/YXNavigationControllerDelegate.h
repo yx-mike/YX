@@ -18,12 +18,14 @@ typedef NS_ENUM(NSUInteger, YXNavigationAnimationStyle) {
 
 @interface YXNavigationControllerDelegate : NSObject<UINavigationControllerDelegate>
 
-- (instancetype)initWithNav:(UINavigationController *)navVC;
+@property (nonatomic, assign) YXNavigationAnimationStyle animationStyle;
 
-- (void)setAnimationStyle:(YXNavigationAnimationStyle)style;
+- (instancetype)initWithNav:(UINavigationController *)navVC;
 
 @end
 
+
+#pragma mark - Push
 
 @interface YXPushVCAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
@@ -31,13 +33,25 @@ typedef NS_ENUM(NSUInteger, YXNavigationAnimationStyle) {
 
 @end
 
-
 @interface YXPopVCAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 - (instancetype)initWithControllerDelegate:(YXNavigationControllerDelegate *)controllerDelegate;
 
 @end
 
+
+#pragma mark - Cube
+
+@interface YXPushVCCubeAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+
+@end
+
+@interface YXPopVCCubeAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+
+@end
+
+
+#pragma mark - 手势
 
 @interface YXPercentDrivenPopAnimation : UIPercentDrivenInteractiveTransition
 
