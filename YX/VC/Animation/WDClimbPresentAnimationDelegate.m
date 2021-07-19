@@ -186,7 +186,7 @@
 
 @interface WDClimbDismissPercentDrivenAnimation ()
 
-@property (nonatomic, strong) UIViewController *presentedVC;
+@property (nonatomic, weak) UIViewController *presentedVC;
 
 @property (nonatomic, weak) UIPanGestureRecognizer *panG;
 
