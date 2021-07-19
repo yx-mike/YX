@@ -85,25 +85,21 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     [cell bindValuesForTitle:self.sections[indexPath.row]];
     return cell;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.sections.count;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSString *vcClassName = self.vcNames[indexPath.row];
@@ -115,9 +111,11 @@ static NSString * const cellId = @"YXNoMarginTableViewCell";
         navC.modalPresentationStyle = UIModalPresentationFullScreen;
         navC.navigationBarHidden = YES;
         
-        self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] init];
+        // present
+        self.customTransitioningDelegate = [[YXVCPresentDelegate alloc] initWithRootVC:navC];
         navC.transitioningDelegate = self.customTransitioningDelegate;
         
+        // push
         self.customNavigationControllerDelegate = [[YXNavigationControllerDelegate alloc] initWithNav:navC];
         navC.delegate = self.customNavigationControllerDelegate;
         

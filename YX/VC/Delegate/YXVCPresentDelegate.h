@@ -9,10 +9,35 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class YXDismissPercentDrivenAnimation;
 
 @interface YXVCPresentDelegate : NSObject<UIViewControllerTransitioningDelegate>
 
-@property (strong, nonatomic) YXDismissPercentDrivenAnimation *dismissPercentDriven;
+- (instancetype)initWithRootVC:(UIViewController *)vc;
+
+@end
+
+
+@interface YXPresentVCAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+
+- (instancetype)initWithDelegate:(YXVCPresentDelegate *)presentDelegate;
+
+@end
+
+
+@interface YXDismissVCAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+
+- (instancetype)initWithDelegate:(YXVCPresentDelegate *)presentDelegate;
+
+@end
+
+
+@interface YXDismissPercentDrivenAnimation : UIPercentDrivenInteractiveTransition
+
+@property (nonatomic, assign, readonly) BOOL interacting;
+
+- (instancetype)initWithRootVC:(UIViewController *)vc;
+
+- (void)prepareGestureRecognizer;
+- (void)removeGestureRecognizer;
 
 @end
